@@ -1,0 +1,20 @@
+<nav class="navbar navbar-light bg-dark">
+  <div class="w-100">
+    <ul class="nav nav-pills justify-content-center align-items-center">
+      <li *ngFor="let guide of guides" class="nav-item"
+      routerLinkActive="active">
+        <a class="nav-link"
+          routerLinkActive="active"
+          [routerLink]="['/guides', guide.name]">
+          {{ guide.title }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

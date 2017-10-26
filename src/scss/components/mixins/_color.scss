@@ -1,0 +1,38 @@
+//			SASS MAIN COLOR SHORTHANDS		//
+
+$time-bomb-blue: #549aa8;
+$time-warp-blue: #2010a9;
+$time-bomb-blue-bg: lighten(rgba(28, 93, 153, .8), 10%);
+$time-warp-blue-bg: lighten(rgba(32, 16, 169, .8), 15%);
+
+$dark: #222;
+$light: #bbcde5;
+
+$red: #FF4747;
+$red-light: lighten($red, 20%);
+$yellow: #edc236;
+$yellow-light:lighten($yellow, 20%);
+$green: #64f38c;
+$blue: #00A8E8;
+$blue-light: lighten($blue, 25%);
+$light-blue: darken(#bbcde5, 10%);
+
+$blue-bg: rgba(99, 159, 171, .92);
+$light-blue-bg: rgba(140, 232, 255, .9);
+$light-bg: rgba(191, 238, 255, .9);
+$fade-bg:  rgba(255, 255, 255, .5);
+$fade-light-bg: rgba(255, 255, 255, .3);
+$yellow-bg: rgba(237, 194, 54, .5);
+$white: #eee;
+
+.green {background: #5CBA55;}
+
+// FOR SPELLS PAGE -> BASIC COLORS //
+
+.red-text {color:red;}
+.yellow-text{color:darken(yellow, 15%);}
+.blue-text{color:blue;}
+
+.cunning, .ferocity, .resolve {
+  > h4, h6 {color: #eee;}
+}

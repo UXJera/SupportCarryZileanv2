@@ -1,0 +1,41 @@
+@import '~scss/components/mixins/index';
+
+
+
+.footer {
+  @include blue-dark-gradient;
+  display: flex;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  ul.footer-end {
+    margin-left: auto;
+    padding-right: 1em;
+    li {
+      padding-left: 1em;
+    }
+  }
+  a {
+    color:$blue;
+    @include transition;
+    text-decoration: none;
+    &:hover {
+      color:white;
+    }
+  }
+  li, a {
+    font-family: Oswald, Lato, sans-serif;
+  }
+}
+
+fa {
+  font-size: 1.5em;
+  color: $blue;
+  @include transition;
+  &:hover {
+    color: white;
+  }
+}

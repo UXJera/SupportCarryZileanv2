@@ -1,0 +1,35 @@
+.video-block {
+	@include white-gradient;
+	@include border;
+	margin: 1em 0;
+	max-width: 95%;
+	min-width: 95%;
+  margin: 0 auto;
+	@include box-shadow;
+  overflow:hidden;
+	//& > * {margin: .5em 1em;} // Container for video
+	div {display:flex; justify-content: center;}
+	p {font-size: .9em;}
+}
+
+// TURN YOUTUBE VIDEO INTO RESPONSIVE BLOCK //
+
+.embed-container {
+	height: 0;
+	max-width: 100%;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+	.video-block{max-width: 750px; min-width: 750px;}
+}

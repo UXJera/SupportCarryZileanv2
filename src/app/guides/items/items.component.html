@@ -1,0 +1,21 @@
+<div class="content-container">
+  <div class="container">
+    <div class="w-100">
+      <ul class="nav justify-content-center align-items-center">
+        <li *ngFor="let build of itemBuilds; let i of index" class="nav-item">
+          <a (click)="onSelect(build)">{{build}}</a>
+        </li>
+      </ul>
+    </div>
+  <div class="article-heading" *ngIf="!itemComponent">
+    <h2>{{ article.title }}</h2>
+    <h6>Last Updated: {{ article.updated }}</h6>
+    <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
+  </div>
+  
+    <app-items-utility *ngIf="itemComponent === 'utility'"></app-items-utility>
+    <app-items-damage *ngIf="itemComponent === 'damage'"></app-items-damage>
+    <app-items-tank *ngIf="itemComponent === 'tank'"></app-items-tank>
+
+  </div>
+</div>

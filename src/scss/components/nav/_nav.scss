@@ -1,0 +1,23 @@
+nav a {
+  font-family: Oswald, Lato, sans-serif;
+}
+
+.navbar-brand, .nav .nav-item a {
+  text-align: center;
+}
+
+.nav, .navbar {
+  flex-direction: column;
+}
+
+/*Navbar Settings*/
+
+@media (min-width: 560px) {
+  .nav, .navbar {
+    flex-direction: row;
+  }
+}
+
+.nav li {
+  padding: 0 1em;
+}

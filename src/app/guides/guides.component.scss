@@ -1,0 +1,9 @@
+@import '~scss/components/mixins/index';
+
+.navbar {
+  @include blue-light-lighten-gradient;
+}
+
+.nav-item a {
+  font-weight: 700;
+}

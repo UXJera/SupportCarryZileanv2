@@ -1,0 +1,46 @@
+@import '~scss/components/mixins/index';
+
+
+
+.navbar {
+  align-items: center;
+}
+
+.nav-background {
+  @include blue-dark-gradient;
+}
+
+a.navbar-brand {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  @include transition;
+  &:hover {
+    color: $blue;
+  }
+  &:focus {
+    color: $blue;
+  }
+  img {
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+
+.nav-link {
+  font-weight: 700;
+  @include transition;
+  color: $blue;
+  &:hover {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 700px){
+  .justify-content-end {
+    margin-left: auto;
+  }
+}
