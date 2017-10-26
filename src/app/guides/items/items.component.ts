@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class ItemsComponent implements OnInit {
 
   itemBuilds = ['utility','damage','tank'];
-  itemComponent;
+
+  componentSelected;
 
   onSelect(value) {
-    this.itemComponent = value;
+    this.componentSelected = value;
   }
 
   article: Object = {

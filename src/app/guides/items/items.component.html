@@ -7,15 +7,15 @@
         </li>
       </ul>
     </div>
-  <div class="article-heading" *ngIf="!itemComponent">
+  <div class="article-heading" *ngIf="!componentSelected">
     <h2>{{ article.title }}</h2>
     <h6>Last Updated: {{ article.updated }}</h6>
     <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
   </div>
-  
-    <app-items-utility *ngIf="itemComponent === 'utility'"></app-items-utility>
-    <app-items-damage *ngIf="itemComponent === 'damage'"></app-items-damage>
-    <app-items-tank *ngIf="itemComponent === 'tank'"></app-items-tank>
+
+    <app-items-utility *ngIf="componentSelected === 'utility'"></app-items-utility>
+    <app-items-damage *ngIf="componentSelected === 'damage'"></app-items-damage>
+    <app-items-tank *ngIf="componentSelected === 'tank'"></app-items-tank>
 
   </div>
 </div>

@@ -1,0 +1,19 @@
+@import '~scss/components/mixins/index';
+
+.w-100 {
+  margin-bottom: 1em;
+}
+
+li.nav-item {
+  cursor: pointer;
+  a {
+    text-transform: capitalize;
+    background: $blue;
+    padding: .5em 1em;
+    @include border-shadow;
+    @include transition;
+    &:hover {
+      background: $yellow;
+    }
+  }
+}

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { GuidesRoutingModule } from './guides-routing.module';
 import { ItemsModule } from './items/items.module';
+import { RunesModule } from './runes/runes.module';
 
 import { ItemsComponent } from './items/items.component';
 import { GuidesComponent } from './guides.component';
@@ -17,12 +18,12 @@ import { TricksComponent } from './tricks/tricks.component';
   imports: [
     CommonModule,
     GuidesRoutingModule,
-    ItemsModule
+    ItemsModule,
+    RunesModule
   ],
   declarations: [
     GuidesComponent,
-    RunesComponent,
-    SpellsComponent, 
+    SpellsComponent,
     LaningComponent,
     MatchupsComponent,
     LandingPageComponent,

@@ -10,10 +10,10 @@ import { ItemsTankComponent } from './items-tank/items-tank.component';
 @NgModule({
   imports: [
     CommonModule,
-    ItemsRoutingModule
+    //ItemsRoutingModule
   ],
   declarations: [
-    ItemsComponent, 
+    ItemsComponent,
     ItemsUtilityComponent,
     ItemsDamageComponent,
     ItemsTankComponent
