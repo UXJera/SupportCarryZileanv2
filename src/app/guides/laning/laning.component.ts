@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LaningComponent implements OnInit {
 
+  itemList = ['aggressive','reactive'];
+
+  componentSelected;
+
+  onSelect(value) {
+    this.componentSelected = value;
+  }
+
   article: Object = {
     title: 'Playstyles',
     updated: 'Pre-Season 8'

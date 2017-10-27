@@ -1,11 +1,18 @@
 <div class="content-container">
-  <div class="article-heading">
+  <div class="container">
+    <div class="w-100">
+      <ul class="nav justify-content-center align-items-center guides-nav">
+        <li *ngFor="let item of itemList; let i of index" class="nav-item">
+          <a (click)="onSelect(item)">{{item}}</a>
+        </li>
+      </ul>
+    </div>
+  <div class="article-heading" *ngIf="!componentSelected">
     <h2>{{ article.title }}</h2>
     <h6>Last Updated: {{ article.updated }}</h6>
+    <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
   </div>
-    <p>Lorem ipsum vel volutpat facilisis euismod duis proin lacus phasellus, in nisi lobortis vivamus tristique ligula fames luctus accumsan praesent eu in interdum amet orci scelerisque maecenas eget viverra in netus phasellus.</p>
-  <p>Suscipit cubilia sociosqu molestie vestibulum ut vitae aliquet tincidunt ligula, aliquet lacinia molestie suspendisse pretium nullam auctor fringilla, ad rutrum at tortor commodo taciti lorem platea duis pharetra sit platea interdum massa dolor id felis.</p>
-  <p>Praesent proin eget gravida tristique dictumst aenean curae habitasse litora nullam vivamus vitae, pharetra non lobortis elementum egestas interdum taciti auctor curabitur primis mi.</p>
-  <p>Aliquam in enim suscipit tempor phasellus senectus primis tortor egestas, volutpat neque purus nullam morbi fames tempor ante cursus taciti, auctor laoreet adipiscing torquent habitant tellus convallis ullamcorper volutpat facilisis suscipit aenean varius urna vitae.</p>
-  <p>Vitae turpis elit nam ad dictum ultrices sodales at ante, orci aliquam egestas morbi nibh sem etiam cursus non litora, elit sociosqu ullamcorper imperdiet nisi aenean egestas aliquam auctor dui sit luctus.</p>
+    <app-laning-aggressive *ngIf="componentSelected === itemList[0]"></app-laning-aggressive>
+    <app-laning-reactive *ngIf="componentSelected === itemList[1]"></app-laning-reactive>
+  </div>
 </div>
