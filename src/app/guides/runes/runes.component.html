@@ -12,11 +12,14 @@
     <h6>Last Updated: {{ article.updated }}</h6>
     <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
   </div>
-
+    <!-- Loop through all items in the itemList and append the value to app-runes, then set option to only show if componentSelected = the same value -->
     <app-runes-utility *ngIf="componentSelected === itemList[0]"></app-runes-utility>
     <app-runes-defensive *ngIf="componentSelected === itemList[1]"></app-runes-defensive>
     <app-runes-offensive *ngIf="componentSelected === itemList[2]"></app-runes-offensive>
     <!-- Can this be programmaticly written? -->
+    <!-- ngOptions -->
+    <!-- Can you bind to create selectors?-->
+    <!-- Convert array of strings into an array of objects, binding selector as a property? But will we still be able to set the selector to an element? -->
 
   </div>
 </div>
