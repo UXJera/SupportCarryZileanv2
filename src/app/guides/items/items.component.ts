@@ -7,12 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemsComponent implements OnInit {
 
-  itemList = ['utility','damage','tank'];
+  itemList = [
+    { index: 0, name: 'Utility', img: '' },
+    { index: 1, name: 'Damage', img: '' },
+    { index: 2, name: 'Tank', img: '' },
+  ];
 
   componentSelected;
 
   onSelect(value) {
-    this.componentSelected = value;
+    this.componentSelected = value.index;
   }
 
   article: Object = {
