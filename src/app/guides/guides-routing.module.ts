@@ -6,7 +6,7 @@ import { GuidesComponent } from './guides.component';
 import { ItemsComponent } from './items/items.component';
 import { RunesComponent } from './runes/runes.component';
 import { SpellsComponent }  from './spells/spells.component';
-import { LaningComponent } from './laning/laning.component';
+import { PlaystyleComponent } from './playstyle/playstyle.component';
 import { MatchupsComponent } from './matchups/matchups.component';
 
 
@@ -17,7 +17,7 @@ const guidesRoutes: Routes = [
     //{path: 'guides/items', loadChildren: './guides/items/items.module#ItemsModule'},
     {path: 'guides/runes', component: RunesComponent},
     {path: 'guides/spells', component: SpellsComponent},
-    {path: 'guides/playstyle', component: LaningComponent},
+    {path: 'guides/playstyle', component: PlaystyleComponent},
     {path: 'guides/matchups', component: MatchupsComponent},
   ]},
 ]

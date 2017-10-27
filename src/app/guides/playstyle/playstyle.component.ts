@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-laning',
-  templateUrl: './laning.component.html',
-  styleUrls: ['./laning.component.css']
+  selector: 'app-playstyle',
+  templateUrl: './playstyle.component.html',
+  styleUrls: ['./playstyle.component.scss']
 })
-export class LaningComponent implements OnInit {
+export class PlaystyleComponent implements OnInit {
 
   itemList = [
     { index: 0, name: 'aggressive', img: '' },

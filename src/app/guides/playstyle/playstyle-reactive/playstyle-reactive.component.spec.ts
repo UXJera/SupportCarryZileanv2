@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LaningAggressiveComponent } from './laning-aggressive.component';
+import { PlaystyleReactiveComponent } from './playstyle-reactive.component';
 
-describe('LaningAggressiveComponent', () => {
-  let component: LaningAggressiveComponent;
-  let fixture: ComponentFixture<LaningAggressiveComponent>;
+describe('PlaystyleReactiveComponent', () => {
+  let component: PlaystyleReactiveComponent;
+  let fixture: ComponentFixture<PlaystyleReactiveComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LaningAggressiveComponent ]
+      declarations: [ PlaystyleReactiveComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LaningAggressiveComponent);
+    fixture = TestBed.createComponent(PlaystyleReactiveComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
