@@ -3,16 +3,16 @@
     <div class="w-100">
       <ul class="nav justify-content-center align-items-center guides-nav">
         <li *ngFor="let item of itemList; let i of index" class="nav-item">
-          <a (click)="onSelect(item)">{{item}}</a>
+          <a (click)="onSelect(item)">{{item.name}}</a>
         </li>
       </ul>
     </div>
-  <div class="article-heading" *ngIf="!componentSelected">
+  <div class="article-heading" *ngIf="componentSelected === undefined">
     <h2>{{ article.title }}</h2>
     <h6>Last Updated: {{ article.updated }}</h6>
     <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
   </div>
-    <app-laning-aggressive *ngIf="componentSelected === itemList[0]"></app-laning-aggressive>
-    <app-laning-reactive *ngIf="componentSelected === itemList[1]"></app-laning-reactive>
+    <app-laning-aggressive *ngIf="componentSelected === itemList[0].index"></app-laning-aggressive>
+    <app-laning-reactive *ngIf="componentSelected === itemList[1].index"></app-laning-reactive>
   </div>
 </div>

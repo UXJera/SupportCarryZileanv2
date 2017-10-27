@@ -7,12 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LaningComponent implements OnInit {
 
-  itemList = ['aggressive','reactive'];
+  itemList = [
+    { index: 0, name: 'aggressive', img: '' },
+    { index: 1, name: 'reactive', img: '' }
+  ];
 
   componentSelected;
 
   onSelect(value) {
-    this.componentSelected = value;
+    this.componentSelected = value.index;
   }
 
   article: Object = {
