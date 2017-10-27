@@ -5,9 +5,9 @@ import { GuidesRoutingModule } from './guides-routing.module';
 import { ItemsModule } from './items/items.module';
 import { RunesModule } from './runes/runes.module';
 import { LaningModule } from './laning/laning.module';
+import { SpellsModule } from './spells/spells.module';
 
 import { GuidesComponent } from './guides.component';
-import { SpellsComponent } from './spells/spells.component';
 
 import { MatchupsComponent } from './matchups/matchups.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -21,11 +21,11 @@ import { LaningReactiveComponent } from './laning/laning-reactive/laning-reactiv
     GuidesRoutingModule,
     ItemsModule,
     RunesModule,
-    LaningModule
+    LaningModule,
+    SpellsModule
   ],
   declarations: [
     GuidesComponent,
-    SpellsComponent,
     MatchupsComponent,
     LandingPageComponent,
     TricksComponent,
