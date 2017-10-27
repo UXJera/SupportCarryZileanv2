@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RunesComponent implements OnInit {
 
-  runeBuilds = ['offensive','utility','defensive'];
+  itemList = ['offensive','utility','defensive'];
 
   componentSelected;
 

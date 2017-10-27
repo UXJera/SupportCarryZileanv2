@@ -1,9 +1,9 @@
 <div class="content-container">
   <div class="container">
     <div class="w-100">
-      <ul class="nav justify-content-center align-items-center">
-        <li *ngFor="let build of runeBuilds; let i of index" class="nav-item">
-          <a (click)="onSelect(build)">{{build}}</a>
+      <ul class="nav justify-content-center align-items-center guides-nav">
+        <li *ngFor="let item of itemList; let i of index" class="nav-item">
+          <a (click)="onSelect(item)">{{item}}</a>
         </li>
       </ul>
     </div>
@@ -13,9 +13,10 @@
     <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
   </div>
 
-    <app-runes-utility *ngIf="componentSelected === 'utility'"></app-runes-utility>
-    <app-runes-defensive *ngIf="componentSelected === 'defensive'"></app-runes-defensive>
-    <app-runes-offensive *ngIf="componentSelected === 'offensive'"></app-runes-offensive>
+    <app-runes-utility *ngIf="componentSelected === itemList[0]"></app-runes-utility>
+    <app-runes-defensive *ngIf="componentSelected === itemList[1]"></app-runes-defensive>
+    <app-runes-offensive *ngIf="componentSelected === itemList[2]"></app-runes-offensive>
+    <!-- Can this be programmaticly written? -->
 
   </div>
 </div>

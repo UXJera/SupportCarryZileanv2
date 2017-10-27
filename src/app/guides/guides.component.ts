@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-guides',
   templateUrl: './guides.component.html',
-  styleUrls: ['./guides.component.scss']
+  styleUrls: ['./guides.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class GuidesComponent implements OnInit {
 

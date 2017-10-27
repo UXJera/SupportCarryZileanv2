@@ -1,9 +1,9 @@
 <div class="content-container">
   <div class="container">
     <div class="w-100">
-      <ul class="nav justify-content-center align-items-center">
-        <li *ngFor="let build of itemBuilds; let i of index" class="nav-item">
-          <a (click)="onSelect(build)">{{build}}</a>
+      <ul class="nav justify-content-center align-items-center guides-nav">
+        <li *ngFor="let item of itemList; let i of index" class="nav-item">
+          <a (click)="onSelect(item)">{{item}}</a>
         </li>
       </ul>
     </div>
@@ -13,9 +13,9 @@
     <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
   </div>
 
-    <app-items-utility *ngIf="componentSelected === 'utility'"></app-items-utility>
-    <app-items-damage *ngIf="componentSelected === 'damage'"></app-items-damage>
-    <app-items-tank *ngIf="componentSelected === 'tank'"></app-items-tank>
+    <app-items-utility *ngIf="componentSelected === itemList[0]"></app-items-utility>
+    <app-items-damage *ngIf="componentSelected === itemList[1]"></app-items-damage>
+    <app-items-tank *ngIf="componentSelected === itemList[2]"></app-items-tank>
 
   </div>
 </div>

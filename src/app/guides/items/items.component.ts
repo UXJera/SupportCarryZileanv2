@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemsComponent implements OnInit {
 
-  itemBuilds = ['utility','damage','tank'];
+  itemList = ['utility','damage','tank'];
 
   componentSelected;
 
