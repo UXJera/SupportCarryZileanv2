@@ -7,12 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RunesComponent implements OnInit {
 
-  itemList = ['offensive','utility','defensive'];
+  itemList = [
+    { index: 0, name: 'Utility', img: '' },
+    { index: 1, name: 'Offensive', img: '' },
+    { index: 2, name: 'Defensive', img: '' },
+  ];
 
   componentSelected;
 
   onSelect(value) {
-    this.componentSelected = value;
+    this.componentSelected = value.index;
   }
 
   article: Object = {
