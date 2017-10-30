@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Guide } from '../guide.model';
+
 @Component({
   selector: 'app-skill-order',
   templateUrl: './skill-order.component.html',
@@ -12,15 +14,19 @@ export class SkillOrderComponent implements OnInit {
     updated: 'Pre-Season 8'
   }
 
-  itemList = [
-    { index: 0, name: 'q max', img: '' },
-    { index: 1, name: 'e max', img: '' },
-  ];
-
   componentSelected;
 
+  private itemGuides: Guide[] = [
+    new Guide(0,'q max', ''),
+    new Guide(1,'e max',''),
+  ]
+
   onSelect(value) {
+    for (let items of this.itemGuides) {
+      items.selected = false;
+    }
     this.componentSelected = value.index;
+    value.selected = true;
   }
   constructor() { }
 

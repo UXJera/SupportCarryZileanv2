@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Guide } from '../guide.model';
+
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
@@ -7,16 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemsComponent implements OnInit {
 
-  itemList = [
-    { index: 0, name: 'Utility', img: '' },
-    { index: 1, name: 'Damage', img: '' },
-    { index: 2, name: 'Tank', img: '' },
-  ];
-
   componentSelected;
 
+  private itemGuides: Guide[] = [
+    new Guide(0,'utility', ''),
+    new Guide(1,'damage',''),
+    new Guide(2,'tank',''),
+  ]
+
   onSelect(value) {
+    for (let items of this.itemGuides) {
+      items.selected = false;
+    }
     this.componentSelected = value.index;
+    value.selected = true;
   }
 
   article: Object = {

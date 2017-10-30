@@ -2,8 +2,11 @@
   <div class="container">
     <div class="w-100">
       <ul class="nav justify-content-center align-items-center guides-nav">
-        <li *ngFor="let item of itemList; let i of index" class="nav-item">
-          <a (click)="onSelect(item)">{{item.name}}</a>
+        <li *ngFor="let item of itemGuides; let i of index" [ngClass]="{selected: item.selected === true}"  class="skill-nav">
+          <a (click)="onSelect(item)">
+            <!-- {{item.name}} -->
+          <img src="{{item.img}}" />
+        </a>
         </li>
       </ul>
     </div>
@@ -13,11 +16,11 @@
     <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
   </div>
 
-    <app-spells-p *ngIf="componentSelected === itemList[0].index"></app-spells-p>
-    <app-spells-q *ngIf="componentSelected === itemList[1].index"></app-spells-q>
-    <app-spells-w *ngIf="componentSelected === itemList[2].index"></app-spells-w>
-    <app-spells-e *ngIf="componentSelected === itemList[3].index"></app-spells-e>
-    <app-spells-r *ngIf="componentSelected === itemList[4].index"></app-spells-r>
+    <app-spells-p *ngIf="componentSelected === itemGuides[0].index"></app-spells-p>
+    <app-spells-q *ngIf="componentSelected === itemGuides[1].index"></app-spells-q>
+    <app-spells-w *ngIf="componentSelected === itemGuides[2].index"></app-spells-w>
+    <app-spells-e *ngIf="componentSelected === itemGuides[3].index"></app-spells-e>
+    <app-spells-r *ngIf="componentSelected === itemGuides[4].index"></app-spells-r>
 
   </div>
 </div>

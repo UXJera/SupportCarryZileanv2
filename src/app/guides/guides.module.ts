@@ -13,6 +13,8 @@ import { GuidesComponent } from './guides.component';
 
 import { GuidesLandingComponent } from './guides-landing/guides-landing.component';
 
+import { GuideService } from './guide.service';
+
 
 @NgModule({
   imports: [
@@ -28,6 +30,7 @@ import { GuidesLandingComponent } from './guides-landing/guides-landing.componen
   declarations: [
     GuidesComponent,
     GuidesLandingComponent,
-  ]
+  ],
+  providers: [GuideService]
 })
 export class GuidesModule { }

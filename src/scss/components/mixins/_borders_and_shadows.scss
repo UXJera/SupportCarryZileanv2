@@ -41,3 +41,9 @@ $border-radius: 10px;
   border: $border;
   box-shadow: 5px 5px 5px #333;
 }
+
+@mixin border-shadow-glow {
+  border-radius: $border-radius;
+  border: $border;
+  box-shadow: 0px 0px 10px 10px $yellow;
+}
