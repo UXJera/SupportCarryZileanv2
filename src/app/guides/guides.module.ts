@@ -7,11 +7,12 @@ import { RunesModule } from './runes/runes.module';
 import { SpellsModule } from './spells/spells.module';
 import { PlaystyleModule } from './playstyle/playstyle.module';
 import { MatchupsModule } from './matchups/matchups.module';
+import { SkillOrderModule } from './skill-order/skill-order.module';
 
 import { GuidesComponent } from './guides.component';
 
 import { GuidesLandingComponent } from './guides-landing/guides-landing.component';
-import { SkillOrderComponent } from './skill-order/skill-order.component';
+
 
 @NgModule({
   imports: [
@@ -21,12 +22,12 @@ import { SkillOrderComponent } from './skill-order/skill-order.component';
     RunesModule,
     SpellsModule,
     PlaystyleModule,
-    MatchupsModule
+    MatchupsModule,
+    SkillOrderModule
   ],
   declarations: [
     GuidesComponent,
     GuidesLandingComponent,
-    SkillOrderComponent,
   ]
 })
 export class GuidesModule { }

@@ -1,16 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-skill-order',
-  templateUrl: './skill-order.component.html',
-  styleUrls: ['./skill-order.component.scss']
+  selector: 'app-skill-q-max',
+  templateUrl: './skill-q-max.component.html',
+  styleUrls: ['./skill-q-max.component.scss']
 })
-export class SkillOrderComponent implements OnInit {
-
-  article: Object = {
-    title: 'Skill Order',
-    updated: 'Pre-Season 8'
-  }
+export class SkillQMaxComponent implements OnInit {
 
   itemList = [
     { index: 0, name: 'q max', img: '' },
@@ -22,6 +17,8 @@ export class SkillOrderComponent implements OnInit {
   onSelect(value) {
     this.componentSelected = value.index;
   }
+
+
   constructor() { }
 
   ngOnInit() {

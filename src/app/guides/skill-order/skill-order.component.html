@@ -1,3 +1,20 @@
-<p>
-  skill-order works!
-</p>
+<div class="content-container">
+  <div class="container">
+    <div class="w-100">
+      <ul class="nav justify-content-center align-items-center guides-nav">
+        <li *ngFor="let item of itemList; let i of index" class="nav-item">
+          <a (click)="onSelect(item)">{{item.name}}</a>
+        </li>
+      </ul>
+    </div>
+  <div class="article-heading" *ngIf="componentSelected === undefined">
+    <h2>{{ article.title }}</h2>
+    <h6>Last Updated: {{ article.updated }}</h6>
+    <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
+  </div>
+
+    <app-skill-q-max *ngIf="componentSelected === itemList[0].index"></app-skill-q-max>
+    <app-skill-e-max *ngIf="componentSelected === itemList[1].index"></app-skill-e-max>
+
+  </div>
+</div>
