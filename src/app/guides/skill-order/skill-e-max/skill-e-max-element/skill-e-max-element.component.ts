@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillEMaxElementComponent implements OnInit {
 
+  imagePath = "assets/images/skill-order/emax.jpg";
+  imageLink = "assets/images/skill-order/emax-big.jpg"
+
   constructor() { }
 
   ngOnInit() {

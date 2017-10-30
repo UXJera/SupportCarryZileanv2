@@ -7,16 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillQMaxComponent implements OnInit {
 
-  itemList = [
-    { index: 0, name: 'q max', img: '' },
-    { index: 1, name: 'e max', img: '' },
-  ];
 
-  componentSelected;
-
-  onSelect(value) {
-    this.componentSelected = value.index;
-  }
 
 
   constructor() { }

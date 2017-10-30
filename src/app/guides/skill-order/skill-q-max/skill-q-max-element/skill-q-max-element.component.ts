@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillQMaxElementComponent implements OnInit {
 
+  imagePath = "assets/images/skill-order/qmax.jpg";
+  imageLink = "assets/images/skill-order/qmax-big.jpg"
+
+
   constructor() { }
 
   ngOnInit() {
