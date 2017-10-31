@@ -13,7 +13,10 @@
   <div class="article-heading" *ngIf="componentSelected === undefined">
     <h2>{{ article.title }}</h2>
     <h6>Last Updated: {{ article.updated }}</h6>
-    <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
+    <div>
+      <p>There are two distinct playstyles for Zilean: Aggressive and Reactive.</p>
+      <p></p>
+    </div>
   </div>
     <app-playstyle-aggressive *ngIf="componentSelected === itemGuides[0].index"></app-playstyle-aggressive>
     <app-playstyle-reactive *ngIf="componentSelected === itemGuides[1].index"></app-playstyle-reactive>

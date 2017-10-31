@@ -9,6 +9,11 @@ import { Guide } from '../guide.model';
 })
 export class PlaystyleComponent implements OnInit {
 
+  article: Object = {
+    title: 'Playstyles',
+    updated: 'Pre-Season 8'
+  }
+
   componentSelected;
 
   private itemGuides: Guide[] = [

@@ -1,0 +1,8 @@
+@import '~scss/components/mixins/index';
+
+.item-code{
+  @include border-shadow;
+  background: red;
+  padding-bottom: .5em;
+  //overflow:hidden;
+}
