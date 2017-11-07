@@ -8,15 +8,16 @@ export class GuideService {
 
 
   private itemGuides: Guide[];
-  
-  componentSelected;
+
+  //componentSelected;
 
   onSelect(value) {
     for (let items of this.itemGuides) {
       items.selected = false;
     }
-    this.componentSelected = value.index;
+    let componentSelected = value.index;
     value.selected = true;
+    return componentSelected;
   }
 
   constructor() { }

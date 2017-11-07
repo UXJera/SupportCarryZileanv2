@@ -1,0 +1,26 @@
+@import '~scss/components/mixins/index';
+
+.container-fluid {
+  display: flex;
+  align-items: space-around;
+}
+
+.content-container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guides-button {
+  font-weight: 700;
+  padding: .5em 1em;
+  @include blue-dark-gradient;
+  @include border-shadow;
+  @include transition;
+  margin-bottom: 2em;
+  &:hover {
+    text-decoration: none;
+    color: $blue;
+  }
+}

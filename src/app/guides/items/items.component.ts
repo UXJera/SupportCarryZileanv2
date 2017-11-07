@@ -1,13 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 
 import { Guide } from '../guide.model';
+//import { GuideService } from '../guide.service';
 
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
-  styleUrls: ['./items.component.scss']
+  styleUrls: ['./items.component.scss'],
+  //providers: [GuideService]
 })
-export class ItemsComponent implements OnInit {
+export class ItemsComponent implements OnInit, OnChanges {
+
+  constructor(
+    //private guideService: GuideService
+  ) { }
 
   componentSelected;
 
@@ -16,6 +22,8 @@ export class ItemsComponent implements OnInit {
     new Guide(1,'damage',''),
     new Guide(2,'tank',''),
   ]
+
+  //this.guideService.onSelect(value);
 
   onSelect(value) {
     for (let items of this.itemGuides) {
@@ -30,9 +38,12 @@ export class ItemsComponent implements OnInit {
     updated: 'Pre-Season 8'
   }
 
-  constructor() { }
+
 
   ngOnInit() {
+  }
+  ngOnChanges() {
+    //this.guideService.onSelect();
   }
 
 }
