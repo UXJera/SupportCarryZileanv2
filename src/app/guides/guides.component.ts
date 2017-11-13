@@ -14,7 +14,7 @@ export class GuidesComponent implements OnInit {
     { name: 'skill-order', title: 'Skill Order'},
     { name: 'spells', title: 'Spell Information'},
     { name: 'playstyle', title: 'Playstles'},
-    { name: 'matchups', title: 'Matchups'}
+    //{ name: 'matchups', title: 'Matchups'}
   ];
 
   constructor() { }
