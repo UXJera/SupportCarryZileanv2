@@ -8,6 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class RunesOffensiveElementComponent implements OnInit {
 
   constructor() { }
+  toggled = false;
+
+  images: Object = {
+    detailed: '../assets/images/runes/offensive/offensive-detail-sd.jpg',
+    brief: '../assets/images/runes/offensive/offensive-brief-sd.jpg',
+  }
+
+  imagesHD: Object = {
+    detailed: '../assets/images/runes/offensive/offensive-detail-hd.jpg',
+    brief: '../assets/images/runes/offensive/offensive-brief-hd.jpg'
+  }
+
+  onToggle() {
+    this.toggled = !this.toggled;
+  }
 
   ngOnInit() {
   }

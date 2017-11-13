@@ -1,3 +1,7 @@
-<p>
-  runes-utility-element works!
-</p>
+<button class="btn btn-default toggle-btn" (click)="onToggle()">Toggle Details</button>
+<div *ngIf="toggled" class="image-full">
+  <a [href]="imagesHD.detailed"><img [src]="images.detailed"/></a>
+</div>
+<div *ngIf="!toggled" class="image-full">
+  <a [href]="imagesHD.brief"><img [src]="images.brief"/></a>
+</div>
