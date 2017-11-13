@@ -6,6 +6,9 @@ import { ItemsRoutingModule } from './items-routing.module';
 import { ItemsUtilityComponent } from './items-utility/items-utility.component';
 import { ItemsDamageComponent } from './items-damage/items-damage.component';
 import { ItemsTankComponent } from './items-tank/items-tank.component';
+import { ItemsUtilityElementComponent } from './items-utility/items-utility-element/items-utility-element.component';
+import { ItemsDamageElementComponent } from './items-damage/items-damage-element/items-damage-element.component';
+import { ItemsTankElementComponent } from './items-tank/items-tank-element/items-tank-element.component';
 
 @NgModule({
   imports: [
@@ -16,7 +19,15 @@ import { ItemsTankComponent } from './items-tank/items-tank.component';
     ItemsComponent,
     ItemsUtilityComponent,
     ItemsDamageComponent,
-    ItemsTankComponent
+    ItemsTankComponent,
+    ItemsUtilityElementComponent,
+    ItemsDamageElementComponent,
+    ItemsTankElementComponent
+  ],
+  exports: [
+    ItemsUtilityElementComponent,
+    ItemsDamageElementComponent,
+    ItemsTankElementComponent
   ]
 })
 export class ItemsModule { }
