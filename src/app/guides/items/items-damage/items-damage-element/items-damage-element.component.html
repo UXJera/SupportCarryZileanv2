@@ -1,3 +1,5 @@
-<p>
-  items-damage-element works!
-</p>
+<ul class="item-build-container">
+  <li *ngFor="let item of itemBuild">
+    <img src="{{item.img}}" alt="{{item.name}}" />
+  </li>
+</ul>

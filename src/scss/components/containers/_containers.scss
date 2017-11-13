@@ -27,3 +27,12 @@
   max-width: 75vw;
   @include border-shadow;
 }
+
+.item-build-container {
+  list-style: none;
+  display:flex;
+  img {
+    @include border-shadow;
+    margin: 0 .5em;
+  }
+}
