@@ -23,6 +23,7 @@
 
 // Used in Runes
 .image-full img {
+  min-width: 50vw;
   max-width: 75vw;
   @include border-shadow;
 }
