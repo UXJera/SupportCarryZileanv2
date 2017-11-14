@@ -13,7 +13,14 @@
   <div class="article-heading" *ngIf="componentSelected === undefined">
     <h2>{{ article.title }}</h2>
     <h6>Last Updated: {{ article.updated }}</h6>
-    <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
+    <div>
+      <h5>Which Page Should I Use?</h5>
+      <ul>
+      <li><span>{{itemGuides[0].name | titlecase}}</span> - When you want versatility in your build or playstyle</li>
+      <li><span>{{itemGuides[1].name | titlecase}}</span> - When you want to win your lane and deal lots of damage</li>
+      <li><span>{{itemGuides[2].name | titlecase}}</span> - When you want survive and win by controlling champion mobility</li>
+      </ul>
+    </div>
   </div>
 
     <app-runes-utility *ngIf="componentSelected === itemGuides[0].index"></app-runes-utility>
