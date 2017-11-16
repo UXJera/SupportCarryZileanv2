@@ -7,11 +7,9 @@ export class Guide {
 
 
   constructor(index: number, name: string, imagePath: string) {
-    // Add in optional value for description or a default value
-    this.index = index;
+    this.index = index; // For Spells
     this.name = name;
     this.img = imagePath;
     this.selected = false;
-    //this.description = description;
   }
 }
