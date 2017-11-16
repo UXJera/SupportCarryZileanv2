@@ -5,3 +5,9 @@
   <div *ngIf="!toggled" class="element-center image-full">
     <a [href]="imagesHD.brief" target="_blank"><img [src]="images.brief"/></a>
 </div>
+
+<div>
+  <div *ngFor="let masteryRow of masteryArray; let i of index">
+    <img *ngFor="let masteryItem of masteryRow" [src]="masteryItem.src">
+  </div>
+</div>
