@@ -16,7 +16,7 @@ export class PlaystyleComponent implements OnInit {
 
   componentSelected;
 
-  private itemGuides: Guide[] = [
+  itemGuides: Guide[] = [
     new Guide(0,'aggressive', ''),
     new Guide(1,'reactive',''),
   ]

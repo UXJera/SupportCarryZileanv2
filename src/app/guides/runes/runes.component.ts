@@ -11,7 +11,7 @@ export class RunesComponent implements OnInit {
 
   componentSelected;
 
-  private itemGuides: Guide[] = [
+  itemGuides: Guide[] = [
     new Guide(0,'utility', ''),
     new Guide(1,'offensive',''),
     new Guide(2,'defensive',''),

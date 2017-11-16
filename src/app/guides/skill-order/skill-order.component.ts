@@ -16,7 +16,7 @@ export class SkillOrderComponent implements OnInit {
 
   componentSelected;
 
-  private itemGuides: Guide[] = [
+  itemGuides: Guide[] = [
     new Guide(0,'q max', '../assets/images/skills/q.png'),
     new Guide(1,'e max','../assets/images/skills/e.png'),
   ]

@@ -17,7 +17,7 @@ export class ItemsComponent implements OnInit, OnChanges {
 
   componentSelected;
 
-  private itemGuides: Guide[] = [
+  itemGuides: Guide[] = [
     new Guide(0,'utility', ''),
     new Guide(1,'damage',''),
     new Guide(2,'tank',''),

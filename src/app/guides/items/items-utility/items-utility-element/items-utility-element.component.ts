@@ -9,7 +9,7 @@ import { ItemBuild } from '../../item-build.model';
 })
 export class ItemsUtilityElementComponent implements OnInit {
 
-  private itemBuild: ItemBuild[] = [
+  itemBuild: ItemBuild[] = [
     new ItemBuild(0,'Eye of the Watchers', './assets/images/items/eye-of-the-watchers.png'),
     new ItemBuild(1,'Ardent Censer', './assets/images/items/ardent-censer.png'),
     new ItemBuild(2,'Redemption', './assets/images/items/redemption.png'),

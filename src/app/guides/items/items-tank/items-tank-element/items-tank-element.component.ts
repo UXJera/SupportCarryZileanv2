@@ -10,7 +10,7 @@ export class ItemsTankElementComponent implements OnInit {
 
   constructor() { }
 
-  private itemBuild: ItemBuild[] = [
+  itemBuild: ItemBuild[] = [
     new ItemBuild(0,'Eye of the Oasis', './assets/images/items/eye-of-the-oasis.png'),
     new ItemBuild(1,'Righteous Glory', './assets/images/items/righteous-glory.png'),
     new ItemBuild(2,"Knight's Vow", './assets/images/items/knights-vow.png'),

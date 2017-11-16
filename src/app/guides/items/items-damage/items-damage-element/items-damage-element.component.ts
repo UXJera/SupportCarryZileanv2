@@ -8,7 +8,7 @@ import { ItemBuild } from '../../item-build.model';
 })
 export class ItemsDamageElementComponent implements OnInit {
 
-  private itemBuild: ItemBuild[] = [
+  itemBuild: ItemBuild[] = [
     new ItemBuild(0,'Eye of the Watchers', './assets/images/items/eye-of-the-watchers.png'),
     new ItemBuild(1,'Morellonomicon', './assets/images/items/morellonomicon.png'),
     new ItemBuild(2,"Archangel's Staff / Seraph's Embrace", './assets/images/items/seraphs-embrace.png'),
