@@ -1,3 +1,33 @@
+.nav-item a {
+  font-weight: 700;
+}
+
 .guides-nav li.nav-item.selected a {
   background: $yellow;
+}
+
+.guides-nav  {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1em;
+  list-style: none;
+  li.nav-item {
+    cursor: pointer;
+    a {
+      text-transform: capitalize;
+      background: $blue;
+      padding: .5em 1em;
+      @include border-shadow;
+      @include transition;
+      &:hover {
+        background: $yellow;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px){
+
 }

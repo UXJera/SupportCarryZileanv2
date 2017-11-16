@@ -1,7 +1,8 @@
 <div class="content-container">
   <div class="container">
-    <div class="w-100">
-      <ul class="nav justify-content-center align-items-center guides-nav">
+    <!-- <div class="w-100"> -->
+    <div>
+      <ul class="guides-nav">
         <li *ngFor="let item of itemGuides; let i of index" [ngClass]="{selected: item.selected === true}"  class="skill-nav">
           <a (click)="onSelect(item)">
             <!-- {{item.name}} -->

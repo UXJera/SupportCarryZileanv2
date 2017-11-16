@@ -1,4 +1,54 @@
-.highlight {
-  background: red;
-  margin: 1em;
+@import '~scss/components/mixins/index';
+
+.masteryContainer {
+  @include border-shadow;
+  overflow: hidden;
+}
+
+.masteryRow {
+
+  display:flex;
+  justify-content: space-evenly;
+  background: $time-bomb-blue-bg;
+  &:nth-of-type(even) {
+    background: $time-warp-blue-bg;
+  }
+  .masteryItem {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em .5em;
+    flex:1;
+    img {
+      background:black;
+      border-radius: 50%;
+      margin: .5em 0;
+      &.highlight {
+        box-shadow: 0 0 10px 15px $yellow;
+      }
+    }
+  }
+}
+
+
+.description {
+  display: flex;
+  color:$white;
+}
+
+.descHighlight {
+  padding: 1em;
+  color:black;
+  background: $fade-bg;
+  box-shadow: 0 0 10px 10px $yellow;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 700px){
+  .masteryItem {
+    padding: .5em 2em;
+    img {
+      width: 100px;
+    }
+  }
 }

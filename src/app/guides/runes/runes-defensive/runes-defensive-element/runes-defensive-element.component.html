@@ -7,7 +7,13 @@
 </div>
 
 <div>
-  <div *ngFor="let masteryRow of masteryArray; let i of index">
-    <img *ngFor="let masteryItem of masteryRow" [src]="masteryItem.src" [ngClass]="{highlight: masteryItem.highlight}">
+  <button class="btn btn-default" (click)="onToggleDescription()">Toggle Description</button>
+  <div class="masteryContainer">
+    <div *ngFor="let masteryRow of masteryArrayPrimary; let i of index"  class="masteryRow">
+      <div *ngFor="let masteryItem of masteryRow" class="masteryItem">
+        <img [src]="masteryItem.src" [ngClass]="{highlight: masteryItem.highlight}" />
+        <span class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: masteryItem.highlight}">{{masteryItem.description}}</span>
+      </div>
+    </div>
   </div>
 </div>
