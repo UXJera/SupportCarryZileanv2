@@ -31,8 +31,10 @@
 .item-build-container {
   list-style: none;
   display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   img {
     @include border-shadow;
-    margin: 0 .5em;
+    margin: .5em;
   }
 }
