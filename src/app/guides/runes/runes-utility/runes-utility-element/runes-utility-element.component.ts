@@ -8,22 +8,10 @@ import { Rune } from '../../rune.model';
 export class RunesUtilityElementComponent implements OnInit {
 
   constructor() { }
-  toggled = false;
-
-  images: Object = {
-    detailed: '../assets/images/runes/utility/utility-detailed-sd.jpg',
-    brief: '../assets/images/runes/utility/utility-brief-sd.jpg',
-  }
-
-  imagesHD: Object = {
-    detailed: '../assets/images/runes/utility/utility-detailed-hd.jpg',
-    brief: '../assets/images/runes/utility/utility-brief-hd.jpg'
-  }
 
   toggleDescription = false;
   onToggleDescription() {
     this.toggleDescription = !this.toggleDescription;
-    console.log('Toggled')
   }
 
   inspirationShortcut =  './assets/images/runes/icons/inspiration/'
@@ -32,7 +20,7 @@ export class RunesUtilityElementComponent implements OnInit {
   runePrimarySrc = './assets/images/runes/icons/inspiration/inspiration-main.png';
   runeSecondarySrc = './assets/images/runes/icons/resolve/resolve-main.png';
 
-  masteryArrayPrimary = [
+  runeArrayPrimary = [
     [ new Rune('Unsealed Spellbook', this.inspirationShortcut + 'inspiration-keystone-1.png',
       'While near the shop, you can exchange 1 Summoner Shard to replace a Summoner Spell with a different one. Your Summoner Spell Cooldowns are reduced by 25%.'),
       new Rune('Glacial Augment', this.inspirationShortcut + 'inspiration-keystone-2.png',
@@ -66,7 +54,7 @@ export class RunesUtilityElementComponent implements OnInit {
     ],
   ];
 
-  masteryArraySecondary = [
+  runeArraySecondary = [
     [
       new Rune('Unflinching', this.resolveShortcut + 'resolve-slot-1-1.png',
       'After casting a Summoner Spell, gain Tenacity and Slow Resistance for a short duration. Additionally, gain Tenacity and Slow Resistance for each Summoner Spell on cooldown.'),
@@ -93,9 +81,6 @@ export class RunesUtilityElementComponent implements OnInit {
     ],
   ];
 
-  onToggle() {
-    this.toggled = !this.toggled;
-  }
   ngOnInit() {
   }
 

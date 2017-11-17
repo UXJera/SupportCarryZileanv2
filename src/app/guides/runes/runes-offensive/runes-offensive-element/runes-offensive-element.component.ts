@@ -10,26 +10,10 @@ import { Rune } from '../../rune.model';
 export class RunesOffensiveElementComponent implements OnInit {
 
   constructor() { }
-  toggled = false;
-
-  images: Object = {
-    detailed: '../assets/images/runes/offensive/offensive-detail-sd.jpg',
-    brief: '../assets/images/runes/offensive/offensive-brief-sd.jpg',
-  }
-
-  imagesHD: Object = {
-    detailed: '../assets/images/runes/offensive/offensive-detail-hd.jpg',
-    brief: '../assets/images/runes/offensive/offensive-brief-hd.jpg'
-  }
-
-  onToggle() {
-    this.toggled = !this.toggled;
-  }
 
   toggleDescription = false;
   onToggleDescription() {
     this.toggleDescription = !this.toggleDescription;
-    console.log('Toggled')
   }
 
   runePrimarySrc = './assets/images/runes/icons/sorcery/sorcery-main.png';
@@ -37,7 +21,7 @@ export class RunesOffensiveElementComponent implements OnInit {
   sorceryShortcut =  './assets/images/runes/icons/sorcery/'
   dominationShortcut =  './assets/images/runes/icons/domination/'
 
-  masteryArrayPrimary = [
+  runeArrayPrimary = [
     [ new Rune('Summon Aery', this.sorceryShortcut + 'sorcery-keystone-1.png',
       'Your attack and abilities send Aery to a target, damaging enemies or shielding allies.',true),
       new Rune('Arcane Comet', this.sorceryShortcut + 'sorcery-keystone-2.png',
@@ -71,7 +55,7 @@ export class RunesOffensiveElementComponent implements OnInit {
     ],
   ];
 
-  masteryArraySecondary = [
+  runeArraySecondary = [
     [
       new Rune('Cheap Shot', this.dominationShortcut + 'domination-slot-1-1.png',
       'While Flash is on Cooldown it is replaced with Hexflash. Hexflash: Channel for 2s to blink to a new location. Cannot be used in combat.',true),

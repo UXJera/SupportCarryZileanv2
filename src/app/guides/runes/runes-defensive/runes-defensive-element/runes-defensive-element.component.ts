@@ -11,32 +11,16 @@ export class RunesDefensiveElementComponent implements OnInit {
 
   constructor() { }
 
-  toggled = false;
-  onToggle() {
-    this.toggled = !this.toggled;
-  }
-
-  images: Object = {
-    detailed: '../assets/images/runes/defensive/defensive-detail-sd.jpg',
-    brief: '../assets/images/runes/defensive/defensive-brief-sd.jpg',
-  }
-
-  imagesHD: Object = {
-    detailed: '../assets/images/runes/defensive/defensive-detail-hd.jpg',
-    brief: '../assets/images/runes/defensive/defensive-brief-hd.jpg'
-  }
-
   toggleDescription = false;
   onToggleDescription() {
     this.toggleDescription = !this.toggleDescription;
-    console.log('Toggled')
   }
 
   resolveShortcut =  './assets/images/runes/icons/resolve/'
   sorceryShortcut =  './assets/images/runes/icons/sorcery/'
   runePrimarySrc = './assets/images/runes/icons/resolve/resolve-main.png';
   runeSecondarySrc = './assets/images/runes/icons/sorcery/sorcery-main.png';
-  masteryArrayPrimary = [
+  runeArrayPrimary = [
     [ new Rune('Grasp of the Undying', this.resolveShortcut + 'resolve-keystone-1.png',
       'Every 4s your next attack on a champion deals bonus magic damage, heals you, and permanently increases your health.'),
       new Rune('Aftershock', this.resolveShortcut + 'resolve-keystone-2.png',
@@ -70,10 +54,7 @@ export class RunesDefensiveElementComponent implements OnInit {
     ],
   ];
 
-
-
-
-  masteryArraySecondary = [
+  runeArraySecondary = [
     [
       new Rune('Nulifying Orb', this.sorceryShortcut + 'sorcery-slot-1-1.png',
       'When you take magic damage that would reduce your health below 30%, gain a shield that absorbs magic damage based on level for 4s.',true),

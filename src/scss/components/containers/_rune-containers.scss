@@ -1,11 +1,11 @@
 
-.masteryWrapper {
+.runeWrapper {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.masteryContainer {
+.runeContainer {
   @include border-shadow;
   overflow: hidden;
   display: flex;
@@ -13,7 +13,7 @@
   flex-direction: column;
 }
 
-.masteryHeader {
+.runeHeader {
   display:flex;
   align-items: center;
   justify-content: center;
@@ -22,14 +22,14 @@
   padding: 1em 0;
 }
 
-.masteryRow {
+.runeRow {
   display:flex;
   justify-content: space-evenly;
   background: $time-bomb-blue-bg;
   &:nth-of-type(even) {
     background: $time-warp-blue-bg;
   }
-  .masteryItem {
+  .runeItem {
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +62,7 @@
 }
 
 @media screen and (min-width: 700px){
-  .masteryItem {
+  .runeItem {
     padding: .5em 2em;
     img {
       width: 75px;

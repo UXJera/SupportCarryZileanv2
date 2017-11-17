@@ -1,41 +1,33 @@
-<!-- <button class="btn btn-default toggle-btn" (click)="onToggle()">Toggle Details</button>
-<div *ngIf="toggled" class="element-center image-full">
-  <a [href]="imagesHD.detailed" target="_blank"><img [src]="images.detailed"/></a>
-</div>
-<div *ngIf="!toggled" class="element-center image-full">
-  <a [href]="imagesHD.brief" target="_blank"><img [src]="images.brief"/></a>
-</div> -->
-
 <button class="btn btn-default toggle-btn" (click)="onToggleDescription()">Toggle Rune Details</button>
-<div class="masteryWrapper">
-  <div class="masteryContainer">
-    <div class="masteryHeader">
+<div class="runeWrapper">
+  <div class="runeContainer">
+    <div class="runeHeader">
       <img [src]="runePrimarySrc" alt="Inspiration Icon">
       <h5>Primary</h5>
 
     </div>
-    <div *ngFor="let masteryRow of masteryArrayPrimary; let i of index"  class="masteryRow">
-      <div *ngFor="let masteryItem of masteryRow" class="masteryItem">
-        <img [src]="masteryItem.src" [ngClass]="{highlight: masteryItem.highlight}" />
-        <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: masteryItem.highlight}">
-          <h5>{{masteryItem.name}}</h5>
-          <p>{{masteryItem.description}}</p>
+    <div *ngFor="let runeRow of runeArrayPrimary; let i of index"  class="runeRow">
+      <div *ngFor="let runeItem of runeRow" class="runeItem">
+        <img [src]="runeItem.src" [ngClass]="{highlight: runeItem.highlight}" />
+        <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlight}">
+          <h5>{{runeItem.name}}</h5>
+          <p>{{runeItem.description}}</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="masteryContainer">
-    <div class="masteryHeader">
+  <div class="runeContainer">
+    <div class="runeHeader">
       <img [src]="runeSecondarySrc" alt="Resolve Icon">
       <h5>Secondary</h5>
 
     </div>
-    <div *ngFor="let masteryRow of masteryArraySecondary; let i of index"  class="masteryRow">
-      <div *ngFor="let masteryItem of masteryRow" class="masteryItem">
-        <img [src]="masteryItem.src" [ngClass]="{highlight: masteryItem.highlight}" />
-        <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: masteryItem.highlight}">
-          <h5>{{masteryItem.name}}</h5>
-          <p>{{masteryItem.description}}</p>
+    <div *ngFor="let runeRow of runeArraySecondary; let i of index"  class="runeRow">
+      <div *ngFor="let runeItem of runeRow" class="runeItem">
+        <img [src]="runeItem.src" [ngClass]="{highlight: runeItem.highlight}" />
+        <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlight}">
+          <h5>{{runeItem.name}}</h5>
+          <p>{{runeItem.description}}</p>
         </div>
       </div>
     </div>
