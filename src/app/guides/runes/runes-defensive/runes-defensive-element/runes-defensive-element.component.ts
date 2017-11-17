@@ -33,6 +33,9 @@ export class RunesDefensiveElementComponent implements OnInit {
   }
 
   resolveShortcut =  './assets/images/runes/icons/resolve/'
+  sorceryShortcut =  './assets/images/runes/icons/sorcery/'
+  runePrimarySrc = './assets/images/runes/icons/resolve/resolve-main.png';
+  runeSecondarySrc = './assets/images/runes/icons/sorcery/sorcery-main.png';
   masteryArrayPrimary = [
     [ new Rune('Grasp of the Undying', this.resolveShortcut + 'resolve-keystone-1.png',
       'Every 4s your next attack on a champion deals bonus magic damage, heals you, and permanently increases your health.'),
@@ -64,6 +67,36 @@ export class RunesDefensiveElementComponent implements OnInit {
       'Heals and shields are 5% stronger and increased by an addiotional 10% on low health targets.'),
       new Rune('Second Wind', this.resolveShortcut + 'resolve-slot-3-3.png',
       'After taking damage from an enemy champion heal back some of your missing health over time.',true),
+    ],
+  ];
+
+
+
+
+  masteryArraySecondary = [
+    [
+      new Rune('Nulifying Orb', this.sorceryShortcut + 'sorcery-slot-1-1.png',
+      'When you take magic damage that would reduce your health below 30%, gain a shield that absorbs magic damage based on level for 4s.',true),
+      new Rune('Manaflow Band', this.sorceryShortcut + 'sorcery-slot-1-2.png',
+      'Every 60s, your next ability used has its mana cost refunded, and restores 8% of your missing mana.',true),
+      new Rune('The Ultimate Hat', this.sorceryShortcut + 'sorcery-slot-1-3.png',
+      "Your ultimate's cooldown is reduced by 5%. Each time you cast your ultimate, its cooldown is reduced by 2%, up to 10%.",true),
+    ],
+    [
+      new Rune('Transcendence', this.sorceryShortcut + 'sorcery-slot-2-1.png',
+      'Gain 10% CDR when you reach level 10. Each percent of CDR exceeding the CDR limit is converted to an adaptive bonus.',true),
+      new Rune('Celerity', this.sorceryShortcut + 'sorcery-slot-2-2.png',
+      'Gain 4% increased MS and add 8% of your bonus MS as an adaptive bonus.'),
+      new Rune('Absolute Focus', this.sorceryShortcut + 'sorcery-slot-2-3.png',
+      'While above 70% health, gain an adaptive bonus.'),
+    ],
+    [
+      new Rune('Scorch', this.sorceryShortcut + 'sorcery-slot-3-1.png',
+      'Your next ability hit sets champions on fire dealing 30-60 damage based on level after 1s.'),
+      new Rune('Waterwalking', this.sorceryShortcut + 'sorcery-slot-3-2.png',
+      'Gain 25 MS and an adaptive bonus when in the river.'),
+      new Rune('Gathering Storm', this.sorceryShortcut + 'sorcery-slot-3-3.png',
+      'Every 10 min gain an adaptive bonus.'),
     ],
   ];
 
