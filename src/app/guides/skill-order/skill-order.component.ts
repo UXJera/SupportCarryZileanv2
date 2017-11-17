@@ -18,7 +18,8 @@ export class SkillOrderComponent implements OnInit {
 
   itemGuides: Guide[] = [
     new Guide(0,'q max', '../assets/images/skills/q.png'),
-    new Guide(1,'e max','../assets/images/skills/e.png'),
+    new Guide(1,'hybrid order','../assets/images/skills/e.png'),
+    new Guide(2,'e max','../assets/images/skills/e.png'),
   ]
 
   onSelect(value) {
