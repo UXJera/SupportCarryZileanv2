@@ -1,10 +1,9 @@
 <button class="btn btn-default toggle-btn" (click)="onToggleDescription()">Toggle Rune Details</button>
 <div class="runeWrapper">
-  <div class="runeContainer">
+  <div class="runeContainer inspirationBg">
     <div class="runeHeader">
       <img [src]="runePrimarySrc" alt="Inspiration Icon">
       <h5>Primary</h5>
-
     </div>
     <div *ngFor="let runeRow of runeArrayPrimary; let i of index"  class="runeRow">
       <div *ngFor="let runeItem of runeRow" class="runeItem">
@@ -16,11 +15,10 @@
       </div>
     </div>
   </div>
-  <div class="runeContainer">
+  <div class="runeContainer resolveBg">
     <div class="runeHeader">
       <img [src]="runeSecondarySrc" alt="Resolve Icon">
       <h5>Secondary</h5>
-
     </div>
     <div *ngFor="let runeRow of runeArraySecondary; let i of index"  class="runeRow">
       <div *ngFor="let runeItem of runeRow" class="runeItem">

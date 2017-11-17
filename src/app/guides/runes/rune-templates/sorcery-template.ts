@@ -2,7 +2,7 @@ import { Rune } from '../../rune.model';
 
 sorceryShortcut =  './assets/images/runes/icons/sorcery/'
 
-masteryArrayPrimary = [
+runeArrayPrimary = [
   [ new Rune('Summon Aery', this.sorceryShortcut + 'sorcery-keystone-1.png',
     'Your attack and abilities send Aery to a target, damaging enemies or shielding allies.'),
     new Rune('Arcane Comet', this.sorceryShortcut + 'sorcery-keystone-2.png',
@@ -12,53 +12,53 @@ masteryArrayPrimary = [
   ],
   [
     new Rune('Nulifying Orb', this.sorceryShortcut + 'sorcery-slot-1-1.png',
-    'When you take magic damage that would reduce your health below 30%, gain a shield that absorbs magic damage based on level for 4s.'),
+    'Gain a magic damage shield when taken to low health by magic damage.'),
     new Rune('Manaflow Band', this.sorceryShortcut + 'sorcery-slot-1-2.png',
-    'Every 60s, your next ability used has its mana cost refunded, and restores 8% of your missing mana.'),
+    'Periodically your next ability used has its mana cost refunded and restores some missing mana.'),
     new Rune('The Ultimate Hat', this.sorceryShortcut + 'sorcery-slot-1-3.png',
-    "Your ultimate's cooldown is reduced by 5%. Each time you cast your ultimate, its cooldown is reduced by 2%, up to 10%."),
+    "Your ultimate's cooldown is reduced. Each time you cast your ultimate, its cooldown is further reduced."),
   ],
   [
     new Rune('Transcendence', this.sorceryShortcut + 'sorcery-slot-2-1.png',
-    'Gain 10% CDR when you reach level 10. Each percent of CDR exceeding the CDR limit is converted to an adaptive bonus.'),
+    'Gain 10% CDR when you reach level 10. Excess CDR becomes AP or AD, adaptive.'),
     new Rune('Celerity', this.sorceryShortcut + 'sorcery-slot-2-2.png',
-    'Gain 4% increased MS and add 8% of your bonus MS as an adaptive bonus.'),
+    'Gain 4% increased MS. Gain extra AP or AD, adaptive based on your bonus MS.'),
     new Rune('Absolute Focus', this.sorceryShortcut + 'sorcery-slot-2-3.png',
-    'While above 70% health, gain an adaptive bonus.'),
+    'While above 70% health, gain extra adaptive damage.'),
   ],
   [
     new Rune('Scorch', this.sorceryShortcut + 'sorcery-slot-3-1.png',
-    'Your next ability hit sets champions on fire dealing 30-60 damage based on level after 1s.'),
+    'Your first ability hit every 20s burns champions.'),
     new Rune('Waterwalking', this.sorceryShortcut + 'sorcery-slot-3-2.png',
-    'Gain 25 MS and an adaptive bonus when in the river.'),
+    'Gain SMS and AP or AD, adaptive in the river.'),
     new Rune('Gathering Storm', this.sorceryShortcut + 'sorcery-slot-3-3.png',
-    'Every 10 min gain an adaptive bonus.'),
+    'Gain increasing amounts of AD or AP, adaptive over the course of the game.'),
   ],
 ];
 
-masteryArraySecondary = [
+runeArraySecondary = [
   [
     new Rune('Nulifying Orb', this.sorceryShortcut + 'sorcery-slot-1-1.png',
-    'When you take magic damage that would reduce your health below 30%, gain a shield that absorbs magic damage based on level for 4s.'),
+    'Gain a magic damage shield when taken to low health by magic damage.'),
     new Rune('Manaflow Band', this.sorceryShortcut + 'sorcery-slot-1-2.png',
-    'Every 60s, your next ability used has its mana cost refunded, and restores 8% of your missing mana.'),
+    'Periodically your next ability used has its mana cost refunded and restores some missing mana.'),
     new Rune('The Ultimate Hat', this.sorceryShortcut + 'sorcery-slot-1-3.png',
-    "Your ultimate's cooldown is reduced by 5%. Each time you cast your ultimate, its cooldown is reduced by 2%, up to 10%."),
+    "Your ultimate's cooldown is reduced. Each time you cast your ultimate, its cooldown is further reduced."),
   ],
   [
     new Rune('Transcendence', this.sorceryShortcut + 'sorcery-slot-2-1.png',
-    'Gain 10% CDR when you reach level 10. Each percent of CDR exceeding the CDR limit is converted to an adaptive bonus.'),
+    'Gain 10% CDR when you reach level 10. Excess CDR becomes AP or AD, adaptive.'),
     new Rune('Celerity', this.sorceryShortcut + 'sorcery-slot-2-2.png',
-    'Gain 4% increased MS and add 8% of your bonus MS as an adaptive bonus.'),
+    'Gain 4% increased MS. Gain extra AP or AD, adaptive based on your bonus MS.'),
     new Rune('Absolute Focus', this.sorceryShortcut + 'sorcery-slot-2-3.png',
-    'While above 70% health, gain an adaptive bonus.'),
+    'While above 70% health, gain extra adaptive damage.'),
   ],
   [
     new Rune('Scorch', this.sorceryShortcut + 'sorcery-slot-3-1.png',
-    'Your next ability hit sets champions on fire dealing 30-60 damage based on level after 1s.'),
+    'Your first ability hit every 20s burns champions.'),
     new Rune('Waterwalking', this.sorceryShortcut + 'sorcery-slot-3-2.png',
-    'Gain 25 MS and an adaptive bonus when in the river.'),
+    'Gain SMS and AP or AD, adaptive in the river.'),
     new Rune('Gathering Storm', this.sorceryShortcut + 'sorcery-slot-3-3.png',
-    'Every 10 min gain an adaptive bonus.'),
+    'Gain increasing amounts of AD or AP, adaptive over the course of the game.'),
   ],
 ];

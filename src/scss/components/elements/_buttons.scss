@@ -1,6 +1,23 @@
+@import '~scss/components/mixins/index';
 
 // Used on Runes
 .toggle-btn {
   display:flex;
   margin: 1em auto;
+  background-color: $blue;
+  color:$white;
+  //@include border-shadow;
+}
+
+.guides-button {
+  font-weight: 700;
+  padding: .5em 1em;
+  @include blue-dark-gradient;
+  @include border-shadow;
+  @include transition;
+  margin-bottom: 2em;
+  &:hover {
+    text-decoration: none;
+    color: $blue;
+  }
 }

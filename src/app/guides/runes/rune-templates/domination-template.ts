@@ -2,7 +2,7 @@ import { Rune } from '../../rune.model';
 
 dominationShortcut =  './assets/images/runes/icons/domination/'
 
-masteryArrayPrimary = [
+runeArrayPrimary = [
   [ new Rune('Electrocute', this.dominationShortcut + 'domination-keystone-1.png',
     'While near the shop, you can exchange 1 Summoner Shard to replace a Summoner Spell with a different one. Your Summoner Spell Cooldowns are reduced by 25%.'),
     new Rune('Predator', this.dominationShortcut + 'domination-keystone-2.png',
@@ -36,7 +36,7 @@ masteryArrayPrimary = [
   ],
 ];
 
-masteryArraySecondary = [
+runeArraySecondary = [
   [
     new Rune('Cheap Shot', this.dominationShortcut + 'domination-slot-1-1.png',
     'While Flash is on Cooldown it is replaced with Hexflash. Hexflash: Channel for 2s to blink to a new location. Cannot be used in combat.'),

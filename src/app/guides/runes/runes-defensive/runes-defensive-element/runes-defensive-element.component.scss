@@ -4,54 +4,6 @@
   margin: 1em auto;
 }
 
-.masteryWrapper {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.masteryContainer {
-  @include border-shadow;
-  overflow: hidden;
-  display: flex;
-  min-width: 40vw;
-  flex-direction: column;
-}
-
-.masteryHeader {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  background: black;
-  color:white;
-  padding: 1em 0;
-}
-
-.masteryRow {
-  display:flex;
-  justify-content: space-evenly;
-  background: $time-bomb-blue-bg;
-  &:nth-of-type(even) {
-    background: $time-warp-blue-bg;
-  }
-  .masteryItem {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em .5em;
-    flex:1;
-    img {
-      background:black;
-      border-radius: 50%;
-      margin: .5em 0;
-      &.highlight {
-        box-shadow: 0 0 10px 10px $yellow;
-      }
-    }
-  }
-}
-
-
 .description {
   display: flex;
   flex-direction: column;

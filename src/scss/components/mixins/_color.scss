@@ -1,4 +1,5 @@
 //			SASS MAIN COLOR SHORTHANDS		//
+@import './backgrounds_and_gradients.scss';
 
 $time-bomb-blue: #549aa8;
 $time-warp-blue: #2010a9;
@@ -25,14 +26,10 @@ $fade-light-bg: rgba(255, 255, 255, .3);
 $yellow-bg: rgba(237, 194, 54, .5);
 $white: #eee;
 
-.green {background: #5CBA55;}
+// MASTERY BACKGROUND COLORS
 
-// FOR SPELLS PAGE -> BASIC COLORS //
-
-.red-text {color:red;}
-.yellow-text{color:darken(yellow, 15%);}
-.blue-text{color:blue;}
-
-.cunning, .ferocity, .resolve {
-  > h4, h6 {color: #eee;}
-}
+.resolveBg {background-color: #355e3b ;}
+.sorceryBg {background-color: #3b355e;}
+.precisionBg {background-color: #a3640d;}
+.dominationBg {background-color: #a3190d;}
+.inspirationBg {background-color: #0c92b9;}

@@ -25,9 +25,8 @@
 .runeRow {
   display:flex;
   justify-content: space-evenly;
-  background: $time-bomb-blue-bg;
   &:nth-of-type(even) {
-    background: $time-warp-blue-bg;
+    background: $fade-light-bg;
   }
   .runeItem {
     display:flex;
@@ -67,5 +66,23 @@
     img {
       width: 75px;
     }
+  }
+}
+
+@media screen and (min-width: 900px){
+  .runeContainer {
+    min-width: 35vw;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .runeContainer {
+    min-width: 30vw;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  .runeContainer {
+    min-width: 25vw;
   }
 }

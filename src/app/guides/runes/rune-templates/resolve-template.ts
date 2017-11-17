@@ -2,7 +2,7 @@ import { Rune } from '../../rune.model';
 
 resolveShortcut =  './assets/images/runes/icons/resolve/'
 
-masteryArrayPrimary = [
+runeArrayPrimary = [
   [ new Rune('Grasp of the Undying', this.resolveShortcut + 'resolve-keystone-1.png',
     'Every 4s your next attack on a champion deals bonus magic damage, heals you, and permanently increases your health.'),
     new Rune('Aftershock', this.resolveShortcut + 'resolve-keystone-2.png',
@@ -36,7 +36,7 @@ masteryArrayPrimary = [
   ],
 ];
 
-masteryArraySecondary = [
+runeArraySecondary = [
   [
     new Rune('Unflinching', this.resolveShortcut + 'resolve-slot-1-1.png',
     'After casting a Summoner Spell, gain Tenacity and Slow Resistance for a short duration. Additionally, gain Tenacity and Slow Resistance for each Summoner Spell on cooldown.'),

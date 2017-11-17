@@ -2,7 +2,7 @@ import { Rune } from '../../rune.model';
 
 precisionShortcut =  './assets/images/runes/icons/precision/'
 
-masteryArrayPrimary = [
+runeArrayPrimary = [
   [ new Rune('Press the Attack', this.precisionShortcut + 'precision-keystone-1.png',
     'While near the shop, you can exchange 1 Summoner Shard to replace a Summoner Spell with a different one. Your Summoner Spell Cooldowns are reduced by 25%.'),
     new Rune('Lethal Tempo', this.precisionShortcut + 'precision-keystone-2.png',
@@ -36,7 +36,7 @@ masteryArrayPrimary = [
   ],
 ];
 
-masteryArraySecondary = [
+runeArraySecondary = [
   [
     new Rune('Nulifying Orb', this.precisionShortcut + 'precision-slot-1-1.png',
     'When you take magic damage that would reduce your health below 30%, gain a shield that absorbs magic damage based on level for 4s.'),
