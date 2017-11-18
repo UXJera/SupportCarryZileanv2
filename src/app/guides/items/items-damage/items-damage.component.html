@@ -1,4 +1,46 @@
 <div class="article-container">
   <h4>AP / Damage Item Build Overview</h4>
   <app-items-damage-element></app-items-damage-element>
+
+  <div class="">
+    <h4>Starting Items</h4>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuild1">
+        <img src="{{item.img}}" alt="{{item.name}}" />
+      </li>
+    </ul>
+  </div>
+  <div class="">
+    <h4>Early Game Items</h4>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuild2">
+        <img src="{{item.img}}" alt="{{item.name}}" />
+      </li>
+    </ul>
+  </div>
+
+  <div class="">
+    <h4>Mid Game Core Items</h4>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuild3">
+        <img src="{{item.img}}" alt="{{item.name}}" />
+      </li>
+    </ul>
+  </div>
+
+  <div class="">
+    <h4>End Game Items (Full Offense)</h4>
+    <app-items-damage-element></app-items-damage-element>
+  </div>
+
+  <div class="">
+    <h4>Optional Defensive Items</h4>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuild4">
+        <img src="{{item.img}}" alt="{{item.name}}" />
+      </li>
+    </ul>
+  </div>
+
+
 </div>
