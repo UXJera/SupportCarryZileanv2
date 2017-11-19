@@ -14,27 +14,25 @@ export class SpellsComponent implements OnInit {
   componentSelected;
 
   itemGuides: Guide[] = [
-    new Guide(0,'passive', '../assets/images/skills/passive.png'),
-    new Guide(1,'q','../assets/images/skills/q.png'),
-    new Guide(2,'w','../assets/images/skills/w.png'),
-    new Guide(3,'e','../assets/images/skills/e.png'),
-    new Guide(4,'r','../assets/images/skills/r.png'),
-  ]
+    new Guide(0, 'passive', '../assets/images/skills/passive.png'),
+    new Guide(1, 'q', '../assets/images/skills/q.png'),
+    new Guide(2, 'w', '../assets/images/skills/w.png'),
+    new Guide(3, 'e', '../assets/images/skills/e.png'),
+    new Guide(4, 'r', '../assets/images/skills/r.png'),
+  ];
 
   onSelect(value) {
-    for (let items of this.itemGuides) {
+    for (const items of this.itemGuides) {
       items.selected = false;
     }
     this.componentSelected = value.index;
     value.selected = true;
   }
 
-  article: Object = {
+  article = {
     title: 'Spell Information',
     updated: 'Pre-Season 8'
-  }
-
-
+  };
 
   ngOnInit() {
   }

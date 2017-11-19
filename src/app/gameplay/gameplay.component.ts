@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 })
 export class GameplayComponent implements OnInit {
 
-  //@ViewChild('f') signupForm: NgForm;
+  // @ViewChild('f') signupForm: NgForm;
   //
   // data: any = {};
   // results: string[];

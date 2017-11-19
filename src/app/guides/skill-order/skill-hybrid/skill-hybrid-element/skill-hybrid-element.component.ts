@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillHybridElementComponent implements OnInit {
 
-  imgAlt = "Hybrid Skill Order";
-  imagePath = "assets/images/skill-order/hybrid.jpg";
-  imageLink = "assets/images/skill-order/hybrid-big.jpg"
+  imgAlt = 'Hybrid Skill Order';
+  imagePath = 'assets/images/skill-order/hybrid.jpg';
+  imageLink = 'assets/images/skill-order/hybrid-big.jpg';
 
   constructor() { }
 

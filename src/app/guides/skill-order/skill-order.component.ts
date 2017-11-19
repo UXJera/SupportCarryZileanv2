@@ -9,26 +9,27 @@ import { Guide } from '../guide.model';
 })
 export class SkillOrderComponent implements OnInit {
 
-  article: Object = {
+  article = {
     title: 'Skill Order',
     updated: 'Pre-Season 8'
-  }
+  };
 
   componentSelected;
 
   itemGuides: Guide[] = [
-    new Guide(0,'q max', '../assets/images/skills/q.png'),
-    new Guide(1,'hybrid order','../assets/images/skills/e.png'),
-    new Guide(2,'e max','../assets/images/skills/e.png'),
-  ]
+    new Guide(0, 'q max', '../assets/images/skills/q.png'),
+    new Guide(1, 'hybrid order', '../assets/images/skills/e.png'),
+    new Guide(2, 'e max', '../assets/images/skills/e.png'),
+  ];
 
   onSelect(value) {
-    for (let items of this.itemGuides) {
+    for (const items of this.itemGuides) {
       items.selected = false;
     }
     this.componentSelected = value.index;
     value.selected = true;
   }
+
   constructor() { }
 
   ngOnInit() {

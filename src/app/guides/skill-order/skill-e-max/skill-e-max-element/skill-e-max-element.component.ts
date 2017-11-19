@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class SkillEMaxElementComponent implements OnInit {
 
   imgAlt = 'E Max';
-  imagePath = "assets/images/skill-order/emax.jpg";
-  imageLink = "assets/images/skill-order/emax-big.jpg"
+  imagePath = 'assets/images/skill-order/emax.jpg';
+  imageLink = 'assets/images/skill-order/emax-big.jpg';
 
   constructor() { }
 

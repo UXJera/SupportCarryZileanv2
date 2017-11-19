@@ -9,20 +9,20 @@ import { Guide } from '../guide.model';
 })
 export class PlaystyleComponent implements OnInit {
 
-  article: Object = {
+  article = {
     title: 'Playstyles',
     updated: 'Pre-Season 8'
-  }
+  };
 
   componentSelected;
 
   itemGuides: Guide[] = [
-    new Guide(0,'aggressive', ''),
-    new Guide(1,'reactive',''),
-  ]
+    new Guide(0, 'aggressive', ''),
+    new Guide(1, 'reactive', ''),
+  ];
 
   onSelect(value) {
-    for (let items of this.itemGuides) {
+    for (const items of this.itemGuides) {
       items.selected = false;
     }
     this.componentSelected = value.index;

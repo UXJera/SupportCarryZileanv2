@@ -13,7 +13,7 @@ import { ItemsTankElementComponent } from './items-tank/items-tank-element/items
 @NgModule({
   imports: [
     CommonModule,
-    //ItemsRoutingModule
+    // ItemsRoutingModule
   ],
   declarations: [
     ItemsComponent,

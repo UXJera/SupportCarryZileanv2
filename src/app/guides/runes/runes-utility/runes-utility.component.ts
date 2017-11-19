@@ -11,19 +11,10 @@ export class RunesUtilityComponent implements OnInit {
 
   toggled = false;
 
-  images: Object = {
-    detailed: '../assets/images/runes/utility/utility-detailed-sd.jpg',
-    brief: '../assets/images/runes/utility/utility-brief-sd.jpg',
-  }
-
-  imagesHD: Object = {
-    detailed: '../assets/images/runes/utility/utility-detailed-hd.jpg',
-    brief: '../assets/images/runes/utility/utility-brief-hd.jpg'
-  }
-
   onToggle() {
     this.toggled = !this.toggled;
   }
+
   ngOnInit() {
   }
 

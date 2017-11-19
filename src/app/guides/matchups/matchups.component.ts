@@ -10,7 +10,7 @@ export class MatchupsComponent implements OnInit {
   article: Object = {
     title: 'Laning Matchups',
     updated: 'Pre-Season 8'
-  }
+  };
 
   constructor() { }
 

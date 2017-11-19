@@ -15,7 +15,7 @@ const itemsRoutes: Routes = [
     {path: 'guides/items/tank', component: ItemsTankComponent},
     {path: 'guides/items/damage', component: ItemsDamageComponent},
   ]},
-]
+];
 
 @NgModule({
   imports: [RouterModule.forChild(itemsRoutes)],

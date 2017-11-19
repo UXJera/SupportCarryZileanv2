@@ -12,23 +12,23 @@ export class RunesComponent implements OnInit {
   componentSelected;
 
   itemGuides: Guide[] = [
-    new Guide(0,'utility', ''),
-    new Guide(1,'offensive',''),
-    new Guide(2,'defensive',''),
-  ]
+    new Guide(0, 'utility', ''),
+    new Guide(1, 'offensive', ''),
+    new Guide(2, 'defensive', ''),
+  ];
 
   onSelect(value) {
-    for (let items of this.itemGuides) {
+    for (const items of this.itemGuides) {
       items.selected = false;
     }
     this.componentSelected = value.index;
     value.selected = true;
   }
 
-  article: Object = {
+  article = {
     title: 'Runepage Setup',
     updated: 'Pre-Season 8'
-  }
+  };
 
   constructor() { }
 

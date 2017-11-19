@@ -9,13 +9,13 @@ export class GuideService {
 
   private itemGuides: Guide[];
 
-  //componentSelected;
+  componentSelected;
 
   onSelect(value) {
-    for (let items of this.itemGuides) {
+    for (const items of this.itemGuides) {
       items.selected = false;
     }
-    let componentSelected = value.index;
+    const componentSelected = value.index;
     value.selected = true;
     return componentSelected;
   }
