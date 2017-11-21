@@ -6,7 +6,7 @@
     <h4>Starting Items</h4>
     <ul class="item-build-container">
       <li *ngFor="let item of itemBuild1">
-        <img src="{{item.img}}" alt="{{item.name}}" />
+        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
       </li>
     </ul>
   </div>
@@ -14,7 +14,7 @@
     <h4>Early Game Items</h4>
     <ul class="item-build-container">
       <li *ngFor="let item of itemBuild2">
-        <img src="{{item.img}}" alt="{{item.name}}" />
+        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
       </li>
     </ul>
   </div>
@@ -23,7 +23,7 @@
     <h4>Mid Game Core Items</h4>
     <ul class="item-build-container">
       <li *ngFor="let item of itemBuild3">
-        <img src="{{item.img}}" alt="{{item.name}}" />
+        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
       </li>
     </ul>
   </div>
@@ -37,7 +37,7 @@
     <h4>Optional Utility Items</h4>
     <ul class="item-build-container">
       <li *ngFor="let item of itemBuild4">
-        <img src="{{item.img}}" alt="{{item.name}}" />
+        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
       </li>
     </ul>
   </div>

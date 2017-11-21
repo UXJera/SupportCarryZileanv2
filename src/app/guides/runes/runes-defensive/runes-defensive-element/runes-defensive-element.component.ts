@@ -61,8 +61,8 @@ export class RunesDefensiveElementComponent implements OnInit {
 
   runeArraySecondary = [
     [
-      new Rune('Nulifying Orb', this.sorceryShortcut + 'sorcery-slot-1-1.png',
-      'Gain a magic damage shield when taken to low health by magic damage.', true),
+      new Rune('Nullifying Orb', this.sorceryShortcut + 'sorcery-slot-1-1.png',
+      'Gain a magic damage shield when taken to low health by magic damage.'),
       new Rune('Manaflow Band', this.sorceryShortcut + 'sorcery-slot-1-2.png',
       'Periodically your next ability used has its mana cost refunded and restores some missing mana.', true),
       new Rune('The Ultimate Hat', this.sorceryShortcut + 'sorcery-slot-1-3.png',

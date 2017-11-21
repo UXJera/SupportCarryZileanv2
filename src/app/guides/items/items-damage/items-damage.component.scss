@@ -1,0 +1,5 @@
+@import '~scss/components/mixins/index';
+
+.optional {
+  box-shadow: 0 0 10px 10px $yellow;
+}

@@ -1,14 +1,13 @@
 export class ItemBuild {
-  public index: number;
   public name: string;
   public img: string;
-  // public description: string;
-  // public selected: boolean;
+  public optional: boolean;
+  public description: string;
 
-  constructor(index: number, name: string, imagePath: string, optional: boolean = false) {
-    this.index = index;
+  constructor(name: string, imagePath: string, optional: boolean = false, description: string = '') {
     this.name = name;
     this.img = imagePath;
-    // this.selected = false;
+    this.optional = optional;
+    this.description = description;
   }
 }

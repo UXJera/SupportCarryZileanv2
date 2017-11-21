@@ -2,4 +2,26 @@
   <h4>Utility Runes</h4>
   <h6>This page works best for players who look to get ahead in lane and transition into a "traditional" support role</h6>
   <app-runes-utility-element></app-runes-utility-element>
+  <h5>Sorcery vs. Inspiration</h5>
+  <button class="btn btn-default toggle-btn" (click)="onToggleDiscussion1()">Toggle Discussion</button>
+  <div *ngIf="discussion1" class="discussion-container">
+    <h6>Keystone</h6>
+    <div class="image-versus">
+      <img src="./assets/images/runes/icons/sorcery/sorcery-keystone-1.png">
+      <img src="./assets/images/runes/icons/inspiration/inspiration-keystone-3.png">
+    </div>
+    <p>At this time, Summon Aery (Sorc) is a better option than Kleptomancy (Insp). You will have more consistent poke damage with Aery, and also it scales into late game since buffs on allied champions grant a shield. Kleptomancy is purely for laning.</p>
+    <h6>CDR Effects</h6>
+    <div class="image-versus">
+      <img src="./assets/images/runes/icons/sorcery/sorcery-slot-2-1.png">
+      <img src="./assets/images/runes/icons/inspiration/inspiration-slot-3-1.png">
+    </div>
+    <p>Moving into the other choices for each tree, the big winner is Transcendence (Sorc) because it converts every 10% CDR into 20 AP. The extra 5% CDR on everything (Insp) is alright, but I would say the bonus AP is worth more than 3 seconds off of your ultimate.</p>
+    <h6>Laning Sustain</h6>
+    <div class="image-versus">
+      <img src="./assets/images/runes/icons/sorcery/sorcery-slot-1-2.png">
+      <img src="./assets/images/runes/icons/inspiration/inspiration-slot-1-2.png">
+    </div>
+    <p>Primary Tree Inspiration has better life sustain with Biscuit Delivery (Insp), but Sorcery has better mana management with Manaflow Band (Sorc). You can also activate Rewind (W) while no spells are on cooldown to get back free mana if Manaflow Band is available (This does not put Rewind on cooldown).</p>
+  </div>
 </div>

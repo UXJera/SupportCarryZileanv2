@@ -38,3 +38,20 @@
     margin: .5em;
   }
 }
+
+.discussion-container {
+  background: $fade-light-bg;
+  padding: 1em;
+  @include border-shadow;
+  .image-versus {
+    display:flex;
+    justify-content: center;
+    img {
+      width: 75px;
+      height: 75px;
+      margin: 0 1em;
+      background: black;
+      border-radius: 50%;
+    }
+  }
+}

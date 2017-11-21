@@ -10,9 +10,14 @@ export class RunesUtilityComponent implements OnInit {
   constructor() { }
 
   toggled = false;
+  discussion1 = false;
 
   onToggle() {
     this.toggled = !this.toggled;
+  }
+
+  onToggleDiscussion1() {
+    this.discussion1 = !this.discussion1;
   }
 
   ngOnInit() {
