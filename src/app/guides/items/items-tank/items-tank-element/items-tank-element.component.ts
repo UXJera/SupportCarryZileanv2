@@ -16,7 +16,6 @@ export class ItemsTankElementComponent implements OnInit {
     new ItemBuild('Knight\'s Vow', './assets/images/items/knights-vow.png'),
     new ItemBuild('Locket of the Iron Solari', './assets/images/items/locket-of-the-iron-solari.png'),
     new ItemBuild('Control Ward', './assets/images/items/control-ward.png'),
-    // new ItemBuild(4Banshee's Veil', './assets/images/items/banshees-veil.png'),
     new ItemBuild('Ninja Tabi', './assets/images/items/ninja-tabi.png'),
     new ItemBuild('Hextech Sweeper', './assets/images/items/sweeper.png')
   ];

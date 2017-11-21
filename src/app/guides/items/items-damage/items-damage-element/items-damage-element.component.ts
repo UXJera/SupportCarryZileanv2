@@ -11,10 +11,8 @@ export class ItemsDamageElementComponent implements OnInit {
   itemBuild: ItemBuild[] = [
     new ItemBuild('Eye of the Watchers', './assets/images/items/eye-of-the-watchers.png'),
     new ItemBuild('Morellonomicon', './assets/images/items/morellonomicon.png'),
-    // new ItemBuild(2, 'Zhonya's Hourglass', './assets/images/items/zhonyas-hourglass.png'),
     new ItemBuild('Liandri\'s Torment', './assets/images/items/liandris-torment.png'),
     new ItemBuild('Rabadons Deathcap', './assets/images/items/rabadons-deathcap.png'),
-    // new ItemBuild(4, 'Archangel's Staff / Seraph's Embrace', './assets/images/items/seraphs-embrace.png'),
     new ItemBuild('Sorcerer\'s Shoes', './assets/images/items/sorcerers-shoes.png'),
     new ItemBuild('Control Ward', './assets/images/items/control-ward.png'),
     new ItemBuild('Hextech Sweeper', './assets/images/items/sweeper.png')
