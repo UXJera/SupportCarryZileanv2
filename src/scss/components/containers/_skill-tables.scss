@@ -3,15 +3,23 @@
 	@include border-shadow;
 	@include white-gradient;
 	overflow:hidden;
+	display: flex;
+	margin: 1em auto;
+
 	table {
 		width: 100%;
 		text-align:center;
-		//overflow:hidden;
+
+		tbody {
+			overflow:hidden;
+		}
+
 		tr {background: $light;}
 		tr:nth-of-type(odd){background: $fade-bg;}
 		tr:nth-of-type(1){background: $time-warp-blue-bg;}
 		th { color: $white; font-weight: 700;}
 		td {font-size: .95em;}
+
 		th, td {
 			border: 1px solid $dark;
 			text-align: center;
@@ -22,6 +30,7 @@
 .spell-row {
 	display:flex;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
 	img {
 		width: 100%;
 		max-width: 450px;
