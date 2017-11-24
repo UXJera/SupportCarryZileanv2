@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RunesService } from '../../runes.service';
 
 import { Rune } from '../../rune.model';
 
@@ -9,12 +10,14 @@ import { Rune } from '../../rune.model';
 })
 export class RunesOffensiveElementComponent implements OnInit {
 
-  constructor() { }
+  constructor(private runesService: RunesService) { }
 
   toggleDescription = false;
+
   onToggleDescription() {
-    this.toggleDescription = !this.toggleDescription;
+    return this.toggleDescription = this.runesService.toggleRuneDescription();
   }
+
 
   primaryRune = 'sorcery';
   secondaryRune = 'inspiration';

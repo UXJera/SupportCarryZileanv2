@@ -9,6 +9,8 @@ import { RunesUtilityElementComponent } from './runes-utility/runes-utility-elem
 import { RunesOffensiveElementComponent } from './runes-offensive/runes-offensive-element/runes-offensive-element.component';
 import { RunesDefensiveElementComponent } from './runes-defensive/runes-defensive-element/runes-defensive-element.component';
 
+import { RunesService } from './runes.service';
+
 @NgModule({
   imports: [
     CommonModule
@@ -25,6 +27,6 @@ import { RunesDefensiveElementComponent } from './runes-defensive/runes-defensiv
     RunesUtilityElementComponent,
     RunesOffensiveElementComponent,
     RunesDefensiveElementComponent
-  ]
+  ],
 })
 export class RunesModule { }

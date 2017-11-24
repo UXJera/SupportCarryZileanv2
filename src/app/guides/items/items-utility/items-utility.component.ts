@@ -28,8 +28,8 @@ export class ItemsUtilityComponent implements OnInit {
   // Mid Game Items
   itemBuild3: ItemBuild[] = [
     new ItemBuild('Eye of the Watchers', './assets/images/items/eye-of-the-watchers.png'),
-    new ItemBuild('Redemption', './assets/images/items/redemption.png'),
     new ItemBuild('Athenes Unholy Grail', './assets/images/items/athenes-unholy-grail.png'),
+    new ItemBuild('Redemption', './assets/images/items/redemption.png'),
     new ItemBuild('Boots of Lucidity', './assets/images/items/boots-of-lucidity.png'),
     new ItemBuild('Sweeper Trinket', './assets/images/items/sweeper.png'),
   ];

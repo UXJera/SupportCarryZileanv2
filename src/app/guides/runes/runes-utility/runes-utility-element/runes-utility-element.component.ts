@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Rune } from '../../rune.model';
+import {RunesService} from '../../runes.service';
+
 @Component({
   selector: 'app-runes-utility-element',
   templateUrl: './runes-utility-element.component.html',
@@ -7,11 +9,16 @@ import { Rune } from '../../rune.model';
 })
 export class RunesUtilityElementComponent implements OnInit {
 
-  constructor() { }
+  constructor(private runesService: RunesService) { }
 
   toggleDescription = false;
+
+  // onToggleDescription() {
+  //   this.toggleDescription = !this.toggleDescription;
+  // }
+
   onToggleDescription() {
-    this.toggleDescription = !this.toggleDescription;
+    return this.toggleDescription = this.runesService.toggleRuneDescription();
   }
 
   sorceryShortcut =  './assets/images/runes/icons/sorcery/'

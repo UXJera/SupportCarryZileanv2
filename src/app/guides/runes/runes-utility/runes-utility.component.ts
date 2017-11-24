@@ -1,23 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { RunesService } from '../runes.service';
 
 @Component({
   selector: 'app-runes-utility',
   templateUrl: './runes-utility.component.html',
-  styleUrls: ['./runes-utility.component.scss']
+  styleUrls: ['./runes-utility.component.scss'],
+  providers: [ RunesService ]
 })
 export class RunesUtilityComponent implements OnInit {
 
-  constructor() { }
-
-  toggled = false;
-  discussion1 = false;
-
-  onToggle() {
-    this.toggled = !this.toggled;
+  constructor(private runesService: RunesService) {
   }
 
+  discussion1 = false;
+
   onToggleDiscussion1() {
-    this.discussion1 = !this.discussion1;
+    return this.discussion1 = this.runesService.toggleDiscussion1();
   }
 
   ngOnInit() {

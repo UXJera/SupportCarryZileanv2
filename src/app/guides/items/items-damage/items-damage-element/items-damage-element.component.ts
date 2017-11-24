@@ -13,8 +13,8 @@ export class ItemsDamageElementComponent implements OnInit {
     new ItemBuild('Morellonomicon', './assets/images/items/morellonomicon.png'),
     new ItemBuild('Liandri\'s Torment', './assets/images/items/liandris-torment.png'),
     new ItemBuild('Rabadons Deathcap', './assets/images/items/rabadons-deathcap.png'),
-    new ItemBuild('Sorcerer\'s Shoes', './assets/images/items/sorcerers-shoes.png'),
     new ItemBuild('Control Ward', './assets/images/items/control-ward.png'),
+    new ItemBuild('Sorcerer\'s Shoes', './assets/images/items/sorcerers-shoes.png'),
     new ItemBuild('Hextech Sweeper', './assets/images/items/sweeper.png')
   ];
 
