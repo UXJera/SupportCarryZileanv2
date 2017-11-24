@@ -18,30 +18,10 @@
       <th>XP Gain</th>
       <th>Bonus XP / Min</th>
     </tr>
-    <tr>
-      <td>1 - 5</td>
-      <td>2 xp / 5 sec</td>
-      <td>24 xp / min</td>
-    </tr>
-    <tr>
-      <td>6 - 10</td>
-      <td>3.5 xp / 5 sec</td>
-      <td>42 xp / min</td>
-    </tr>
-    <tr>
-      <td>11 - 15</td>
-      <td>5 xp / 5 sec</td>
-      <td>60 xp / min</td>
-    </tr>
-    <tr>
-      <td>16 & 17</td>
-      <td>6 xp / 5 sec</td>
-      <td>72 xp / min</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>12 xp / 5 sec</td>
-      <td>144 xp / min</td>
+    <tr *ngFor="let row of spellData">
+      <td>{{row.levels}}</td>
+      <td>{{row.xpGain}} XP / 5 sec</td>
+      <td>{{row.xpGain * 12}} XP / Min</td>
     </tr>
   </table>
 </div>

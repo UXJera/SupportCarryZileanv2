@@ -3,28 +3,23 @@
   [
     {"rank": 1,
       "levels": "1 - 5",
-      "xpGain": 2,
-      "xpPerMin": 24
+      "xpGain": 2
     },
     {"rank": 2,
       "levels": "6 - 10",
-      "xpGain": 3.5,
-      "xpPerMin": 42
+      "xpGain": 3.5
     },
     {"rank": 3,
       "levels": "11 - 15",
-      "xpGain": 5,
-      "xpPerMin": 60
+      "xpGain": 5
     },
     {"rank": 4,
       "levels": "16, 17",
-      "xpGain": 6,
-      "xpPerMin": 72
+      "xpGain": 6
     },
     {"rank": 5,
       "levels": "18",
-      "xpGain": 12,
-      "xpPerMin": 144
+      "xpGain": 12
     }
   ],
   "timeBomb":

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SpellsService } from '../spells.service';
 
 @Component({
   selector: 'app-spells-p',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpellsPComponent implements OnInit {
 
-  constructor() { }
+  spellData: any;
+
+  constructor(private spellsService: SpellsService) {
+    this.spellsService.getData().subscribe(
+      (res) => {
+        this.spellData = res;
+        this.spellData = this.spellData.passive;
+      },
+       (error) => console.log("error : " + error),
+    )
+  }
 
   ngOnInit() {
   }
