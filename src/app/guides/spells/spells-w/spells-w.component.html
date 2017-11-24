@@ -6,43 +6,22 @@
 
 <h6>Rewind Spell Rank Information</h6>
 
-<div class="spell-table">
-  <table>
-    <tr>
-      <th>Rank</th>
-      <th>Mana Cost</th>
-      <th>Cooldown</th>
-    </tr>
-    <tr>
-      <td>Rank 1</td>
-      <td>35</td>
-      <td>14 sec</td>
-    </tr>
-    <tr>
-      <td>Rank 2</td>
-      <td>35</td>
-      <td>12 sec</td>
-    </tr>
-    <tr>
-      <td>Rank 3</td>
-      <td>35</td>
-      <td>10 sec</td>
-    </tr>
-    <tr>
-      <td>Rank 4</td>
-      <td>35</td>
-      <td>8 sec</td>
-    </tr>
-    <tr>
-      <td>Rank 5</td>
-      <td>35</td>
-      <td>6 sec</td>
-    </tr>
-  </table>
-</div>
+<div>
 
-<h5>Rewind: Mechanics</h5>
-<p>Talk about the mechanics of the spell: When this can and cannot be used.</p>
+  <div class="spell-table">
+    <table>
+      <tr>
+        <th>Rank</th>
+        <th>Mana Cost</th>
+        <th>Cooldown</th>
+      </tr>
+      <tr *ngFor="let row of spellData">
+        <td>Rank {{row.rank}}</td>
+        <td>{{row.mana}}</td>
+        <td>{{row.cooldown}} sec</td>
+      </tr>
+    </table>
+  </div>
 
 <h5>Rewind: When to Delay and When to Insta-cast</h5>
 <p>In most cases, you want to immediately use W when both E and Q are on cooldown. Or if you are not using Q, ALWAYS W after E.</p>

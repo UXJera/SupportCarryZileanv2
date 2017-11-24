@@ -16,23 +16,11 @@
       <th>Heal on Res</th>
       <th>Cooldown</th>
     </tr>
-    <tr>
-      <td>Rank 1</td>
-      <td>125</td>
-      <td>600 + (2 * AP)</td>
-      <td>120 sec</td>
-    </tr>
-    <tr>
-      <td>Rank 2</td>
-      <td>150</td>
-      <td>850 + (2 * AP)</td>
-      <td>90 sec</td>
-    </tr>
-    <tr>
-      <td>Rank 3</td>
-      <td>175</td>
-      <td>1100 + (2 * AP)</td>
-      <td>60 sec</td>
+    <tr *ngFor="let row of spellData">
+      <td>Rank {{row.rank}}</td>
+      <td>{{row.mana}}</td>
+      <td>{{row.heal}} + ({{row.apRatio}} * AP)</td>
+      <td>{{row.cooldown}} sec</td>
     </tr>
   </table>
 </div>

@@ -8,6 +8,8 @@ import { SpellsEComponent } from './spells-e/spells-e.component';
 import { SpellsRComponent } from './spells-r/spells-r.component';
 import { SpellsPComponent } from './spells-p/spells-p.component';
 
+import { SpellsService } from './spells.service';
+
 @NgModule({
   imports: [
     CommonModule
@@ -18,6 +20,9 @@ import { SpellsPComponent } from './spells-p/spells-p.component';
     SpellsWComponent,
     SpellsEComponent,
     SpellsRComponent,
-    SpellsPComponent]
+    SpellsPComponent],
+  providers: [
+    SpellsService
+  ]
 })
 export class SpellsModule { }
