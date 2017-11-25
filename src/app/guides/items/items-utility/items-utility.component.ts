@@ -5,9 +5,15 @@ import {ItemBuild} from '../item-build.model';
 @Component({
   selector: 'app-items-utility',
   templateUrl: './items-utility.component.html',
-  styleUrls: ['./items-utility.component.scss']
+  styleUrls: ['./items-utility.component.scss'],
 })
 export class ItemsUtilityComponent implements OnInit {
+
+  alternateView = false;
+
+  onToggleAlternate() {
+    this.alternateView = !this.alternateView;
+  }
 
   // Starting Items
   itemBuild1: ItemBuild[] = [

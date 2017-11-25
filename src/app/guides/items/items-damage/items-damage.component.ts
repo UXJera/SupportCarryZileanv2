@@ -7,6 +7,12 @@ import { ItemBuild } from '../item-build.model';
 })
 export class ItemsDamageComponent implements OnInit {
 
+  alternateView = false;
+
+  onToggleAlternate() {
+    this.alternateView = !this.alternateView;
+  }
+
   // Starting Items
   itemBuild1: ItemBuild[] = [
     new ItemBuild('Spelltheifs Edge', './assets/images/items/spellthiefs-edge.png'),

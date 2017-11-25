@@ -9,6 +9,12 @@ import {ItemBuild} from '../item-build.model';
 })
 export class ItemsTankComponent implements OnInit {
 
+  alternateView = false;
+
+  onToggleAlternate() {
+    this.alternateView = !this.alternateView;
+  }
+
   // Starting Items
   itemBuild1: ItemBuild[] = [
     new ItemBuild('Ancient Coin', './assets/images/items/ancient-coin.png'),

@@ -3,6 +3,14 @@
   <h4>Utility Item Build Overview</h4>
   <app-items-utility-element></app-items-utility-element>
 
+  <h5>Recommended Runes</h5>
+
+  <button class="btn btn-default toggle-btn" (click)="onToggleAlternate()">Toggle Rune Details</button>
+
+  <div *ngIf="alternateView">
+    <app-runes-utility-element></app-runes-utility-element>
+  </div>
+
   <div class="">
     <h4>Starting Items</h4>
     <ul class="item-build-container">
