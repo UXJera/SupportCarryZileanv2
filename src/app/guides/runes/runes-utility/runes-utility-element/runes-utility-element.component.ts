@@ -13,19 +13,18 @@ export class RunesUtilityElementComponent implements OnInit {
 
   toggleDescription = false;
 
-  // onToggleDescription() {
-  //   this.toggleDescription = !this.toggleDescription;
-  // }
-
   onToggleDescription() {
     return this.toggleDescription = this.runesService.toggleRuneDescription();
   }
 
+  primarySkill = 'sorcery';
+  secondarySkill = 'domination'
+
   sorceryShortcut =  './assets/images/runes/icons/sorcery/'
-  resolveShortcut =  './assets/images/runes/icons/resolve/';
+  dominationShortcut =  './assets/images/runes/icons/domination/';
 
   runePrimarySrc = './assets/images/runes/icons/sorcery/sorcery-main.png';
-  runeSecondarySrc = './assets/images/runes/icons/resolve/resolve-main.png';
+  runeSecondarySrc = './assets/images/runes/icons/domination/domination-main.png';
 
   runeArrayPrimary = [
     [ new Rune('Summon Aery', this.sorceryShortcut + 'sorcery-keystone-1.png',
@@ -63,29 +62,29 @@ export class RunesUtilityElementComponent implements OnInit {
 
   runeArraySecondary = [
     [
-      new Rune('Unflinching', this.resolveShortcut + 'resolve-slot-1-1.png',
-      'After casting a Summoner Spell, gain Tenacity and Slow Resistance for a short duration. Additionally, gain Tenacity and Slow Resistance for each Summoner Spell on cooldown.'),
-      new Rune('Demolish', this.resolveShortcut + 'resolve-slot-1-2.png',
-      'Charge up a powerful attack against a tower while near it.'),
-      new Rune('Font of Life', this.resolveShortcut + 'resolve-slot-1-3.png',
-      'Imparing the movement of an enemy champion marks them. Your allies heal when attacking champions you\'ve marked.', true),
+      new Rune('Cheap Shot', this.dominationShortcut + 'domination-slot-1-1.png',
+      'Deal bonus true damage to enemies with impaired movement or actions.'),
+      new Rune('Taste of Blood', this.dominationShortcut + 'domination-slot-1-2.png',
+      'Heal when you damage an enemy champion.'),
+      new Rune('Sudden Impact', this.dominationShortcut + 'domination-slot-1-3.png',
+      'Gain a burst of Lethality and Magic Penetration after using a dash, leap, blink, teleport, or when leaving stealth.'),
     ],
     [
-      new Rune('Iron Skin', this.resolveShortcut + 'resolve-slot-2-1.png',
-      'Gain 5 Armor. Heals, incluing consumables, increase your Armor by 5% temporarily.', true),
-      new Rune('Mirror Shell', this.resolveShortcut + 'resolve-slot-2-2.png',
-      'Gain 5 Magic Resist. Heals, incluing consumables, increase your Magic Resist by 5% temporarily.', true),
-      new Rune('Conditioning', this.resolveShortcut + 'resolve-slot-2-3.png',
-      'After 10 min gain +8 Armor and +8 Magic Resist and increase your Armor and Magic Resist by 5%.', true),
+      new Rune('Zombie Ward', this.dominationShortcut + 'domination-slot-2-1.png',
+      'After killing a ward, a friendly Zombie Ward is raised in its place. When your wards expire, they also reanimate as Zombie Wards.', true),
+      new Rune('Ghost Poro', this.dominationShortcut + 'domination-slot-2-2.png',
+      'When you enter brush, a poro appears. It will stay behind and give you vision.'),
+      new Rune('Eyeball Collection', this.dominationShortcut + 'domination-slot-2-3.png',
+      'Collect eyeballs for champion and ward takedowns. Gain permanent AD or AP, adaptive for each eyeball plus bonus upon collection completion.'),
     ],
     [
-      new Rune('Overgrowth', this.resolveShortcut + 'resolve-slot-3-1.png',
-      'Gain additional permanent max health when minions or monsters die near you.'),
-      new Rune('Revitalize', this.resolveShortcut + 'resolve-slot-3-2.png',
-      'Heals and shields are 5% stronger and increased by an addiotional 10% on low health targets.'),
-      new Rune('Second Wind', this.resolveShortcut + 'resolve-slot-3-3.png',
-      'After taking damage from an enemy champion heal back some of your missing health over time.'),
-    ],
+      new Rune('Ravenous Hunter', this.dominationShortcut + 'domination-slot-3-1.png',
+      'Unique takedowns grant permanent healing from ability damage.'),
+      new Rune('Ingenious Hunter', this.dominationShortcut + 'domination-slot-3-2.png',
+      'Unique takedowns grant permanent Active Item CDR (including trinkets).', true),
+      new Rune('Relentless Hunter', this.dominationShortcut + 'domination-slot-3-3.png',
+      'Unique takedowns grant permanent out of combat MS.'),
+    ]
   ];
 
   ngOnInit() {

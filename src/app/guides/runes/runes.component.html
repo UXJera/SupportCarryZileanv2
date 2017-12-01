@@ -19,6 +19,7 @@
       <li><span>{{itemGuides[0].name | titlecase}}</span> - When you want versatility in your build or playstyle</li>
       <li><span>{{itemGuides[1].name | titlecase}}</span> - When you want to win your lane and deal lots of damage</li>
       <li><span>{{itemGuides[2].name | titlecase}}</span> - When you want survive and win by controlling champion mobility</li>
+      <li><span>{{itemGuides[3].name | titlecase}}</span> - When you want win by pressuring side lanes and activated items</li>
       </ul>
     </div>
   </div>
@@ -26,6 +27,7 @@
     <app-runes-utility *ngIf="componentSelected === itemGuides[0].index"></app-runes-utility>
     <app-runes-offensive *ngIf="componentSelected === itemGuides[1].index"></app-runes-offensive>
     <app-runes-defensive *ngIf="componentSelected === itemGuides[2].index"></app-runes-defensive>
+    <app-runes-split-push *ngIf="componentSelected === itemGuides[3].index"></app-runes-split-push>
 
 
   </div>

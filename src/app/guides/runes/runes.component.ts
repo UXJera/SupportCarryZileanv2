@@ -15,6 +15,7 @@ export class RunesComponent implements OnInit {
     new Guide(0, 'utility', ''),
     new Guide(1, 'offensive', ''),
     new Guide(2, 'defensive', ''),
+    new Guide(3, 'split push', '')
   ];
 
   onSelect(value) {

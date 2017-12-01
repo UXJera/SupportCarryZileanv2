@@ -10,6 +10,8 @@ import { RunesOffensiveElementComponent } from './runes-offensive/runes-offensiv
 import { RunesDefensiveElementComponent } from './runes-defensive/runes-defensive-element/runes-defensive-element.component';
 
 import { RunesService } from './runes.service';
+import { RunesSplitPushComponent } from './runes-split-push/runes-split-push.component';
+import { RunesSplitPushElementComponent } from './runes-split-push/runes-split-push-element/runes-split-push-element.component';
 
 @NgModule({
   imports: [
@@ -22,7 +24,9 @@ import { RunesService } from './runes.service';
     RunesDefensiveComponent,
     RunesUtilityElementComponent,
     RunesOffensiveElementComponent,
-    RunesDefensiveElementComponent],
+    RunesDefensiveElementComponent,
+    RunesSplitPushComponent,
+    RunesSplitPushElementComponent],
   exports: [
     RunesUtilityElementComponent,
     RunesOffensiveElementComponent,
