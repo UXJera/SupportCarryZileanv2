@@ -4,8 +4,19 @@
   padding:1em 0;
 }
 
-.content-container {
 
+// Used for content centered within components
+.content-container {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .image-inline-sm {
+    width:1.2em;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 .article-heading {

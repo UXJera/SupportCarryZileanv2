@@ -67,7 +67,7 @@ export class RunesDefensiveElementComponent implements OnInit {
       new Rune('Manaflow Band', this.sorceryShortcut + 'sorcery-slot-1-2.png',
       'Periodically your next ability used has its mana cost refunded and restores some missing mana.', true),
       new Rune('The Ultimate Hat', this.sorceryShortcut + 'sorcery-slot-1-3.png',
-      'Your ultimate\'s cooldown is reduced. Each time you cast your ultimate, its cooldown is further reduced.', true),
+      'Your ultimate\'s cooldown is reduced. Each time you cast your ultimate, its cooldown is further reduced.'),
     ],
     [
       new Rune('Transcendence', this.sorceryShortcut + 'sorcery-slot-2-1.png',
