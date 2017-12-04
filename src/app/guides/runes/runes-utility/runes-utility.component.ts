@@ -9,8 +9,23 @@ import { RunesService } from '../runes.service';
 })
 export class RunesUtilityComponent implements OnInit {
 
+
+  runesData: any;
+
   constructor(private runesService: RunesService) {
+    this.runesService.getData().subscribe(
+      (res) => {
+        this.runesData = res;
+        this.runesData = this.runesData.domination;
+        console.log(this.runesData);
+        console.log(this.runesData.keystone[0].name)
+      },
+       (error) => console.log("error : " + error),
+    )
   }
+  //
+  // constructor(private runesService: RunesService) {
+  // }
 
   discussion1 = false;
 

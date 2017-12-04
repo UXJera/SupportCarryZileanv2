@@ -1,0 +1,15 @@
+{
+  "domination": {
+    "keystone": [
+      {
+      "name": "Test Name",
+      "description": "Test Desc",
+      "image": "./assets/images/runes/icons/sorcery/sorcery-keystone-1.png",
+      "highlight": false,
+      "comments": "Test Comment"}
+    ],
+    "slot-1": [],
+    "slot-2": [],
+    "slot-3": []
+  }
+}
