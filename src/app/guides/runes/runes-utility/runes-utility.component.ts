@@ -5,33 +5,22 @@ import { RunesService } from '../runes.service';
   selector: 'app-runes-utility',
   templateUrl: './runes-utility.component.html',
   styleUrls: ['./runes-utility.component.scss'],
-  providers: [ RunesService ]
 })
 export class RunesUtilityComponent implements OnInit {
 
-
-  runesData: any;
-
-  constructor(private runesService: RunesService) {
-    this.runesService.getData().subscribe(
-      (res) => {
-        this.runesData = res;
-        this.runesData = this.runesData.domination;
-        console.log(this.runesData);
-        console.log(this.runesData.keystone[0].name)
-      },
-       (error) => console.log("error : " + error),
-    )
-  }
+  // runesData: any;
+  // domination: any;
   //
   // constructor(private runesService: RunesService) {
+  //   this.runesService.getData().subscribe(
+  //     (res) => {
+  //       this.runesData = res;
+  //       this.domination = this.runesData.domination;
+  //       console.log(this.runesData.domination);
+  //     },
+  //      (error) => console.log("error : " + error),
+  //   )
   // }
-
-  discussion1 = false;
-
-  onToggleDiscussion1() {
-    return this.discussion1 = this.runesService.toggleDiscussion1();
-  }
 
   ngOnInit() {
   }

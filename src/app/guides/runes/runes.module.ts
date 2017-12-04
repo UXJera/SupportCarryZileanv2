@@ -32,5 +32,8 @@ import { RunesSplitPushElementComponent } from './runes-split-push/runes-split-p
     RunesOffensiveElementComponent,
     RunesDefensiveElementComponent
   ],
+  providers: [
+    RunesService
+  ]
 })
 export class RunesModule { }

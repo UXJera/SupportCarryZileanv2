@@ -73,9 +73,9 @@ export class RunesOffensiveElementComponent implements OnInit {
     ],
     [
       new Rune('Magical Footwear', this.inspirationShortcut + 'inspiration-slot-2-1.png',
-      'You get free boots at 10 min but you cannot buy boots before then. Each takedown you get makes your boots come 30s sooner.', true),
+      'You get free boots at 10 min but you cannot buy boots before then. Each takedown you get makes your boots come 30s sooner.'),
       new Rune('Future\'s Market', this.inspirationShortcut + 'inspiration-slot-2-2.png',
-      'You can enter debt to buy items.'),
+      'You can enter debt to buy items.', true),
       new Rune('Minion Dematerializer', this.inspirationShortcut + 'inspiration-slot-2-3.png',
       'Start the game with 6 Minion Dematerializers. Killing minions with the item gives permanent bonus damage vs. that minion type.'),
     ],

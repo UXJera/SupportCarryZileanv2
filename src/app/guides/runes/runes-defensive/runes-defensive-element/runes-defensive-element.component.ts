@@ -48,7 +48,7 @@ export class RunesDefensiveElementComponent implements OnInit {
       new Rune('Mirror Shell', this.resolveShortcut + 'resolve-slot-2-2.png',
       'Gain 5 Magic Resist. Heals, incluing consumables, increase your Magic Resist by 5% temporarily.', true),
       new Rune('Conditioning', this.resolveShortcut + 'resolve-slot-2-3.png',
-      'After 10 min gain +8 Armor and +8 Magic Resist and increase your Armor and Magic Resist by 5%.', true),
+      'After 10 min gain +8 Armor and +8 Magic Resist and increase your Armor and Magic Resist by 5%.'),
     ],
     [
       new Rune('Overgrowth', this.resolveShortcut + 'resolve-slot-3-1.png',
