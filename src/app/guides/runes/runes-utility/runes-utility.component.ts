@@ -8,19 +8,24 @@ import { RunesService } from '../runes.service';
 })
 export class RunesUtilityComponent implements OnInit {
 
-  // runesData: any;
-  // domination: any;
-  //
-  // constructor(private runesService: RunesService) {
-  //   this.runesService.getData().subscribe(
-  //     (res) => {
-  //       this.runesData = res;
-  //       this.domination = this.runesData.domination;
-  //       console.log(this.runesData.domination);
-  //     },
-  //      (error) => console.log("error : " + error),
-  //   )
-  // }
+  //runesData: any;
+  domination: any;
+  sorcery: any;
+
+  constructor(private runesService: RunesService) {
+    this.runesService.getData().subscribe(
+      (res) => {
+        let runesData: any = res;
+        // this.runesData = res;
+        this.domination = runesData.domination;
+        this.sorcery = runesData.sorcery;
+        console.log(this.domination);
+        console.log(this.sorcery);
+        // console.log(this.runesData.domination);
+      },
+       (error) => console.log("error : " + error),
+    )
+  }
 
   ngOnInit() {
   }
