@@ -8,7 +8,19 @@ import { RunesService } from '../runes.service';
 })
 export class RunesOffensiveComponent implements OnInit {
 
-  constructor() { }
+  primaryRune: any; // Sorcery
+  secondaryRune: any; // Domination
+
+  constructor(private runesService: RunesService) {
+    this.runesService.getData().subscribe(
+      (res) => {
+        let runesData: any = res;
+        this.primaryRune = runesData.sorcery;
+        this.secondaryRune = runesData.inspiration;
+      },
+       (error) => console.log("error : " + error),
+    )
+  }
 
   ngOnInit() {
   }

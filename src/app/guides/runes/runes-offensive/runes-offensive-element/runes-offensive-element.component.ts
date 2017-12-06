@@ -10,7 +10,19 @@ import { Rune } from '../../rune.model';
 })
 export class RunesOffensiveElementComponent implements OnInit {
 
-  constructor(private runesService: RunesService) { }
+  primaryRune: any; // Sorcery
+  secondaryRune: any; // Domination
+
+  constructor(private runesService: RunesService) {
+    this.runesService.getData().subscribe(
+      (res) => {
+        let runesData: any = res;
+        this.primaryRune = runesData.sorcery;
+        this.secondaryRune = runesData.inspiration;
+      },
+       (error) => console.log("error : " + error),
+    )
+  }
 
   toggleDescription = false;
 
@@ -19,8 +31,8 @@ export class RunesOffensiveElementComponent implements OnInit {
   }
 
 
-  primaryRune = 'sorcery';
-  secondaryRune = 'inspiration';
+  // primaryRune = 'sorcery';
+  // secondaryRune = 'inspiration';
 
   sorceryShortcut =  './assets/images/runes/icons/sorcery/';
   inspirationShortcut =  './assets/images/runes/icons/inspiration/';

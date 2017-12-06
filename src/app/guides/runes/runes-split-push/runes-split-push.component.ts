@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {RunesService} from '../runes.service';
 
 @Component({
   selector: 'app-runes-split-push',
@@ -7,7 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RunesSplitPushComponent implements OnInit {
 
-  constructor() { }
+  primaryRune: any; // Domination
+  secondaryRune: any; // Sorcery
+
+  constructor(private runesService: RunesService) {
+    this.runesService.getData().subscribe(
+      (res) => {
+        let runesData: any = res;
+        this.primaryRune = runesData.domination;
+        this.secondaryRune = runesData.sorcery;
+      },
+       (error) => console.log("error : " + error),
+    )
+  }
 
   ngOnInit() {
   }
