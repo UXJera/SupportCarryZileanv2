@@ -10,9 +10,6 @@ import { RunesService } from '../../runes.service';
 })
 export class RunesSplitPushElementComponent implements OnInit {
 
-  runePrimarySrc = './assets/images/runes/icons/domination/domination-main.png';
-  runeSecondarySrc = './assets/images/runes/icons/sorcery/sorcery-main.png';
-
   primaryRune: any; // Sorcery
   secondaryRune: any; // Domination
 
@@ -27,7 +24,7 @@ export class RunesSplitPushElementComponent implements OnInit {
     )
   }
 
-  toggleDescription = false;
+  public toggleDescription = false;
 
   onToggleDescription() {
     return this.toggleDescription = this.runesService.toggleRuneDescription();
