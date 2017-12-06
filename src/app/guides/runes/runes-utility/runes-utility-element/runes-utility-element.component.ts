@@ -23,12 +23,6 @@ export class RunesUtilityElementComponent implements OnInit {
     )
   }
 
-  public toggleDescription = false;
-
-  onToggleDescription() {
-    return this.toggleDescription = this.runesService.toggleRuneDescription();
-  }
-
   ngOnInit() {
   }
 
