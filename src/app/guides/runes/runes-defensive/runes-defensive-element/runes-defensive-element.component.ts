@@ -9,18 +9,12 @@ import { Rune } from '../../rune.model';
 })
 export class RunesDefensiveElementComponent implements OnInit {
 
-  primaryRune: any; // Sorcery
-  secondaryRune: any; // Domination
+  primaryRune: any; // resolve
+  secondaryRune: any; // sorcery
 
   constructor(private runesService: RunesService) {
-    this.runesService.getData().subscribe(
-      (res) => {
-        let runesData: any = res;
-        this.primaryRune = runesData.resolve;
-        this.secondaryRune = runesData.sorcery;
-      },
-       (error) => console.log("error : " + error),
-    )
+    this.primaryRune = this.runesService.resolve;
+    this.secondaryRune = this.runesService.sorcery;
   }
 
   public toggleDescription = false;

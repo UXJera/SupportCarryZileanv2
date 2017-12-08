@@ -12,14 +12,8 @@ export class RunesSplitPushComponent implements OnInit {
   secondaryRune: any; // Sorcery
 
   constructor(private runesService: RunesService) {
-    this.runesService.getData().subscribe(
-      (res) => {
-        let runesData: any = res;
-        this.primaryRune = runesData.domination;
-        this.secondaryRune = runesData.sorcery;
-      },
-       (error) => console.log("error : " + error),
-    )
+    this.primaryRune = this.runesService.domination;
+    this.secondaryRune = this.runesService.sorcery;
   }
 
   ngOnInit() {

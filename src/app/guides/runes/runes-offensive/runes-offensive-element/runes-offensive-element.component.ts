@@ -14,14 +14,8 @@ export class RunesOffensiveElementComponent implements OnInit {
   secondaryRune: any; // Inspiration
 
   constructor(private runesService: RunesService) {
-    this.runesService.getData().subscribe(
-      (res) => {
-        let runesData: any = res;
-        this.primaryRune = runesData.sorcery;
-        this.secondaryRune = runesData.inspiration;
-      },
-       (error) => console.log("error : " + error),
-    )
+    this.primaryRune = this.runesService.sorcery;
+    this.secondaryRune = this.runesService.inspiration;
   }
 
   public toggleDescription = false;

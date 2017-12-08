@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { RunesService } from './runes.service';
 import { Guide } from '../guide.model';
 
 @Component({
@@ -9,7 +9,7 @@ import { Guide } from '../guide.model';
 })
 export class RunesComponent implements OnInit {
 
-  componentSelected;
+  componentSelected: boolean;
 
   itemGuides: Guide[] = [
     new Guide(0, 'utility', ''),
@@ -17,6 +17,20 @@ export class RunesComponent implements OnInit {
     new Guide(2, 'defensive', ''),
     new Guide(3, 'split push', '')
   ];
+
+  dominationIcon;
+  sorceryIcon;
+  inspirationIcon;
+  resolveIcon;
+  precisionIcon;
+
+  constructor(private runesService: RunesService) {
+    this.dominationIcon = this.runesService.domination.primaryImage;
+    this.sorceryIcon = this.runesService.sorcery.primaryImage;
+    this.inspirationIcon = this.runesService.inspiration.primaryImage;
+    this.resolveIcon = this.runesService.resolve.primaryImage;
+    this.precisionIcon = this.runesService.precision.primaryImage;
+ }
 
   onSelect(value) {
     for (const items of this.itemGuides) {
@@ -30,8 +44,6 @@ export class RunesComponent implements OnInit {
     title: 'Runepage Setup',
     updated: 'Pre-Season 8'
   };
-
-  constructor() { }
 
   ngOnInit() {
   }

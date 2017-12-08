@@ -16,10 +16,34 @@
     <div>
       <h5>Which Page Should I Use?</h5>
       <ul>
-      <li><span>{{itemGuides[0].name | titlecase}}</span> - When you want versatility in your build or playstyle</li>
-      <li><span>{{itemGuides[1].name | titlecase}}</span> - When you want to win your lane and deal lots of damage</li>
-      <li><span>{{itemGuides[2].name | titlecase}}</span> - When you want survive and win by controlling champion mobility</li>
-      <li><span>{{itemGuides[3].name | titlecase}}</span> - When you want win by pressuring side lanes and activated items</li>
+      <li>
+        <span>
+          <img class="image-inline-md" [src]="sorceryIcon"/>
+          <img class="image-inline-md" [src]="dominationIcon"/>
+          <a (click)="onSelect(itemGuides[0])">
+          {{itemGuides[0].name | titlecase}}</a>
+        </span> - When you want versatility in your build or playstyle</li>
+      <li>
+        <span>
+          <img class="image-inline-md" [src]="sorceryIcon"/>
+          <img class="image-inline-md" [src]="inspirationIcon"/>
+          <a (click)="onSelect(itemGuides[1])">
+          {{itemGuides[1].name | titlecase}}</a>
+        </span> - When you want to win your lane and deal lots of damage</li>
+      <li>
+        <span>
+          <img class="image-inline-md" [src]="resolveIcon"/>
+          <img class="image-inline-md" [src]="sorceryIcon"/>
+          <a (click)="onSelect(itemGuides[2])">
+          {{itemGuides[2].name | titlecase}}</a>
+        </span> - When you want survive and win by controlling champion mobility</li>
+      <li>
+        <span>
+          <img class="image-inline-md" [src]="dominationIcon"/>
+          <img class="image-inline-md" [src]="sorceryIcon"/>
+          <a (click)="onSelect(itemGuides[3])">
+          {{itemGuides[3].name | titlecase}}</a>
+        </span> - When you want win by pressuring side lanes and activated items</li>
       </ul>
     </div>
   </div>
