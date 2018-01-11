@@ -15,7 +15,6 @@ import { FooterComponent } from './footer/footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 import { AboutComponent } from './about/about.component';
 
-
 @NgModule({
   imports: [
     CommonModule,

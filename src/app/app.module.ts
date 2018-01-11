@@ -17,8 +17,9 @@ import {WildcardRoutingModule} from './core/wildcard-routing.module';
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    WildcardRoutingModule,
     FormsModule,
+
+    WildcardRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
