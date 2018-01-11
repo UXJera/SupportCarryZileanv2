@@ -3,3 +3,15 @@
 .optional {
   box-shadow: 0 0 10px 10px $yellow;
 }
+
+// CONVERT THESE TO SCSS TEMPLATE
+
+.italic {
+  font-style: italic;
+}
+
+.warning-block {
+  background: red;
+  @include box-shadow;
+  text-align: center;
+}

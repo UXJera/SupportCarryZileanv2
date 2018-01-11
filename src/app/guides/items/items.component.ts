@@ -18,8 +18,8 @@ export class ItemsComponent implements OnInit, OnChanges {
   componentSelected;
 
   itemGuides: Guide[] = [
-    new Guide(0, 'utility', ''),
-    new Guide(1, 'damage', ''),
+    new Guide(0, 'damage', ''),
+    new Guide(1, 'utility', ''),
     new Guide(2, 'tank', ''),
   ];
 

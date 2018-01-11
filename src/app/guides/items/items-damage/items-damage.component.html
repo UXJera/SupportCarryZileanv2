@@ -2,14 +2,18 @@
   <h4>AP / Damage Item Build Overview</h4>
   <app-items-damage-element></app-items-damage-element>
 
-  <button class="btn btn-default toggle-btn" (click)="onToggleAlternate()">Toggle Runes</button>
+  <!-- <button class="btn btn-default toggle-btn" (click)="onToggleAlternate()">Toggle Runes</button>
 
-  <div *ngIf="alternateView">
+   <div *ngIf="alternateView">
     <h5>Recommended Runes</h5>
     <app-runes-offensive-element></app-runes-offensive-element>
 
     <p>The damage build is the most common build and its goals are to win lane and be a damage threat. This build works best in Gold elo and below, because most people don't know how to play against Zilean.</p>
     <p>This is arguably the most fun build to play, but does not work out well if you fall behind.</p>
+  </div> -->
+  <div class="">
+    <h5>Build Objectives:</h5>
+    <p>This Item build is full offense where you will be focusing on damage threat and relying on your skills to assist the team. <br>Do note that this build has a hard time if you fall behind, or if the enemies build magic resist.</p>
   </div>
 
   <div class="">
@@ -21,6 +25,7 @@
     </ul>
     <p>The starter items are intuitive, and you're going to want to be careful on how much mana you expend in lane. Also only go for Double Bombs if you can ensure a kill or you need an escape. Use Single Bombs to poke out enemies.</p>
   </div>
+
   <div class="">
     <h5>Early Game Items</h5>
     <ul class="item-build-container">
@@ -28,8 +33,8 @@
         <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
       </li>
     </ul>
-    <p>Be sure to upgrade Spellthiefs before Sightston. You'll want to pick up a mana item early, so either buy Lost Chapter (rushing Morellonomicon) or Tear of the Goddess.</p>
-    <p>Tear is a playstyle item for most Zilean mains which allows a liberal use of spells. It is possible to manage mana WITHOUT Tear, but it takes conscious effort to do so. There is nothing wrong about taking Tear, or not taking Tear. It is merely a playstyle differentiation.</p>
+    <p>On the first back you should either buy a Tear of the Godess or upgrade into Frostfang. Both items give you more mana sustain in lane, but some Zilean players prefer the extra mana that Tear provides. If you don't buy Tear, your first mana item should be an early Lost Chapter.</p>
+    <p class="italic">Tear is a playstyle item for most Zilean mains which allows a liberal use of spells. It is possible to manage mana WITHOUT Tear, but it takes conscious effort to do so. There is nothing wrong about taking Tear, or not taking Tear. It is merely a playstyle differentiation.</p>
   </div>
 
   <div class="">

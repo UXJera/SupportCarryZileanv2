@@ -12,8 +12,8 @@ export class RunesComponent implements OnInit {
   componentSelected: boolean;
 
   itemGuides: Guide[] = [
-    new Guide(0, 'utility', ''),
-    new Guide(1, 'offensive', ''),
+    new Guide(0, 'offensive', ''),
+    new Guide(1, 'utility', ''),
     new Guide(2, 'defensive', ''),
     new Guide(3, 'split push', '')
   ];
@@ -42,7 +42,7 @@ export class RunesComponent implements OnInit {
 
   article = {
     title: 'Runepage Setup',
-    updated: 'Pre-Season 8'
+    updated: 'Patch 8.1'
   };
 
   ngOnInit() {

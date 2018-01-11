@@ -19,18 +19,16 @@ export class ItemsDamageComponent implements OnInit {
     new ItemBuild('Potion of Healing', './assets/images/items/potion.png'),
     new ItemBuild('Refillable Potion', './assets/images/items/refill-potion.png'),
     new ItemBuild('Trinket Ward', './assets/images/items/trinket-ward.png'),
-    // new ItemBuild(4, 'Liandri's Torment', './assets/images/items/liandris-torment.png'),
-    // new ItemBuild(5, 'Sorcerer's Shoes', './assets/images/items/sorcerers-shoes.png'),
-    // new ItemBuild(6, 'Hextech Sweeper', './assets/images/items/sweeper.png')
   ];
 
   // Early Game Items
   itemBuild2: ItemBuild[] = [
+    new ItemBuild('Tear of the Goddess', './assets/images/items/tear.png', true),
     new ItemBuild('Frostfang', './assets/images/items/frostfang.png'),
     new ItemBuild('Sightstone', './assets/images/items/sightstone.png'),
     new ItemBuild('Boots', './assets/images/items/boots.png'),
     new ItemBuild('Lost Chapter', './assets/images/items/lost-chapter.png'),
-    new ItemBuild('Tear of the Goddess', './assets/images/items/tear.png', true),
+
   ];
 
   // Mid Game Items
@@ -44,6 +42,7 @@ export class ItemsDamageComponent implements OnInit {
   // Defensive Optional Items
   itemBuild4: ItemBuild[] = [
     new ItemBuild('Locket of the Iron Solari', './assets/images/items/locket-of-the-iron-solari.png'),
+    new ItemBuild('Rylai\'s Crystal Staff', './assets/images/items/rylais.png'),
     new ItemBuild('Banshees Veil', './assets/images/items/banshees-veil.png'),
     new ItemBuild('Zhonya\'s Hourglass', './assets/images/items/zhonyas-hourglass.png'),
     new ItemBuild('Archangel\'s Staff / Seraph\'s Embrace', './assets/images/items/seraphs-embrace.png', true),

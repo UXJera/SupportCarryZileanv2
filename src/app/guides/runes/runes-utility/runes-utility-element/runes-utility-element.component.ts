@@ -15,6 +15,8 @@ export class RunesUtilityElementComponent implements OnInit {
   constructor(private runesService: RunesService) {
     this.primaryRune = this.runesService.sorcery;
     this.secondaryRune = this.runesService.domination;
+    this.primaryRune.keystone[0].highlightPrimary = true;
+    this.primaryRune.keystone[1].highlightPrimary = false;
   }
 
   ngOnInit() {

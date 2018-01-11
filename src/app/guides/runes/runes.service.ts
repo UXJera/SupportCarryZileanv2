@@ -137,15 +137,15 @@ export class RunesService {
           name: "Summon Aery",
           image: "./assets/images/runes/icons/sorcery/sorcery-keystone-1.png",
           description: "Your attack and abilities send Aery to a target, damaging enemies or shielding allies.",
-          highlightPrimary: true,
+          highlightPrimary: false,
           comments: "Summon Aery is a solid keystone for supports with poke and buffs. The extra damage early in lane does add up, and also the shield triggers when you use Time Warp on allies. This can be used to stop a small amount of damage to an ally or proc certain items like <img class=\"image-inline-sm\" src=\"./assets/images/items/athenes-unholy-grail.png\" alt=\"Athene's Unholy Grail Icon\"/> Athene's Unholy Grail or <img class=\"image-inline-sm\" src=\"./assets/images/items/ardent-censer.png\" alt=\"Ardent Censer Icon\"/> Ardent Censer."
         },
         {
           name: "Arcane Comet",
           image: "./assets/images/runes/icons/sorcery/sorcery-keystone-2.png",
           description: "Damaging a champion with an ability hurls a damaging comet at their location, or if Arcane Comet is on cooldown, reduces its remaining cooldown.",
-          highlightPrimary: false,
-          comments: ""
+          highlightPrimary: true,
+          comments: "Arcane Comet is the rune of choice because it has a high probability of landing against CC'ed or slowed targets. This also forces players to continue running after the bomb has detonated, which is useful for zoning opponents away from their minions."
         },
         {
           name: "Phase Rush",
@@ -382,7 +382,7 @@ export class RunesService {
           description: "Get a Biscuit every 3 mins, until 12 mins. Biscuits restore health and mana. Consuming a Biscuit permanently increases your max mana.",
           highlightPrimary: true,
           highlightSecondary: true,
-          comments: "Having extra sustain in lane is very important, espcially when facing poke lanes. Remember that these restore a percentage of missiong health and mana, they are also usable while other potions are healing."
+          comments: "Having extra sustain in lane is very important, espcially when facing poke lanes. Remember that these restore a percentage of missing health and mana, they are also usable while other potions are healing."
         },
         {
           name: "Perfect Timing",
