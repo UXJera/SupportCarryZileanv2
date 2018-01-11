@@ -1,6 +1,7 @@
 @import '~scss/components/mixins/index';
 
 .skill-nav {
+  margin: 1em;
   img:hover {
     @include transition;
     @include border-shadow-glow;

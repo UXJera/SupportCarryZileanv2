@@ -9,12 +9,14 @@
 .guides-nav  {
   display:flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 1em;
+  //margin-bottom: 1em;
   list-style: none;
+  flex-wrap: wrap;
   li.nav-item {
     cursor: pointer;
+    margin-bottom: 1.25em;
     a {
       text-transform: capitalize;
       background: $blue;
@@ -23,6 +25,9 @@
       @include transition;
       &:hover {
         background: $yellow;
+      }
+      img {
+
       }
     }
   }

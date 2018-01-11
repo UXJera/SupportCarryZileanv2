@@ -11,7 +11,7 @@ export class SkillOrderComponent implements OnInit {
 
   article = {
     title: 'Skill Order',
-    updated: 'Pre-Season 8'
+    updated: 'Patch 8.1'
   };
 
   componentSelected;

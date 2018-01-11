@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Rune } from '../../rune.model';
 import { RunesService } from '../../runes.service';
 
-
 @Component({
   selector: 'app-runes-split-push-element',
   templateUrl: './runes-split-push-element.component.html',

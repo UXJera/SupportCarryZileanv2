@@ -31,7 +31,7 @@ export class SpellsComponent implements OnInit {
 
   article = {
     title: 'Spell Information',
-    updated: 'Pre-Season 8'
+    updated: 'Patch 8.1'
   };
 
   ngOnInit() {

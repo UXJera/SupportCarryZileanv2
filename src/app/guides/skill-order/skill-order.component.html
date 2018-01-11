@@ -15,8 +15,10 @@
     </div>
   <div class="article-heading" *ngIf="componentSelected === undefined">
     <h2>{{ article.title }}</h2>
-    <h6>Last Updated: {{ article.updated }}</h6>
-    <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
+    <h6>Updated: {{ article.updated }}</h6>
+    <p>Q Max is the most common skill-order for Zileans, but there are alternatives.</p>
+    <app-skill-q-max-element></app-skill-q-max-element>
+
   </div>
 
     <app-skill-q-max *ngIf="componentSelected === itemGuides[0].index"></app-skill-q-max>

@@ -19,6 +19,12 @@ export class RunesUtilityElementComponent implements OnInit {
     this.primaryRune.keystone[1].highlightPrimary = false;
   }
 
+  public toggleDescription = false;
+
+  onToggleDescription() {
+    return this.toggleDescription = this.runesService.toggleRuneDescription();
+  }
+
   ngOnInit() {
   }
 

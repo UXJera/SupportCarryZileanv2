@@ -1,7 +1,7 @@
 <div class="content-container">
   <div class="container">
     <div class="w-100">
-      <ul class="nav justify-content-center align-items-center guides-nav">
+      <ul class="nav guides-nav">
         <li
         *ngFor="let item of itemGuides; let i of index"
         [ngClass]="{selected: item.selected === true}"
@@ -12,7 +12,7 @@
     </div>
   <div class="article-heading" *ngIf="componentSelected === undefined">
     <h2>{{ article.title }}</h2>
-    <h6>Last Updated: {{ article.updated }}</h6>
+    <h6>Updated: {{ article.updated }}</h6>
     <div>
       <h5>Which Page Should I Use?</h5>
       <ul>

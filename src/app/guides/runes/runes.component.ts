@@ -9,7 +9,7 @@ import { Guide } from '../guide.model';
 })
 export class RunesComponent implements OnInit {
 
-  componentSelected: boolean;
+  componentSelected;
 
   itemGuides: Guide[] = [
     new Guide(0, 'offensive', ''),
@@ -30,7 +30,7 @@ export class RunesComponent implements OnInit {
     this.inspirationIcon = this.runesService.inspiration.primaryImage;
     this.resolveIcon = this.runesService.resolve.primaryImage;
     this.precisionIcon = this.runesService.precision.primaryImage;
- }
+ };
 
   onSelect(value) {
     for (const items of this.itemGuides) {
@@ -38,7 +38,7 @@ export class RunesComponent implements OnInit {
     }
     this.componentSelected = value.index;
     value.selected = true;
-  }
+  };
 
   article = {
     title: 'Runepage Setup',
@@ -46,6 +46,6 @@ export class RunesComponent implements OnInit {
   };
 
   ngOnInit() {
-  }
+  };
 
 }
