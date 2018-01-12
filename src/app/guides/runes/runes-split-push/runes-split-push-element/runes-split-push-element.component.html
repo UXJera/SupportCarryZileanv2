@@ -1,15 +1,15 @@
 <button class="btn btn-default toggle-btn" (click)="onToggleDescription()">Toggle Rune Details</button>
 <div class="runeWrapper">
 
-  <div class="runeContainer" ngClass="{{primaryRune?.name}}Bg">
+  <div class="runeContainer" ngClass="{{primarySplitPushRune?.name}}Bg">
 
     <div class="runeHeader">
-      <img [src]="primaryRune?.primaryImage" alt="{{primaryRune?.name | titlecase }} Icon">
+      <img [src]="primarySplitPushRune?.primaryImage" alt="{{primarySplitPushRune?.name | titlecase }} Icon">
       <h5>Primary</h5>
     </div>
 
     <div class="runeRow">
-      <div *ngFor="let runeItem of primaryRune?.keystone" class="runeItem">
+      <div *ngFor="let runeItem of primarySplitPushRune?.keystone" class="runeItem">
         <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightPrimary}" />
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightPrimary}">
           <h5>{{runeItem.name}}</h5>
@@ -19,7 +19,7 @@
     </div>
 
     <div class="runeRow">
-      <div *ngFor="let runeItem of primaryRune?.slot1" class="runeItem">
+      <div *ngFor="let runeItem of primarySplitPushRune?.slot1" class="runeItem">
         <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightPrimary}" />
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightPrimary}">
           <h5>{{runeItem.name}}</h5>
@@ -29,7 +29,7 @@
     </div>
 
     <div class="runeRow">
-      <div *ngFor="let runeItem of primaryRune?.slot2" class="runeItem">
+      <div *ngFor="let runeItem of primarySplitPushRune?.slot2" class="runeItem">
         <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightPrimary}" />
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightPrimary}">
           <h5>{{runeItem.name}}</h5>
@@ -39,7 +39,7 @@
     </div>
 
     <div class="runeRow">
-      <div *ngFor="let runeItem of primaryRune?.slot3" class="runeItem">
+      <div *ngFor="let runeItem of primarySplitPushRune?.slot3" class="runeItem">
         <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightPrimary}" />
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightPrimary}">
           <h5>{{runeItem.name}}</h5>
@@ -50,15 +50,15 @@
 
   </div>
 
-  <div class="runeContainer" ngClass="{{secondaryRune?.name}}Bg">
+  <div class="runeContainer" ngClass="{{secondarySplitPushRuneRune?.name}}Bg">
 
     <div class="runeHeader">
-      <img [src]="secondaryRune?.primaryImage" alt="{{secondaryRune?.name | titlecase }} Icon">
+      <img [src]="secondarySplitPushRuneRune?.primaryImage" alt="{{secondarySplitPushRuneRune?.name | titlecase }} Icon">
       <h5>Secondary</h5>
     </div>
 
     <div class="runeRow">
-      <div *ngFor="let runeItem of secondaryRune?.slot1" class="runeItem">
+      <div *ngFor="let runeItem of secondarySplitPushRuneRune?.slot1" class="runeItem">
         <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightSecondary}" />
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightSecondary}">
           <h5>{{runeItem.name}}</h5>
@@ -68,7 +68,7 @@
     </div>
 
     <div class="runeRow">
-      <div *ngFor="let runeItem of secondaryRune?.slot2" class="runeItem">
+      <div *ngFor="let runeItem of secondarySplitPushRuneRune?.slot2" class="runeItem">
         <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightSecondary}" />
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightSecondary}">
           <h5>{{runeItem.name}}</h5>
@@ -78,7 +78,7 @@
     </div>
 
     <div class="runeRow">
-      <div *ngFor="let runeItem of secondaryRune?.slot3" class="runeItem">
+      <div *ngFor="let runeItem of secondarySplitPushRuneRune?.slot3" class="runeItem">
         <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightSecondary}" />
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightSecondary}">
           <h5>{{runeItem.name}}</h5>

@@ -9,12 +9,12 @@ import { Rune } from '../../rune.model';
 })
 export class RunesDefensiveElementComponent implements OnInit {
 
-  primaryRune: any; // resolve
-  secondaryRune: any; // sorcery
+  primaryDefensiveRune: any; // resolve
+  secondaryDefensiveRune: any; // sorcery
 
   constructor(private runesService: RunesService) {
-    this.primaryRune = this.runesService.resolve;
-    this.secondaryRune = this.runesService.sorcery;
+    this.primaryDefensiveRune = this.runesService.resolve;
+    this.secondaryDefensiveRune = this.runesService.sorcery;
   }
 
   public toggleDescription = false;

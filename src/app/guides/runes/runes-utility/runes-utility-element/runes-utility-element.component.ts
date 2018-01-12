@@ -9,14 +9,12 @@ import { RunesService } from '../../runes.service';
 })
 export class RunesUtilityElementComponent implements OnInit {
 
-  primaryRune: any; // Sorcery
-  secondaryRune: any; // Domination
+  primaryUtilityRune: any; // Sorcery
+  secondaryUtilityRune: any; // Domination
 
   constructor(private runesService: RunesService) {
-    this.primaryRune = this.runesService.sorcery;
-    this.secondaryRune = this.runesService.domination;
-    this.primaryRune.keystone[0].highlightPrimary = true;
-    this.primaryRune.keystone[1].highlightPrimary = false;
+    this.primaryUtilityRune = this.runesService.sorcery;
+    this.secondaryUtilityRune = this.runesService.domination;
   }
 
   public toggleDescription = false;
@@ -26,6 +24,8 @@ export class RunesUtilityElementComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.primaryUtilityRune.keystone[0].highlightPrimary = true;
+    this.primaryUtilityRune.keystone[1].highlightPrimary = false;
   }
 
 }

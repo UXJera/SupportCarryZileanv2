@@ -10,12 +10,12 @@ import { Rune } from '../../rune.model';
 })
 export class RunesOffensiveElementComponent implements OnInit {
 
-  primaryRune: any; // Sorcery
-  secondaryRune: any; // Inspiration
+  primaryOffensiveRune: any; // Sorcery
+  secondaryOffensiveRune: any; // Inspiration
 
   constructor(private runesService: RunesService) {
-    this.primaryRune = this.runesService.sorcery;
-    this.secondaryRune = this.runesService.inspiration;
+    this.primaryOffensiveRune = this.runesService.sorcery;
+    this.secondaryOffensiveRune = this.runesService.inspiration;
   }
 
   public toggleDescription = false;
@@ -25,6 +25,7 @@ export class RunesOffensiveElementComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.primaryOffensiveRune.keystone[1].highlightPrimary = true;
+    this.primaryOffensiveRune.keystone[0].highlightPrimary = false;
   }
-
 }

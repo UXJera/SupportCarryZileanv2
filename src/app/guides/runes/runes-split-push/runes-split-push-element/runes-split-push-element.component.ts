@@ -9,12 +9,12 @@ import { RunesService } from '../../runes.service';
 })
 export class RunesSplitPushElementComponent implements OnInit {
 
-  primaryRune: any; // Sorcery
-  secondaryRune: any; // Domination
+  primarySplitPushRune: any; // Sorcery
+  secondarySplitPushRuneRune: any; // Domination
 
   constructor(private runesService: RunesService) {
-    this.primaryRune = this.runesService.domination;
-    this.secondaryRune = this.runesService.sorcery;
+    this.primarySplitPushRune = this.runesService.domination;
+    this.secondarySplitPushRuneRune = this.runesService.sorcery;
   }
 
   public toggleDescription = false;
