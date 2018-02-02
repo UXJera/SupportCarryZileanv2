@@ -20,7 +20,8 @@ export class ItemsComponent implements OnInit, OnChanges {
   itemGuides: Guide[] = [
     new Guide(0, 'damage', ''),
     new Guide(1, 'utility', ''),
-    new Guide(2, 'tank', ''),
+    new Guide(2, 'hybrid', ''),
+    new Guide(3, 'tank', ''),
   ];
 
   // this.guideService.onSelect(value);
@@ -35,7 +36,7 @@ export class ItemsComponent implements OnInit, OnChanges {
 
   article = {
     title: 'Item Builds',
-    updated: 'Patch 8.1'
+    updated: 'Patch 8.2'
   };
 
   ngOnInit() {

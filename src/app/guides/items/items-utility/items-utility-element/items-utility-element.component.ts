@@ -10,8 +10,9 @@ import { ItemBuild } from '../../item-build.model';
 export class ItemsUtilityElementComponent implements OnInit {
 
   itemBuild: ItemBuild[] = [
-    new ItemBuild('Eye of the Watchers', './assets/images/items/eye-of-the-watchers.png'),
-    new ItemBuild('Athenes Unholy Grail', './assets/images/items/athenes-unholy-grail.png'),
+    new ItemBuild('Remnant of the Watchers', './assets/images/items/remnant-of-the-watchers.png'),
+    new ItemBuild('Ardent Censer', './assets/images/items/ardent-censer.png', true),
+    //new ItemBuild('Athenes Unholy Grail', './assets/images/items/athenes-unholy-grail.png'),
     new ItemBuild('Redemption', './assets/images/items/redemption.png'),
     new ItemBuild('Locket of the Iron Solari', './assets/images/items/locket-of-the-iron-solari.png'),
     new ItemBuild('Control Ward', './assets/images/items/control-ward.png'),

@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemBuild } from '../item-build.model';
+
+import {ItemBuild} from '../item-build.model';
+
 @Component({
-  selector: 'app-items-damage',
-  templateUrl: './items-damage.component.html',
-  styleUrls: ['./items-damage.component.scss']
+  selector: 'app-items-hybrid',
+  templateUrl: './items-hybrid.component.html',
+  styleUrls: ['./items-hybrid.component.scss']
 })
-export class ItemsDamageComponent implements OnInit {
+export class ItemsHybridComponent implements OnInit {
 
   alternateView = false;
 
@@ -15,7 +17,7 @@ export class ItemsDamageComponent implements OnInit {
 
   // Starting Items
   itemBuild1: ItemBuild[] = [
-    new ItemBuild('Spelltheifs Edge', './assets/images/items/spellthiefs-edge.png'),
+    new ItemBuild('Spellthiefs Edge', './assets/images/items/spellthiefs-edge.png'),
     new ItemBuild('Potion of Healing', './assets/images/items/potion.png'),
     new ItemBuild('Refillable Potion', './assets/images/items/refill-potion.png'),
     new ItemBuild('Trinket Ward', './assets/images/items/trinket-ward.png'),
@@ -26,24 +28,23 @@ export class ItemsDamageComponent implements OnInit {
     new ItemBuild('Frostfang', './assets/images/items/frostfang.png'),
     new ItemBuild('Boots', './assets/images/items/boots.png'),
     new ItemBuild('Lost Chapter', './assets/images/items/lost-chapter.png'),
-    new ItemBuild('Tear of the Goddess', './assets/images/items/tear.png', true),
   ];
 
   // Mid Game Items
   itemBuild3: ItemBuild[] = [
     new ItemBuild('Frostfang', './assets/images/items/frostfang.png'),
     new ItemBuild('Morellonomicon', './assets/images/items/morellonomicon.png'),
-    new ItemBuild('Sorcerer Shoes', './assets/images/items/sorcerers-shoes.png'),
+    new ItemBuild('Redemption', './assets/images/items/redemption.png'),
+    new ItemBuild('Boots of Lucidity', './assets/images/items/boots-of-lucidity.png'),
     new ItemBuild('Sweeper Trinket', './assets/images/items/sweeper.png'),
   ];
 
-  // Defensive Optional Items
+  // Optional Items
   itemBuild4: ItemBuild[] = [
-    new ItemBuild('Locket of the Iron Solari', './assets/images/items/locket-of-the-iron-solari.png'),
-    new ItemBuild('Rylai\'s Crystal Staff', './assets/images/items/rylais.png'),
     new ItemBuild('Banshees Veil', './assets/images/items/banshees-veil.png'),
-    new ItemBuild('Zhonya\'s Hourglass', './assets/images/items/zhonyas-hourglass.png'),
-    new ItemBuild('Archangel\'s Staff / Seraph\'s Embrace', './assets/images/items/seraphs-embrace.png', true),
+    new ItemBuild('Knights Vow', './assets/images/items/knights-vow.png'),
+    new ItemBuild('Banner of Command', './assets/images/items/banner-of-command.png'),
+    new ItemBuild('Ludens Echo', './assets/images/items/ludens-echo.png'),
   ];
 
   constructor() { }

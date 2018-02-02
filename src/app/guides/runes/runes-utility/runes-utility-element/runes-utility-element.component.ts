@@ -26,6 +26,8 @@ export class RunesUtilityElementComponent implements OnInit {
   ngOnInit() {
     this.primaryUtilityRune.keystone[0].highlightPrimary = true;
     this.primaryUtilityRune.keystone[1].highlightPrimary = false;
+    this.primaryUtilityRune.slot3[2].highlightPrimary = true;
+    this.primaryUtilityRune.slot3[0].highlightPrimary = false;
   }
 
 }

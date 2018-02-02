@@ -26,14 +26,13 @@ export class ItemsTankComponent implements OnInit {
   // Early Game Items
   itemBuild2: ItemBuild[] = [
     new ItemBuild('Nomads Medalion', './assets/images/items/nomads-medalion.png'),
-    new ItemBuild('Sightstone', './assets/images/items/sightstone.png'),
     new ItemBuild('Boots', './assets/images/items/boots.png'),
     new ItemBuild('Glacial Shroud', './assets/images/items/glacial-shroud.png'),
   ];
 
   // Mid Game Items
   itemBuild3: ItemBuild[] = [
-    new ItemBuild('Eye of the Oasis', './assets/images/items/eye-of-the-oasis.png'),
+    new ItemBuild('Nomads Medalion', './assets/images/items/nomads-medalion.png'),
     new ItemBuild('Rigteous Glory', './assets/images/items/righteous-glory.png'),
     new ItemBuild('Knight\'s Vow', './assets/images/items/knights-vow.png'),
     new ItemBuild('Mercury Treads', './assets/images/items/mercury-treads.png'),

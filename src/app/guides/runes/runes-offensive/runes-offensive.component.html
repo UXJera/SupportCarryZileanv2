@@ -21,10 +21,15 @@
     <h5>{{  primaryRune?.slot2[0].name }}</h5>
     <p [innerHTML]="primaryRune?.slot2[0].comments"></p>
 
-    <!-- Biscuit Delivery -->
-    <img [src]="secondaryRune?.slot1[1].image" alt="{{secondaryRune?.slot1[1].name}}">
-    <h5>{{  secondaryRune?.slot1[1].name }}</h5>
-    <p [innerHTML]="secondaryRune?.slot1[1].comments"></p>
+    <!-- Scorch -->
+    <img [src]="primaryRune?.slot3[0].image" alt="{{primaryRune?.slot3[0].name}}">
+    <h5>{{  primaryRune?.slot3[0].name }}</h5>
+    <p [innerHTML]="primaryRune?.slot3[0].comments"></p>
+
+    <!-- Stopwatch -->
+    <img [src]="secondaryRune?.slot1[2].image" alt="{{secondaryRune?.slot1[2].name}}">
+    <h5>{{  secondaryRune?.slot1[2].name }}</h5>
+    <p [innerHTML]="secondaryRune?.slot1[2].comments"></p>
 
     <!-- Future's Market -->
     <img [src]="secondaryRune?.slot2[1].image" alt="{{secondaryRune?.slot2[1].name}}">

@@ -214,7 +214,7 @@ export class RunesService {
           description: "Your first ability hit every 20s burns champions.",
           highlightPrimary: true,
           highlightSecondary: false,
-          comments: ""
+          comments: "Scorch is useful for winning lane and having stronger poke. The extra damage allows a level 1 Time Bomb to deal over 100 damage when it is up. The rune does fall off in the mid and late game, so be sure to abuse it during lane."
         },
         {
           name: "Waterwalking",
@@ -228,9 +228,9 @@ export class RunesService {
           name: "Gathering Storm",
           image: "./assets/images/runes/icons/sorcery/sorcery-slot-3-3.png",
           description: "Gain increasing amounts of AD or AP, adaptive over the course of the game.",
-          highlightPrimary: true,
+          highlightPrimary: false,
           highlightSecondary: false,
-          comments: ""
+          comments: "Gathering Storm ise useful if you think the game is going to go long. Utility based Zilean benefits from this rune the most because it helps with teamfight damage in a low-AP item build."
         }
       ]
     }
@@ -292,25 +292,25 @@ export class RunesService {
           name: "Iron Skin",
           image: "./assets/images/runes/icons/resolve/resolve-slot-2-1.png",
           description: "Gain 5 Armor. Heals, including consumables, increase your Armor by 5% temporarily.",
-          highlightPrimary: true,
-          highlightSecondary: true,
+          highlightPrimary: false,
+          highlightSecondary: false,
           comments: "In general, Iron Skin will give you the most value in the early laning phase because AD damage is more prevalent than AP. This is typically the best choice from this row."
         },
         {
           name: "Mirror Shell",
           image: "./assets/images/runes/icons/resolve/resolve-slot-2-2.png",
           description: "Gain 6 Magic Resist. Heals, incluidng consumables, increase your Magic Resist by 5% temporarily.",
-          highlightPrimary: true,
-          highlightSecondary: true,
+          highlightPrimary: false,
+          highlightSecondary: false,
           comments: "Mirror Shell is the MR equivalent to Iron Skin, and should only be taken against heavy AP poke lanes, such as <img class=\"image-inline-sm\" src=\"./assets/images/champions/karma.png\" alt=\"Karma Icon\"/> Karma and <img class=\"image-inline-sm\" src=\"./assets/images/champions/brand.png\" alt=\"Brand Icon\"/> Brand."
         },
         {
           name: "Conditioning",
           image: "./assets/images/runes/icons/resolve/resolve-slot-2-3.png",
           description: "After 10 min gain +8 Armor and +8 Magic Resist and increase your Armor and Magic Resist by 5%.",
-          highlightPrimary: false,
+          highlightPrimary: true,
           highlightSecondary: false,
-          comments: ""
+          comments: "Conditioning gives you the most value in this tree after 10 minutes. If you are playing reactively, this is the better of the runes in this row."
         }
       ],
       slot3: [
@@ -336,7 +336,7 @@ export class RunesService {
           description: "After taking damage from an enemy champion heal back some of your missing health over time.",
           highlightPrimary: true,
           highlightSecondary: false,
-          comments: ""
+          comments: "Second Wind does a surprising amount of healing and is great against poke lanes, or if you are trading often. This talent usually equates to the healing of an extra potion before your first back."
         }
       ]
     }
@@ -380,17 +380,17 @@ export class RunesService {
           name: "Biscuit Delivery",
           image: "./assets/images/runes/icons/inspiration/inspiration-slot-1-2.png",
           description: "Get a Biscuit every 3 mins, until 12 mins. Biscuits restore health and mana. Consuming a Biscuit permanently increases your max mana.",
-          highlightPrimary: true,
-          highlightSecondary: true,
+          highlightPrimary: false,
+          highlightSecondary: false,
           comments: "Having extra sustain in lane is very important, espcially when facing poke lanes. Remember that these restore a percentage of missing health and mana, they are also usable while other potions are healing."
         },
         {
           name: "Perfect Timing",
           image: "./assets/images/runes/icons/inspiration/inspiration-slot-1-3.png",
           description: "Gain a free Stopwatch. Stopwatch has a one time use Stasis effect.",
-          highlightPrimary: false,
-          highlightSecondary: false,
-          comments: ""
+          highlightPrimary: true,
+          highlightSecondary: true,
+          comments: "Stopwatch is a valid meta item that sells for 120g after use. Zilean doesn't usually build Zhonya's Hourglass, so this is a 1-time use item that can be used to outplay an opponent."
         }
       ],
       slot2: [

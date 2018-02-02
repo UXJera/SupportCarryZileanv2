@@ -20,14 +20,18 @@
     <a (click)="onSelect(itemGuides[1])"><h5>Maximum Utility</h5></a>
     <app-items-utility-element></app-items-utility-element>
 
-    <a (click)="onSelect(itemGuides[2])"><h5>Resilient Tank</h5></a>
+    <a (click)="onSelect(itemGuides[2])"><h5>Damage / Utility Hybrid</h5></a>
+    <app-items-hybrid-element></app-items-hybrid-element>
+
+    <a (click)="onSelect(itemGuides[3])"><h5>Resilient Tank</h5></a>
     <app-items-tank-element></app-items-tank-element>
 
   </div>
 
     <app-items-damage *ngIf="componentSelected === itemGuides[0].index"></app-items-damage>
     <app-items-utility *ngIf="componentSelected === itemGuides[1].index"></app-items-utility>
-    <app-items-tank *ngIf="componentSelected === itemGuides[2].index"></app-items-tank>
+    <app-items-hybrid *ngIf="componentSelected === itemGuides[2].index"></app-items-hybrid>
+    <app-items-tank *ngIf="componentSelected === itemGuides[3].index"></app-items-tank>
 
   </div>
 </div>
