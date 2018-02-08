@@ -377,37 +377,29 @@ export class RunesService {
           comments: ""
         },
         {
-          name: "Biscuit Delivery",
-          image: "./assets/images/runes/icons/inspiration/inspiration-slot-1-2.png",
-          description: "Get a Biscuit every 3 mins, until 12 mins. Biscuits restore health and mana. Consuming a Biscuit permanently increases your max mana.",
-          highlightPrimary: false,
-          highlightSecondary: false,
-          comments: "Having extra sustain in lane is very important, espcially when facing poke lanes. Remember that these restore a percentage of missing health and mana, they are also usable while other potions are healing."
+          name: "Magical Footwear",
+          image: "./assets/images/runes/icons/inspiration/inspiration-slot-2-1.png",
+          description: "You get free boots at 10 min but you cannot buy boots before then. Each takedown you get makes your boots come 30s sooner.",
+          highlightPrimary: true,
+          highlightSecondary: true,
+          comments: "Magical Footware will give you the most gold from the this row, and also gives you an extra 10 MS. The downside is that you cannot buy boots from the shop and have to wait until 10 minutes at the latest."
         },
         {
           name: "Perfect Timing",
           image: "./assets/images/runes/icons/inspiration/inspiration-slot-1-3.png",
           description: "Gain a free Stopwatch. Stopwatch has a one time use Stasis effect.",
-          highlightPrimary: true,
-          highlightSecondary: true,
-          comments: "Stopwatch is a valid meta item that sells for 120g after use. Zilean doesn't usually build Zhonya's Hourglass, so this is a 1-time use item that can be used to outplay an opponent."
+          highlightPrimary: false,
+          highlightSecondary: false,
+          comments: "Stopwatch is a good choice if you are going to be building Zhonyas, but isn't that fantastic otherwise."
         }
       ],
       slot2: [
         {
-          name: "Magical Footwear",
-          image: "./assets/images/runes/icons/inspiration/inspiration-slot-2-1.png",
-          description: "You get free boots at 10 min but you cannot buy boots before then. Each takedown you get makes your boots come 30s sooner.",
-          highlightPrimary: false,
-          highlightSecondary: false,
-          comments: "In general, Iron Skin will give you the most value in the early laning phase because AD damage is more prevalent than AP. This is typically the best choice from this row."
-        },
-        {
           name: "Future's Market",
           image: "./assets/images/runes/icons/inspiration/inspiration-slot-2-2.png",
           description: "You can enter debt to buy items.",
-          highlightPrimary: true,
-          highlightSecondary: true,
+          highlightPrimary: false,
+          highlightSecondary: false,
           comments: "Future's Market allows you to go into debt to help finish items earlier. The downside is that you have to pay back 50g, so be careful not to go \"into debt\" too many times or by a small amount (under 25g)."
         },
         {
@@ -417,6 +409,14 @@ export class RunesService {
           highlightPrimary: false,
           highlightSecondary: false,
           comments: ""
+        },
+        {
+          name: "Biscuit Delivery",
+          image: "./assets/images/runes/icons/inspiration/inspiration-slot-1-2.png",
+          description: "Get a Biscuit every 3 mins, until 12 mins. Biscuits restore health and mana. Consuming a Biscuit permanently increases your max mana.",
+          highlightPrimary: true,
+          highlightSecondary: false,
+          comments: "Having extra sustain in lane is very important, espcially when facing poke lanes. Remember that these restore a percentage of missing health and mana, they are also usable while other potions are healing."
         }
       ],
       slot3: [
