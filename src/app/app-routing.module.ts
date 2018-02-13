@@ -4,6 +4,7 @@ import {Routes, RouterModule, PreloadAllModules} from '@angular/router';
 import {HomeComponent} from './core/home/home.component';
 import {GameplayComponent} from './gameplay/gameplay.component';
 import {AboutComponent} from './core/about/about.component';
+import {VideoContentComponent} from './video-content/video-content.component';
 import {PageNotFoundComponent} from './core/page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
@@ -11,7 +12,9 @@ const appRoutes: Routes = [
   {path: 'guides', loadChildren: './guides/guides.module#GuidesModule'},
   {path: 'articles', loadChildren: './articles/articles.module#ArticlesModule'},
   {path: 'gameplay', component: GameplayComponent},
+  {path: 'video-content', component: VideoContentComponent},
   {path: 'about', component: AboutComponent},
+
 ];
 
 @NgModule({
