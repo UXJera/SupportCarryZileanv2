@@ -56,7 +56,7 @@ export class RunesService {
           description: "Deal bonus true damage to enemies with impaired movement or actions.",
           highlightPrimary: true,
           highlightSecondary: false,
-          comments: ""
+          comments: "Cheap Shot is a simple talent that gives you a little extra damage when you deal damage to a slowed target, or extra damage on Double Bombs."
         },
         {
           name: "Taste of Blood",
@@ -263,16 +263,8 @@ export class RunesService {
       ],
       slot1: [
         {
-          name: "Unflinching",
-          image: "./assets/images/runes/icons/resolve/resolve-slot-1-1.png",
-          description: "After casting a Summoner Spell, gain Tenacity and Slow Resistance for a short duration. Additionally, gain Tenacity and Slow Resistance for each Summoner Spell on cooldown.",
-          highlightPrimary: false,
-          highlightSecondary: false,
-          comments: ""
-        },
-        {
           name: "Demolish",
-          image: "./assets/images/runes/icons/resolve/resolve-slot-1-2.png",
+          image: "./assets/images/runes/icons/resolve/resolve-slot-1-1.png",
           description: "Charge up a powerful attack against a tower while near it.",
           highlightPrimary: false,
           highlightSecondary: false,
@@ -280,12 +272,20 @@ export class RunesService {
         },
         {
           name: "Font of Life",
-          image: "./assets/images/runes/icons/resolve/resolve-slot-1-3.png",
+          image: "./assets/images/runes/icons/resolve/resolve-slot-1-2.png",
           description: "Imparing the movement of an enemy champion marks them. Your allies heal when attacking champions you've marked.",
           highlightPrimary: true,
           highlightSecondary: true,
           comments: "Font of Life is the most practical of the three choices, and also provides an outlet for <img class=\"image-inline-sm\" src=\"./assets/images/items/ardent-censer.png\" alt=\"Ardent Censer Icon\"/> Ardent Censer (similar to Stoneborn Pact / Ardent Censer from Season 7)."
-        }
+        },
+        {
+          name: "Bone Plating",
+          image: "./assets/images/runes/icons/resolve/resolve-slot-1-3.png",
+          description: "After taking damage from an enemy champion, the next 3 spells or attacks against you recieve from the enemy deal less damage.",
+          highlightPrimary: false,
+          highlightSecondary: false,
+          comments: ""
+        },
       ],
       slot2: [
         {
@@ -308,9 +308,17 @@ export class RunesService {
           name: "Conditioning",
           image: "./assets/images/runes/icons/resolve/resolve-slot-2-3.png",
           description: "After 10 min gain +8 Armor and +8 Magic Resist and increase your Armor and Magic Resist by 5%.",
-          highlightPrimary: true,
+          highlightPrimary: false,
           highlightSecondary: false,
           comments: "Conditioning gives you the most value in this tree after 10 minutes. If you are playing reactively, this is the better of the runes in this row."
+        },
+        {
+          name: "Second Wind",
+          image: "./assets/images/runes/icons/resolve/resolve-slot-2-4.png",
+          description: "After taking damage from an enemy champion heal back some of your missing health over time.",
+          highlightPrimary: true,
+          highlightSecondary: false,
+          comments: "Second Wind does a surprising amount of healing and is great against poke lanes, or if you are trading often. This talent usually equates to the healing of an extra potion before your first back."
         }
       ],
       slot3: [
@@ -326,17 +334,17 @@ export class RunesService {
           name: "Revitalize",
           image: "./assets/images/runes/icons/resolve/resolve-slot-3-2.png",
           description: "Heals and shields are 5% stronger and increased by an additional 10% on low health targets.",
+          highlightPrimary: true,
+          highlightSecondary: false,
+          comments: "Of the choices in this tree, this is the slightly better talent because it empowers your ultimate's heal and your Guardian shield."
+        },
+        {
+          name: "Unflinching",
+          image: "./assets/images/runes/icons/resolve/resolve-slot-3-3.png",
+          description: "After casting a Summoner Spell, gain Tenacity and Slow Resistance for a short duration. Additionally, gain Tenacity and Slow Resistance for each Summoner Spell on cooldown.",
           highlightPrimary: false,
           highlightSecondary: false,
           comments: ""
-        },
-        {
-          name: "Second Wind",
-          image: "./assets/images/runes/icons/resolve/resolve-slot-3-3.png",
-          description: "After taking damage from an enemy champion heal back some of your missing health over time.",
-          highlightPrimary: true,
-          highlightSecondary: false,
-          comments: "Second Wind does a surprising amount of healing and is great against poke lanes, or if you are trading often. This talent usually equates to the healing of an extra potion before your first back."
         }
       ]
     }
@@ -353,7 +361,7 @@ export class RunesService {
           comments: ""
         },
         {
-          name: "Aftershock",
+          name: "Glacial Augment",
           image: "./assets/images/runes/icons/inspiration/inspiration-keystone-2.png",
           description: "Your first attack against an enemy champion slows them (per unit cooldown). Slowing champions with active items shoots a freeze ray at them, creating a lingering slow zone.",
           highlightPrimary: false,
@@ -381,7 +389,7 @@ export class RunesService {
           image: "./assets/images/runes/icons/inspiration/inspiration-slot-2-1.png",
           description: "You get free boots at 10 min but you cannot buy boots before then. Each takedown you get makes your boots come 30s sooner.",
           highlightPrimary: true,
-          highlightSecondary: true,
+          highlightSecondary: false,
           comments: "Magical Footware will give you the most gold from the this row, and also gives you an extra 10 MS. The downside is that you cannot buy boots from the shop and have to wait until 10 minutes at the latest."
         },
         {
@@ -415,8 +423,8 @@ export class RunesService {
           image: "./assets/images/runes/icons/inspiration/inspiration-slot-1-2.png",
           description: "Get a Biscuit every 3 mins, until 12 mins. Biscuits restore health and mana. Consuming a Biscuit permanently increases your max mana.",
           highlightPrimary: true,
-          highlightSecondary: false,
-          comments: "Having extra sustain in lane is very important, espcially when facing poke lanes. Remember that these restore a percentage of missing health and mana, they are also usable while other potions are healing."
+          highlightSecondary: true,
+          comments: "Having extra sustain in lane is very important, espcially when facing poke lanes. Remember that these restore a percentage of missing health and mana, they are also usable while other potions are healing, and they give you a free 40 maximum mana per biscuit."
         }
       ],
       slot3: [

@@ -42,7 +42,7 @@ export class RunesComponent implements OnInit {
 
   article = {
     title: 'Runepage Setup',
-    updated: 'Patch 8.3'
+    updated: 'Patch 8.4'
   };
 
   ngOnInit() {

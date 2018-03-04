@@ -33,9 +33,9 @@ export class ItemsHybridComponent implements OnInit {
   // Mid Game Items
   itemBuild3: ItemBuild[] = [
     new ItemBuild('Frostfang', './assets/images/items/frostfang.png'),
-    new ItemBuild('Morellonomicon', './assets/images/items/morellonomicon.png'),
+    new ItemBuild('Archangel\'s Staff', './assets/images/items/archangels-staff.png'),
     new ItemBuild('Redemption', './assets/images/items/redemption.png'),
-    new ItemBuild('Boots of Lucidity', './assets/images/items/boots-of-lucidity.png'),
+    new ItemBuild('Boots of Mobility', './assets/images/items/boots-of-mobility.png'),
     new ItemBuild('Sweeper Trinket', './assets/images/items/sweeper.png'),
   ];
 

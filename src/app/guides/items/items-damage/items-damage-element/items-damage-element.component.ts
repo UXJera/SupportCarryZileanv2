@@ -10,8 +10,9 @@ export class ItemsDamageElementComponent implements OnInit {
 
   itemBuild: ItemBuild[] = [
     new ItemBuild('Remnant of the Watchers', './assets/images/items/remnant-of-the-watchers.png'),
+    new ItemBuild('Archangel\'s Staff', './assets/images/items/archangels-staff.png'),
     new ItemBuild('Morellonomicon', './assets/images/items/morellonomicon.png'),
-    new ItemBuild('Liandri\'s Torment', './assets/images/items/liandris-torment.png'),
+    //new ItemBuild('Liandri\'s Torment', './assets/images/items/liandris-torment.png'),
     new ItemBuild('Rabadons Deathcap', './assets/images/items/rabadons-deathcap.png'),
     new ItemBuild('Control Ward', './assets/images/items/control-ward.png'),
     new ItemBuild('Sorcerer\'s Shoes', './assets/images/items/sorcerers-shoes.png'),

@@ -36,7 +36,7 @@ export class ItemsComponent implements OnInit, OnChanges {
 
   article = {
     title: 'Item Builds',
-    updated: 'Patch 8.2'
+    updated: 'Patch 8.4'
   };
 
   ngOnInit() {

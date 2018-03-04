@@ -26,12 +26,13 @@ export class ItemsDamageComponent implements OnInit {
     new ItemBuild('Frostfang', './assets/images/items/frostfang.png'),
     new ItemBuild('Boots', './assets/images/items/boots.png'),
     new ItemBuild('Lost Chapter', './assets/images/items/lost-chapter.png'),
-    new ItemBuild('Tear of the Goddess', './assets/images/items/tear.png', true),
+    new ItemBuild('Tear of the Goddess', './assets/images/items/tear.png'),
   ];
 
   // Mid Game Items
   itemBuild3: ItemBuild[] = [
     new ItemBuild('Frostfang', './assets/images/items/frostfang.png'),
+    new ItemBuild('Archangel\'s Staff', './assets/images/items/archangels-staff.png'),
     new ItemBuild('Morellonomicon', './assets/images/items/morellonomicon.png'),
     new ItemBuild('Sorcerer Shoes', './assets/images/items/sorcerers-shoes.png'),
     new ItemBuild('Sweeper Trinket', './assets/images/items/sweeper.png'),
@@ -43,7 +44,7 @@ export class ItemsDamageComponent implements OnInit {
     new ItemBuild('Rylai\'s Crystal Staff', './assets/images/items/rylais.png'),
     new ItemBuild('Banshees Veil', './assets/images/items/banshees-veil.png'),
     new ItemBuild('Zhonya\'s Hourglass', './assets/images/items/zhonyas-hourglass.png'),
-    new ItemBuild('Archangel\'s Staff / Seraph\'s Embrace', './assets/images/items/seraphs-embrace.png', true),
+    new ItemBuild('Liandri\'s Torment', './assets/images/items/liandris-torment.png'),
   ];
 
   constructor() { }
