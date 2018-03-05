@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemBuild } from '../item-build.model';
+import { ItemsService } from '../items.service';
+
 @Component({
   selector: 'app-items-damage',
   templateUrl: './items-damage.component.html',
@@ -8,6 +10,12 @@ import { ItemBuild } from '../item-build.model';
 export class ItemsDamageComponent implements OnInit {
 
   alternateView = false;
+
+  items: any;
+
+  constructor(private itemsService: ItemsService) {
+    this.items = this.itemsService.itemLib;
+  }
 
   onToggleAlternate() {
     this.alternateView = !this.alternateView;
@@ -47,7 +55,7 @@ export class ItemsDamageComponent implements OnInit {
     new ItemBuild('Liandri\'s Torment', './assets/images/items/liandris-torment.png'),
   ];
 
-  constructor() { }
+
 
   ngOnInit() {
   }
