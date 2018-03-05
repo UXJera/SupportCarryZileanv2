@@ -11,7 +11,7 @@
     <h5>Starting Items</h5>
     <ul class="item-build-container">
       <li *ngFor="let item of itemBuild1">
-        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        <img src="{{item.img}}" alt="{{item.name}}" title="{{item.name}}" [ngClass]="{optional: item.optional}"/>
       </li>
     </ul>
     <p>The starter items are intuitive, and you're going to want to be careful on how much mana you expend in lane. Also only go for Double Bombs if you can ensure a kill or you need an escape. Use Single Bombs to poke out enemies.</p>
@@ -21,7 +21,7 @@
     <h5>Early Game Items</h5>
     <ul class="item-build-container">
       <li *ngFor="let item of itemBuild2">
-        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        <img src="{{item.img}}" alt="{{item.name}}" title="{{item.name}}" [ngClass]="{optional: item.optional}"/>
       </li>
     </ul>
     <p>On the first back you should Frostfang and start working on your mana item. If you are newer to Zilean, pick up a Tear of the Goddess. For more experienced players, skip the Tear and buy Lost Chapter.</p>
@@ -32,7 +32,7 @@
     <h5>Mid Game Core Items</h5>
     <ul class="item-build-container">
       <li *ngFor="let item of itemBuild3">
-        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        <img src="{{item.img}}" alt="{{item.name}}" title="{{item.name}}" [ngClass]="{optional: item.optional}"/>
       </li>
     </ul>
     <p>Your first major item to complete is Morellonomicon. It provides enough CDR and mana to help you in the mid game. You shouldn't need to upgrade Frostfang unless you really need the extra ward for vision, otherwise put that 950g towards your next damage item, or Sorcerer's Shoes.</p>
@@ -49,7 +49,7 @@
     <h5>Optional Defensive Items</h5>
     <ul class="item-build-container">
       <li *ngFor="let item of itemBuild4">
-        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        <img src="{{item.img}}" alt="{{item.name}}" title="{{item.name}}" [ngClass]="{optional: item.optional}"/>
       </li>
     </ul>
     <p>These items do take away some of the damage, but offer utility to the team. Zilean's damage is greatly reduced by Magic Resist, and hitting back-line targets is very hard in teamfights. These items allow you to survive longer so you can save your ultimate for carries or a hyper tank.</p>
@@ -70,5 +70,10 @@
       <li *ngFor="let passive of items.ardentCenser.passive" [innerHTML]="passive"></li>
     </ul>
   </div>
+
+  <button type="button" class="btn btn-outline-secondary" placement="top" ngbTooltip="Tooltip on top">
+    Tooltip on top
+  </button>
+
 
 </div>

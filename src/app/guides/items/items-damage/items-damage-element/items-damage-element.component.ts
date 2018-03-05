@@ -9,7 +9,7 @@ import { ItemBuild } from '../../item-build.model';
 export class ItemsDamageElementComponent implements OnInit {
 
   itemBuild: ItemBuild[] = [
-    new ItemBuild('Remnant of the Watchers', './assets/images/items/remnant-of-the-watchers.png'),
+    new ItemBuild('Remnant of the Watchers: \&nbsp 100', './assets/images/items/remnant-of-the-watchers.png'),
     new ItemBuild('Archangel\'s Staff', './assets/images/items/archangels-staff.png'),
     new ItemBuild('Morellonomicon', './assets/images/items/morellonomicon.png'),
     //new ItemBuild('Liandri\'s Torment', './assets/images/items/liandris-torment.png'),
