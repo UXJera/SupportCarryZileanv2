@@ -56,19 +56,4 @@
   </div>
 
 
-  <div>
-    <h5>{{ items.ardentCenser.name }}</h5>
-    <img src="{{items.ardentCenser.image}}" [alt]="items.ardentCenser.name">
-    <h6>Price:</h6>
-    <p>{{ items.ardentCenser.price }}</p>
-    <h6>Stats</h6>
-    <ul>
-      <li *ngFor="let stat of items.ardentCenser.stats" [innerHTML]="stat"></li>
-    </ul>
-    <h6>Passive</h6>
-    <ul>
-      <li *ngFor="let passive of items.ardentCenser.passive" [innerHTML]="passive"></li>
-    </ul>
-  </div>
-
 </div>
