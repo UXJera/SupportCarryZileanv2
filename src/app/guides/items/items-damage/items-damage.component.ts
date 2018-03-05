@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemBuild } from '../item-build.model';
 import { ItemsService } from '../items.service';
-import {NgbTooltipConfig} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-items-damage',
