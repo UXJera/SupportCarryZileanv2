@@ -4,13 +4,21 @@
   <div class="runeContainer" ngClass="{{primarySplitPushRune?.name}}Bg">
 
     <div class="runeHeader">
-      <img [src]="primarySplitPushRune?.primaryImage" alt="{{primarySplitPushRune?.name | titlecase }} Icon">
+      <img
+      [src]="primarySplitPushRune?.primaryImage"
+      alt="{{primarySplitPushRune?.name | titlecase }} Icon"
+      title="{{primarySplitPushRune?.name | titlecase }}">
       <h5>Primary</h5>
     </div>
 
     <div class="runeRow">
       <div *ngFor="let runeItem of primarySplitPushRune?.keystone" class="runeItem">
-        <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightPrimary}" />
+        <img
+        [src]="runeItem.image"
+        [ngClass]="{highlight: runeItem.highlightPrimary}"
+        alt="{{runeItem.name | titlecase }} Icon"
+        title="{{runeItem.name}}"
+        />
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightPrimary}">
           <h5>{{runeItem.name}}</h5>
           <p>{{runeItem.description}}</p>
@@ -20,7 +28,11 @@
 
     <div class="runeRow">
       <div *ngFor="let runeItem of primarySplitPushRune?.slot1" class="runeItem">
-        <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightPrimary}" />
+        <img
+        [src]="runeItem.image"
+        [ngClass]="{highlight: runeItem.highlightPrimary}"
+        alt="{{runeItem.name | titlecase }} Icon"
+        title="{{runeItem.name}}"/>
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightPrimary}">
           <h5>{{runeItem.name}}</h5>
           <p>{{runeItem.description}}</p>
@@ -30,7 +42,11 @@
 
     <div class="runeRow">
       <div *ngFor="let runeItem of primarySplitPushRune?.slot2" class="runeItem">
-        <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightPrimary}" />
+        <img
+        [src]="runeItem.image"
+        [ngClass]="{highlight: runeItem.highlightPrimary}"
+        alt="{{runeItem.name | titlecase }} Icon"
+        title="{{runeItem.name}}" />
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightPrimary}">
           <h5>{{runeItem.name}}</h5>
           <p>{{runeItem.description}}</p>
@@ -40,7 +56,11 @@
 
     <div class="runeRow">
       <div *ngFor="let runeItem of primarySplitPushRune?.slot3" class="runeItem">
-        <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightPrimary}" />
+        <img
+        [src]="runeItem.image"
+        [ngClass]="{highlight: runeItem.highlightPrimary}"
+        alt="{{runeItem.name | titlecase }} Icon"
+        title="{{runeItem.name}}"/>
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightPrimary}">
           <h5>{{runeItem.name}}</h5>
           <p>{{runeItem.description}}</p>
@@ -53,13 +73,20 @@
   <div class="runeContainer" ngClass="{{secondarySplitPushRuneRune?.name}}Bg">
 
     <div class="runeHeader">
-      <img [src]="secondarySplitPushRuneRune?.primaryImage" alt="{{secondarySplitPushRuneRune?.name | titlecase }} Icon">
+      <img
+      [src]="secondarySplitPushRuneRune?.primaryImage"
+      alt="{{secondarySplitPushRuneRune?.name | titlecase }} Icon"
+      title="{{secondarySplitPushRuneRune?.name | titlecase }}">
       <h5>Secondary</h5>
     </div>
 
     <div class="runeRow">
       <div *ngFor="let runeItem of secondarySplitPushRuneRune?.slot1" class="runeItem">
-        <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightSecondary}" />
+        <img
+        [src]="runeItem.image"
+        [ngClass]="{highlight: runeItem.highlightSecondary}"
+        alt="{{runeItem.name | titlecase }} Icon"
+        title="{{runeItem.name}}"/>
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightSecondary}">
           <h5>{{runeItem.name}}</h5>
           <p>{{runeItem.description}}</p>
@@ -69,7 +96,11 @@
 
     <div class="runeRow">
       <div *ngFor="let runeItem of secondarySplitPushRuneRune?.slot2" class="runeItem">
-        <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightSecondary}" />
+        <img
+        [src]="runeItem.image"
+        [ngClass]="{highlight: runeItem.highlightSecondary}"
+        alt="{{runeItem.name | titlecase }} Icon"
+        title="{{runeItem.name}}"/>
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightSecondary}">
           <h5>{{runeItem.name}}</h5>
           <p>{{runeItem.description}}</p>
@@ -79,7 +110,11 @@
 
     <div class="runeRow">
       <div *ngFor="let runeItem of secondarySplitPushRuneRune?.slot3" class="runeItem">
-        <img [src]="runeItem.image" [ngClass]="{highlight: runeItem.highlightSecondary}" />
+        <img
+        [src]="runeItem.image"
+        [ngClass]="{highlight: runeItem.highlightSecondary}"
+        alt="{{runeItem.name | titlecase }} Icon"
+        title="{{runeItem.name}}"/>
         <div class="description" *ngIf="toggleDescription" [ngClass]="{descHighlight: runeItem.highlightSecondary}">
           <h5>{{runeItem.name}}</h5>
           <p>{{runeItem.description}}</p>

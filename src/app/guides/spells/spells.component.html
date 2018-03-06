@@ -6,7 +6,7 @@
         <li *ngFor="let item of itemGuides; let i of index" [ngClass]="{selected: item.selected === true}"  class="skill-nav">
           <a (click)="onSelect(item)">
             <!-- {{item.name}} -->
-          <img src="{{item.img}}" alt="{{item.name}}" />
+          <img src="{{item.img}}" alt="{{item.name}}" title="{{item.name | titlecase }}" />
         </a>
         </li>
       </ul>
