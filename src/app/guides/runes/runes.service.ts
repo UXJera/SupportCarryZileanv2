@@ -10,7 +10,7 @@ export class RunesService {
 
   private runesUrl = './assets/json/runes.json';
 
-  basePath = './assets/images/runes/icons/';
+  basePath = './assets/images/runes/';
 
   constructor(private http: Http) { }
 
