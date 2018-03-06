@@ -1,5 +1,7 @@
 <ul class="item-build-container">
   <li *ngFor="let item of itemBuild">
-    <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+    <a href="{{item.link}}" target="_blank">
+      <img src="{{item.img}}" alt="{{item.name}}" title="{{item.name}}"/>
+    </a>
   </li>
 </ul>

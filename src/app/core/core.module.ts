@@ -16,6 +16,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 import { AboutComponent } from './about/about.component';
 
+import { ItemsService } from '../guides/items/items.service';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -37,6 +39,9 @@ import { AboutComponent } from './about/about.component';
     AppRoutingModule,
     HeaderComponent,
     FooterComponent
+  ],
+  providers: [
+    ItemsService
   ]
 })
 export class CoreModule { }

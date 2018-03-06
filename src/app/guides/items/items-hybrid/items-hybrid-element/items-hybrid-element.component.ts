@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { ItemBuild } from '../../item-build.model';
+import { ItemsService } from '../../items.service';
 
 @Component({
   selector: 'app-items-hybrid-element',
@@ -8,19 +7,25 @@ import { ItemBuild } from '../../item-build.model';
   styleUrls: ['./items-hybrid-element.component.scss']
 })
 export class ItemsHybridElementComponent implements OnInit {
-  itemBuild: ItemBuild[] = [
-    new ItemBuild('Remnant of the Watchers', './assets/images/items/remnant-of-the-watchers.png'),
-    new ItemBuild('Archangel\'s Staff', './assets/images/items/archangels-staff.png'),
-    //new ItemBuild('Morellonomicon', './assets/images/items/morellonomicon.png'),
-    new ItemBuild('Redemption', './assets/images/items/redemption.png'),
-    new ItemBuild('Locket of the Iron Solari', './assets/images/items/locket-of-the-iron-solari.png'),
-    new ItemBuild('Control Ward', './assets/images/items/control-ward.png'),
-    new ItemBuild('Boots of Mobility', './assets/images/items/boots-of-mobility.png'),
-    new ItemBuild('Hextech Sweeper', './assets/images/items/sweeper.png')
-  ];
 
-  constructor() { }
+  itemBuild = [];
 
-  ngOnInit() { }
+  items: any;
+
+  constructor(private itemsService: ItemsService) {
+    this.items = this.itemsService.itemLib;
+  }
+
+  ngOnInit() {
+    this.itemBuild = [
+      this.items.eyeOfTheWatchers,
+      this.items.archangelsStaff,
+      this.items.redemption,
+      this.items.locketOfTheIronSolari,
+      this.items.controlWard,
+      this.items.bootsOfMobility,
+      this.items.sweeper
+    ]
+  }
 
 }

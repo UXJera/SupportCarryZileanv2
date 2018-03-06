@@ -8,8 +8,10 @@
   <div class="">
     <h5>Starting Items</h5>
     <ul class="item-build-container">
-      <li *ngFor="let item of itemBuild1">
-        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+      <li *ngFor="let item of itemBuildStart">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
       </li>
     </ul>
     <p>The standard Spelltheif's Edge and 3 potions opener is recommended here.</p>
@@ -17,8 +19,10 @@
   <div class="">
     <h5>Early Game Items</h5>
     <ul class="item-build-container">
-      <li *ngFor="let item of itemBuild2">
-        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+      <li *ngFor="let item of itemBuildEarly">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
       </li>
     </ul>
     <p>Upgrading Frostfang should be your highest priority on back. If you have extra money, pick up a Mana Crystal to start working on your Last Chapter.</p>
@@ -27,8 +31,10 @@
   <div class="">
     <h5>Mid Game Core Items</h5>
     <ul class="item-build-container">
-      <li *ngFor="let item of itemBuild3">
-        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+      <li *ngFor="let item of itemBuildMid">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
       </li>
     </ul>
     <p>After finishing Morellonomicon, your next item should either be Redemption or Locket of the Iron Solari, depending on the enemy composition. You shouldn't need to upgrade Frostfang yet, unless you are having trouble keeping vision up and need the 4th ward.</p>
@@ -43,8 +49,10 @@
   <div class="">
     <h5>Optional Items</h5>
     <ul class="item-build-container">
-      <li *ngFor="let item of itemBuild4">
-        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+      <li *ngFor="let item of itemBuildOptional">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
       </li>
     </ul>
     <p>From here, you have your choice on what item you may need to win the game. I tend to play on the defensive and utility side of things, but more damage items might work better for you.</p>

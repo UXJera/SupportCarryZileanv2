@@ -14,6 +14,8 @@ import { ItemsDamageElementComponent } from './items-damage/items-damage-element
 import { ItemsTankElementComponent } from './items-tank/items-tank-element/items-tank-element.component';
 import { ItemsHybridElementComponent } from './items-hybrid/items-hybrid-element/items-hybrid-element.component';
 
+import { ItemsService } from './items.service';
+
 import { RunesModule } from '../runes/runes.module';
 import { RunesService } from '../runes/runes.service';
 
@@ -40,6 +42,6 @@ import { RunesService } from '../runes/runes.service';
     ItemsDamageElementComponent,
     ItemsTankElementComponent
   ],
-  providers: [RunesService]
+  //providers: [ItemsService, RunesService]
 })
 export class ItemsModule { }

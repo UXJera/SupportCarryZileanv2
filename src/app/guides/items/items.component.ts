@@ -3,6 +3,8 @@ import { Component, OnInit, OnChanges } from '@angular/core';
 import { Guide } from '../guide.model';
 // import { GuideService } from '../guide.service';
 
+import { ItemsService } from './items.service';
+
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
@@ -11,9 +13,11 @@ import { Guide } from '../guide.model';
 })
 export class ItemsComponent implements OnInit, OnChanges {
 
-  constructor(
-    // private guideService: GuideService
-  ) { }
+  items: any;
+
+  constructor(private itemsService: ItemsService) {
+    this.items = this.itemsService.itemLib;
+  }
 
   componentSelected;
 

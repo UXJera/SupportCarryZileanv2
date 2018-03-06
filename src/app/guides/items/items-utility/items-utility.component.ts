@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import {ItemBuild} from '../item-build.model';
+import { ItemsService } from '../items.service';
 
 @Component({
   selector: 'app-items-utility',
@@ -9,49 +8,43 @@ import {ItemBuild} from '../item-build.model';
 })
 export class ItemsUtilityComponent implements OnInit {
 
-  alternateView = false;
+  items: any;
 
-  onToggleAlternate() {
-    this.alternateView = !this.alternateView;
+  constructor(private itemsService: ItemsService) {
+    this.items = this.itemsService.itemLib;
   }
 
-  // Starting Items
-  itemBuild1: ItemBuild[] = [
-    new ItemBuild('Spellthiefs Edge', './assets/images/items/spellthiefs-edge.png'),
-    new ItemBuild('Potion of Healing', './assets/images/items/potion.png'),
-    new ItemBuild('Refillable Potion', './assets/images/items/refill-potion.png'),
-    new ItemBuild('Trinket Ward', './assets/images/items/trinket-ward.png'),
-  ];
-
-  // Early Game Items
-  itemBuild2: ItemBuild[] = [
-    new ItemBuild('Frostfang', './assets/images/items/frostfang.png'),
-    new ItemBuild('Boots', './assets/images/items/boots.png'),
-    new ItemBuild('Forbidden Idol', './assets/images/items/forbidden-idol.png'),
-  ];
-
-  // Mid Game Items
-  itemBuild3: ItemBuild[] = [
-    new ItemBuild('Remnant of the Watchers', './assets/images/items/remnant-of-the-watchers.png'),
-    new ItemBuild('Ardent Censer', './assets/images/items/ardent-censer.png'),
-    // new ItemBuild('Athenes Unholy Grail', './assets/images/items/athenes-unholy-grail.png'),
-    new ItemBuild('Redemption', './assets/images/items/redemption.png'),
-    new ItemBuild('Boots of Mobility', './assets/images/items/boots-of-mobility.png'),
-    new ItemBuild('Sweeper Trinket', './assets/images/items/sweeper.png'),
-  ];
-
-  // Optional Items
-  itemBuild4: ItemBuild[] = [
-    new ItemBuild('Mikaels Crucible', './assets/images/items/mikaels-crucible.png'),
-    new ItemBuild('Warmog\'s Armor', './assets/images/items/knights-vow.png'),
-    new ItemBuild('Banner of Command', './assets/images/items/banner-of-command.png'),
-    //new ItemBuild('Ardent Censer', './assets/images/items/ardent-censer.png'),
-    new ItemBuild('Athenes Unholy Grail', './assets/images/items/athenes-unholy-grail.png'),
-  ];
-
-  constructor() { }
+  itemBuildStart = [];
+  itemBuildEarly = [];
+  itemBuildMid = [];
+  itemBuildOptional = [];
 
   ngOnInit() {
+    this.itemBuildStart = [
+      this.items.ancientCoin,
+      this.items.healthPot,
+      this.items.refillablePotion,
+      this.items.trinketWard
+    ];
+
+    this.itemBuildEarly = [
+      this.items.nomadsMedallion,
+      this.items.boots,
+      this.items.faerieCharm,
+    ];
+    this.itemBuildMid = [
+      this.items.remnantOfTheAscended,
+      this.items.ardentCenser,
+      this.items.redemption,
+      this.items.bootsOfMobility,
+      this.items.sweeper
+    ];
+    this.itemBuildOptional = [
+      this.items.mikaelsCrucible,
+      this.items.knightsVow,
+      this.items.bannerOfCommand,
+      this.items.athenesUnholyGrail,
+    ];
   }
 
 }

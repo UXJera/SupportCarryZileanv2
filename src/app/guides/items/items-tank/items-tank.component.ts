@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import {ItemBuild} from '../item-build.model';
+import { ItemsService } from '../items.service';
 
 @Component({
   selector: 'app-items-tank',
@@ -9,46 +8,42 @@ import {ItemBuild} from '../item-build.model';
 })
 export class ItemsTankComponent implements OnInit {
 
-  alternateView = false;
+  items: any;
 
-  onToggleAlternate() {
-    this.alternateView = !this.alternateView;
+  constructor(private itemsService: ItemsService) {
+    this.items = this.itemsService.itemLib;
   }
 
-  // Starting Items
-  itemBuild1: ItemBuild[] = [
-    new ItemBuild('Ancient Coin', './assets/images/items/ancient-coin.png'),
-    new ItemBuild('Potion of Healing', './assets/images/items/potion.png'),
-    new ItemBuild('Refillable Potion', './assets/images/items/refill-potion.png'),
-    new ItemBuild('Trinket Ward', './assets/images/items/trinket-ward.png'),
-  ];
-
-  // Early Game Items
-  itemBuild2: ItemBuild[] = [
-    new ItemBuild('Nomads Medalion', './assets/images/items/nomads-medalion.png'),
-    new ItemBuild('Boots', './assets/images/items/boots.png'),
-    new ItemBuild('Glacial Shroud', './assets/images/items/glacial-shroud.png'),
-  ];
-
-  // Mid Game Items
-  itemBuild3: ItemBuild[] = [
-    new ItemBuild('Nomads Medalion', './assets/images/items/nomads-medalion.png'),
-    new ItemBuild('Rigteous Glory', './assets/images/items/righteous-glory.png'),
-    new ItemBuild('Knight\'s Vow', './assets/images/items/knights-vow.png'),
-    new ItemBuild('Mercury Treads', './assets/images/items/mercury-treads.png'),
-    new ItemBuild('Sweeper Trinket', './assets/images/items/sweeper.png'),
-  ];
-
-  // Optional Items
-  itemBuild4: ItemBuild[] = [
-    new ItemBuild('Ardent Censer', './assets/images/items/ardent-censer.png'),
-    new ItemBuild('Mikaels Crucible', './assets/images/items/mikaels-crucible.png'),
-    new ItemBuild('Banner of Command', './assets/images/items/banner-of-command.png'),
-  ];
-
-  constructor() { }
+  itemBuildStart = [];
+  itemBuildEarly = [];
+  itemBuildMid = [];
+  itemBuildOptional = [];
 
   ngOnInit() {
+    this.itemBuildStart = [
+      this.items.ancientCoin,
+      this.items.healthPot,
+      this.items.refillablePotion,
+      this.items.trinketWard
+    ];
+
+    this.itemBuildEarly = [
+      this.items.nomadsMedallion,
+      this.items.boots,
+      this.items.glacialShroud,
+    ];
+    this.itemBuildMid = [
+      this.items.nomadsMedallion,
+      this.items.righteousGlory,
+      this.items.knightsVow,
+      this.items.mercuryTreads,
+      this.items.sweeper
+    ];
+    this.itemBuildOptional = [
+      this.items.ardentCenser,
+      this.items.mikaelsCrucible,
+      this.items.bannerOfCommand
+    ];
   }
 
 }

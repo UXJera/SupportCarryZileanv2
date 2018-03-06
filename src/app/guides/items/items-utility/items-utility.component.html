@@ -9,28 +9,47 @@
   <div class="">
     <h5>Starting Items</h5>
     <ul class="item-build-container">
-      <li *ngFor="let item of itemBuild1">
-        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+      <li *ngFor="let item of itemBuildStart">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
       </li>
     </ul>
     <p>This is a pretty generic start that gives you a little extra power in lane. If you are playing against a lane that has little pressure, start Refillable Potion; otherwise start 3 Potions.</p>
-    <p>You can switch out <img class="image-inline-sm" src="./assets/images/items/spellthiefs-edge.png" alt="Spellthief's Edge Icon"/> Spellthief's Edge for <img class="image-inline-sm" src="./assets/images/items/ancient-coin.png" alt="Ancient Coin Icon"/> Ancient Coin if you are against a poke or sustain lane and want to maximize your income, while still reserving mana for counterplay.</p>
+    <p>You can switch out <a href="{{items.ancientCoin.link}}" target="_blank">
+      <img class="image-inline-sm"
+       src="{{items.ancientCoin.img}}"
+       alt="{{items.ancientCoin.name}}"
+       title="{{items.ancientCoin.name"/></a> Ancient Coin for
+     <a href="{{items.spellthiefsEdge.link}}">
+       <img class="image-inline-sm"
+       src="{{items.spellthiefsEdge.img}}"
+       alt="{{items.spellthiefsEdge.name}}"
+       title="{{items.spellthiefsEdge.name}}"/></a> Spellthief's Edge if you want to play more aggressively and bully the lane. Ancient Coin will give you more gold, but less pressure in lane.</p>
   </div>
   <div class="">
     <h5>Early Game Items</h5>
     <ul class="item-build-container">
-      <li *ngFor="let item of itemBuild2">
-        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+      <li *ngFor="let item of itemBuildEarly">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
       </li>
     </ul>
-    <p>On your first back, you should upgrade Support Item and pick up 1 or 2 <img class="image-inline-sm" src="./assets/images/items/faerie-charm.png" alt="Faerie Charm Icon"/> Faerie Charms. Your next buy will be Forbidden Idol which builds into either Ardent Censer or Redemption.</p>
+    <p>On your first back, you should upgrade Support Item and pick up 1 or 2 <a href="{{items.faerieCharm.link}}" target="_blank">
+      <img class="image-inline-sm" src="{{items.faerieCharm.img}}" alt="{{items.faerieCharm.name}}"
+      title="{{items.faerieCharm.name}}"
+      /></a>
+       Faerie Charms. Your next buy will be Forbidden Idol which builds into either Ardent Censer or Redemption.</p>
   </div>
 
   <div class="">
     <h5>Mid Game Core Items</h5>
     <ul class="item-build-container">
-      <li *ngFor="let item of itemBuild3">
-        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+      <li *ngFor="let item of itemBuildMid">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
       </li>
     </ul>
     <p>If you rushed Ardent Censer, your next item is Redemption which is easily attainable wich cheap components. If you went Redemption first, you can move to the next section.</p>
@@ -45,8 +64,10 @@
   <div class="">
     <h5>Optional Utility Items</h5>
     <ul class="item-build-container">
-      <li *ngFor="let item of itemBuild4">
-        <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+      <li *ngFor="let item of itemBuildOptional">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
       </li>
     </ul>
     <p>These are defensive options that you can build depending on the enemy team composition. For instance, take Mikael's Crucible if the enemy team has an abundance of Crowd Control, or are looking for a single target to engage on (stopping the initial CC along with Time Warp should be enough to stop an enemy engage).</p>

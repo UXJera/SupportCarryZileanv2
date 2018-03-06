@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemBuild } from '../../item-build.model';
+import { ItemsService } from '../../items.service';
 
 @Component({
   selector: 'app-items-damage-element',
@@ -8,20 +8,24 @@ import { ItemBuild } from '../../item-build.model';
 })
 export class ItemsDamageElementComponent implements OnInit {
 
-  itemBuild: ItemBuild[] = [
-    new ItemBuild('Remnant of the Watchers', './assets/images/items/remnant-of-the-watchers.png'),
-    new ItemBuild('Archangel\'s Staff', './assets/images/items/archangels-staff.png'),
-    new ItemBuild('Morellonomicon', './assets/images/items/morellonomicon.png'),
-    //new ItemBuild('Liandri\'s Torment', './assets/images/items/liandris-torment.png'),
-    new ItemBuild('Rabadons Deathcap', './assets/images/items/rabadons-deathcap.png'),
-    new ItemBuild('Control Ward', './assets/images/items/control-ward.png'),
-    new ItemBuild('Sorcerer\'s Shoes', './assets/images/items/sorcerers-shoes.png'),
-    new ItemBuild('Hextech Sweeper', './assets/images/items/sweeper.png')
-  ];
+  itemBuild = [];
 
-  constructor() { }
+  items: any;
+
+  constructor(private itemsService: ItemsService) {
+    this.items = this.itemsService.itemLib;
+  }
 
   ngOnInit() {
+    this.itemBuild = [
+      this.items.eyeOfTheWatchers,
+      this.items.archangelsStaff,
+      this.items.morellonomicon,
+      this.items.rabadonsDeathcap,
+      this.items.controlWard,
+      this.items.sorcerersShoes,
+      this.items.sweeper
+    ]
   }
 
 }
