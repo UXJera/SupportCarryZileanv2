@@ -89,7 +89,7 @@ export class ItemsService implements OnInit {
       ],
       passive: [
         'UNIQUE – FAVOR: Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant Gold 25 or restore 6% missing mana (minimum 10). Cannon minions will drop a coin as long as you don\'t kill them.',
-        'UNIQUE – BANDIT: Grants Bandit.',
+,
       ],
       active: []
     },
@@ -303,8 +303,8 @@ export class ItemsService implements OnInit {
         '+10 movement speed'
       ],
       passive: [
-        'UNIQUE – FAVOR: Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 40 Gold or restore 6% missing mana (minimum 10). Cannon minions will drop a coin as long as you don\'t kill them.',
-        'UNIQUE – BANDIT: Grants Bandit.'
+        'UNIQUE – FAVOR: Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 45 Gold or restore 6% missing mana (minimum 10). Cannon minions will drop a coin as long as you don\'t kill them.',
+
       ],
     },
 
@@ -322,8 +322,8 @@ export class ItemsService implements OnInit {
         '+50% base mana regeneration',
       ],
       passive: [
-        'UNIQUE – TRIBUTE: Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 18 bonus magic damage and grants 15 Gold.',
-        'UNIQUE – BANDIT: Grants Bandit.'
+        'UNIQUE – TRIBUTE: Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 18 bonus magic damage and grants 20 Gold.',
+
       ],
     },
 
@@ -381,8 +381,8 @@ export class ItemsService implements OnInit {
         '+50% base mana regeneration'
       ],
       passive: [
-        'UNIQUE – TRIBUTE: Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 18 bonus magic damage and grants Gold 15. Killing a minion or non-epic monster pauses Tribute generation for 12 seconds per unit slain.',
-        'UNIQUE – BANDIT: Grants Bandit.'
+        'UNIQUE – TRIBUTE: Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 18 bonus magic damage and grants Gold 20. Killing a minion or non-epic monster pauses Tribute generation for 12 seconds per unit slain.',
+
       ],
       active: []
     },
@@ -623,8 +623,8 @@ export class ItemsService implements OnInit {
         '+10 movement speed'
       ],
       passive: [
-        'UNIQUE – FAVOR: Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 40 Gold or restore 6% missing mana (minimum 10). Cannon minions will drop a coin as long as you don\'t kill them.',
-        'UNIQUE – BANDIT: Grants Bandit.'
+        'UNIQUE – FAVOR: Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 45 Gold or restore 6% missing mana (minimum 10). Cannon minions will drop a coin as long as you don\'t kill them.',
+
       ],
       active: []
     },
@@ -706,8 +706,8 @@ export class ItemsService implements OnInit {
         '+10 movement speed'
       ],
       passive: [
-        'UNIQUE – FAVOR: Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 40 Gold or restore 6% missing mana (minimum 10). Cannon minions will drop a coin as long as you don\'t kill them.',
-        'UNIQUE – BANDIT: Grants Bandit.'
+        'UNIQUE – FAVOR: Nearby enemy minions, killed by any ally other than you, will sometimes drop a coin that can be picked up to either grant 45 Gold or restore 6% missing mana (minimum 10). Cannon minions will drop a coin as long as you don\'t kill them.',
+
       ],
       active: []
     },
@@ -726,8 +726,8 @@ export class ItemsService implements OnInit {
         '+50% base mana regeneration',
       ],
       passive: [
-        'UNIQUE – TRIBUTE: Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 18 bonus magic damage and grants 15 Gold.',
-        'UNIQUE – BANDIT: Grants Bandit.'
+        'UNIQUE – TRIBUTE: Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 18 bonus magic damage and grants 20 Gold.',
+
       ],
       active: []
     },
