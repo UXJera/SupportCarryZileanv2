@@ -426,7 +426,7 @@ export class ItemsService implements OnInit {
       ],
       passive: [],
       active: [
-        'UNIQUE – FROST BOLT: After a small delay, fires a spray of five icy bolts in a cone, which each bolt dealing 75 - 150 (based on level) (+ 20% AP) magic damage and Slow icon slowing by 40%, decaying over 1 second, to the first units hit (40 second cooldown, shared with other Hextech items).'
+        'UNIQUE – FROST BOLT: After a small delay, fires a spray of five icy bolts in a cone, which each bolt dealing 100 - 200 (based on level) (+ 20% AP) magic damage and Slow icon slowing by 65%, decaying over 1 second, to the first units hit (40 second cooldown, shared with other Hextech items).'
       ]
     },
 
