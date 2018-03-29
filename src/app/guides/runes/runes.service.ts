@@ -25,6 +25,8 @@ export class RunesService {
     return this.runeDescription = !this.runeDescription;
   }
 
+  /****** UPDATED PATCH 8.5 ******/
+
   domination = {
     primaryImage: this.basePath + "domination/domination-main.png",
     name: "domination",

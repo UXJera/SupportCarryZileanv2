@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class ItemsService implements OnInit {
 
-  /***** ITEMS UPDATED IN PATCH 8.4 *****/
+  /***** ITEMS UPDATED IN PATCH 8.6 *****/
 
   imageFolder = './assets/images/items/';
 
@@ -24,7 +24,7 @@ export class ItemsService implements OnInit {
       ],
       passive: [
         'UNIQUE – ETERNITY: Restore mana equal to 15% of damage taken from champions. Restore health equal to 20% of mana spent, up to 25 health per cast, while toggle abilities can heal for up to 25 per second.',
-        'UNIQUE AURA: Nearby enemy champions take 10% more magic damage (700 range).'
+        'UNIQUE AURA: Nearby enemy champions take 15% more magic damage (325 range).'
       ],
       active: []
     },
@@ -418,7 +418,7 @@ export class ItemsService implements OnInit {
       itemCode: 3030,
       link: 'http://leagueoflegends.wikia.com/wiki/Glp',
       img: this.imageFolder + 'hextech-glp.png',
-      price: 3000,
+      price: 2800,
       stats: [
         '+80 ability power',
         '+10% cooldown reduction',
@@ -800,7 +800,7 @@ export class ItemsService implements OnInit {
         'UNIQUE – HASTE: Grants an additional 10% cooldown reduction.',
         'UNIQUE – AWE: Grants bonus ability power equal to 3% maximum mana. Refunds 25% of mana spent.'
       ],
-      active: ['UNIQUE – MANA SHIELD: Drains 20% of your current mana to shield yourself for an equal amount plus 150 for 3 seconds (120 second cooldown).']
+      active: ['UNIQUE – MANA SHIELD: Drains 15% of your current mana to shield yourself for an equal amount plus 150 for 2 seconds (120 second cooldown).']
     },
 
     sorcerersShoes: {
@@ -845,7 +845,6 @@ export class ItemsService implements OnInit {
       ],
       passive: [
         'UNIQUE – TRIBUTE: Grants a charge every 10 seconds, up to 3 charges. Damaging spells and attacks against champions and buildings consume a charge, up to one per attack or cast. Consuming a charge deals them 13 bonus magic damage and grants 10 Gold. Killing a minion or non-epic monster pauses Tribute generation for 12 seconds per unit slain.',
-        'UNIQUE – BANDIT: Grants Bandit mastery 2016 Bandit.'
       ],
       active: []
     },
