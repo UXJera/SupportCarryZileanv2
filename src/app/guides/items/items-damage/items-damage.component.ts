@@ -30,8 +30,8 @@ export class ItemsDamageComponent implements OnInit {
     this.itemBuildEarly = [
       this.items.frostfang,
       this.items.boots,
-      this.items.lostChapter,
-      this.items.tearOfTheGoddess
+      this.items.tearOfTheGoddess,
+      this.items.lostChapter      
     ];
     this.itemBuildMid = [
       this.items.frostfang,
