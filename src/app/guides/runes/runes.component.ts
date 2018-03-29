@@ -9,6 +9,11 @@ import { Guide } from '../guide.model';
 })
 export class RunesComponent implements OnInit {
 
+  article = {
+    title: 'Runepage Setup',
+    updated: 'Patch 8.6'
+  };
+
   componentSelected;
 
   itemGuides: Guide[] = [
@@ -38,11 +43,6 @@ export class RunesComponent implements OnInit {
     }
     this.componentSelected = value.index;
     value.selected = true;
-  };
-
-  article = {
-    title: 'Runepage Setup',
-    updated: 'Patch 8.4'
   };
 
   ngOnInit() {

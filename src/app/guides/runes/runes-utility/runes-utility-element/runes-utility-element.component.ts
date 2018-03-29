@@ -14,7 +14,7 @@ export class RunesUtilityElementComponent implements OnInit {
 
   constructor(private runesService: RunesService) {
     this.primaryUtilityRune = this.runesService.sorcery;
-    this.secondaryUtilityRune = this.runesService.domination;
+    this.secondaryUtilityRune = this.runesService.inspiration;
   }
 
   public toggleDescription = false;

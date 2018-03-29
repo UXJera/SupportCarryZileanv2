@@ -19,7 +19,7 @@ export class ItemsDamageElementComponent implements OnInit {
   ngOnInit() {
     this.itemBuild = [
       this.items.eyeOfTheWatchers,
-      this.items.archangelsStaff,
+      this.items.seraphsEmbrace,
       this.items.morellonomicon,
       this.items.rabadonsDeathcap,
       this.items.controlWard,

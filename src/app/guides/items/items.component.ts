@@ -13,6 +13,11 @@ import { ItemsService } from './items.service';
 })
 export class ItemsComponent implements OnInit, OnChanges {
 
+  article = {
+    title: 'Item Builds',
+    updated: 'Patch 8.6'
+  };
+
   items: any;
 
   constructor(private itemsService: ItemsService) {
@@ -37,11 +42,6 @@ export class ItemsComponent implements OnInit, OnChanges {
     this.componentSelected = value.index;
     value.selected = true;
   }
-
-  article = {
-    title: 'Item Builds',
-    updated: 'Patch 8.4'
-  };
 
   ngOnInit() {
   }

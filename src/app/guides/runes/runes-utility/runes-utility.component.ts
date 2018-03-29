@@ -13,7 +13,7 @@ export class RunesUtilityComponent implements OnInit {
 
   constructor(private runesService: RunesService) {
     this.primaryRune = this.runesService.sorcery;
-    this.secondaryRune = this.runesService.domination;
+    this.secondaryRune = this.runesService.inspiration;
 
     //API CALL IF NEEDED
 

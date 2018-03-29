@@ -19,7 +19,8 @@ export class ItemsUtilityElementComponent implements OnInit {
   ngOnInit() {
     this.itemBuild = [
       this.items.eyeOfAscention,
-      this.items.ardentCenser,
+      this.items.seraphsEmbrace,
+      //this.items.ardentCenser,
       this.items.redemption,
       this.items.locketOfTheIronSolari,
       this.items.controlWard,

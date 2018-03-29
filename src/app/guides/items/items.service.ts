@@ -803,6 +803,21 @@ export class ItemsService implements OnInit {
       active: ['UNIQUE – MANA SHIELD: Drains 15% of your current mana to shield yourself for an equal amount plus 150 for 2 seconds (120 second cooldown).']
     },
 
+    shurelyasReverie: {
+      name: 'Shurelya\'s Reverie',
+      itemCode: 3069,
+      link: 'http://leagueoflegends.wikia.com/wiki/Sorcerer\'s_Shoes',
+      img: this.imageFolder + 'sorcerers-shoes.png',
+      price: 1100,
+      stats: [
+        '+40 ability power',
+        'UNIQUE: +10% cooldown reduction',
+        '+200 health',
+      ],
+      passive: ['UNIQUE: +8% movement speed.'],
+      active: ['UNIQUE: Grants yourself and nearby allies 40% bonus movement speed for 3 seconds (60 second cooldown).']
+    },
+
     sorcerersShoes: {
       name: 'Sorcerer\'s Shoes',
       itemCode: 3020,

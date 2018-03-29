@@ -19,7 +19,7 @@ export class ItemsHybridElementComponent implements OnInit {
   ngOnInit() {
     this.itemBuild = [
       this.items.eyeOfTheWatchers,
-      this.items.archangelsStaff,
+      this.items.seraphsEmbrace,
       this.items.redemption,
       this.items.locketOfTheIronSolari,
       this.items.controlWard,

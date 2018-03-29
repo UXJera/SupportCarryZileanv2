@@ -239,119 +239,111 @@ export class RunesService {
       ]
     }
 
-    resolve = {
-      primaryImage: this.basePath + "resolve/resolve-main.png",
-      name: "resolve",
-      keystone: [
-        {
-          name: "Grasp of the Undying",
-          image: this.basePath + "resolve/resolve-keystone-1.png",
-          description: "Every 4s your next attack on a champion deals bonus magic damage, heals you, and permanently increases your health.",
-          highlightPrimary: false,
-          comments: ""
-        },
-        {
-          name: "Aftershock",
-          image: this.basePath + "resolve/resolve-keystone-2.png",
-          description: "After immobilizing an enemy champion gain defenses and later deal a burst of adaptive damage around you.",
-          highlightPrimary: false,
-          comments: ""
-        },
-        {
-          name: "Guardian",
-          image: this.basePath + "resolve/resolve-keystone-3.png",
-          description: "Guard allies you cast spells on and those that are very nearby. If you or a guarded ally would take damage, you're both hasted and granted a shield.",
-          highlightPrimary: true,
-          comments: "Guardian is a simple keystone that provides a small shield to both you and your closest ally if you take damage. This also can be triggered when you speed boost an ally at low health. Many opponents underestimate the shield absorption and fail to execute on an all-in."
-        }
-      ],
-      slot1: [
-        {
-          name: "Demolish",
-          image: this.basePath + "resolve/resolve-slot-1-1.png",
-          description: "Charge up a powerful attack against a tower while near it.",
-          highlightPrimary: false,
-          highlightSecondary: false,
-          comments: ""
-        },
-        {
-          name: "Font of Life",
-          image: this.basePath + "resolve/resolve-slot-1-2.png",
-          description: "Imparing the movement of an enemy champion marks them. Your allies heal when attacking champions you've marked.",
-          highlightPrimary: true,
-          highlightSecondary: true,
-          comments: "Font of Life is the most practical of the three choices, and also provides an outlet for <img class=\"image-inline-sm\" src=\"./assets/images/items/ardent-censer.png\" alt=\"Ardent Censer Icon\"/> Ardent Censer (similar to Stoneborn Pact / Ardent Censer from Season 7)."
-        },
-        {
-          name: "Bone Plating",
-          image: this.basePath + "resolve/resolve-slot-1-3.png",
-          description: "After taking damage from an enemy champion, the next 3 spells or attacks against you recieve from the enemy deal less damage.",
-          highlightPrimary: false,
-          highlightSecondary: false,
-          comments: ""
-        },
-      ],
-      slot2: [
-        {
-          name: "Iron Skin",
-          image: this.basePath + "resolve/resolve-slot-2-1.png",
-          description: "Gain 5 Armor. Heals, including consumables, increase your Armor by 5% temporarily.",
-          highlightPrimary: false,
-          highlightSecondary: false,
-          comments: "In general, Iron Skin will give you the most value in the early laning phase because AD damage is more prevalent than AP. This is typically the best choice from this row."
-        },
-        {
-          name: "Mirror Shell",
-          image: this.basePath + "resolve/resolve-slot-2-2.png",
-          description: "Gain 6 Magic Resist. Heals, incluidng consumables, increase your Magic Resist by 5% temporarily.",
-          highlightPrimary: false,
-          highlightSecondary: false,
-          comments: "Mirror Shell is the MR equivalent to Iron Skin, and should only be taken against heavy AP poke lanes, such as <img class=\"image-inline-sm\" src=\"./assets/images/champions/karma.png\" alt=\"Karma Icon\"/> Karma and <img class=\"image-inline-sm\" src=\"./assets/images/champions/brand.png\" alt=\"Brand Icon\"/> Brand."
-        },
-        {
-          name: "Conditioning",
-          image: this.basePath + "resolve/resolve-slot-2-3.png",
-          description: "After 10 min gain +8 Armor and +8 Magic Resist and increase your Armor and Magic Resist by 5%.",
-          highlightPrimary: false,
-          highlightSecondary: false,
-          comments: "Conditioning gives you the most value in this tree after 10 minutes. If you are playing reactively, this is the better of the runes in this row."
-        },
-        {
-          name: "Second Wind",
-          image: this.basePath + "resolve/resolve-slot-2-4.png",
-          description: "After taking damage from an enemy champion heal back some of your missing health over time.",
-          highlightPrimary: true,
-          highlightSecondary: false,
-          comments: "Second Wind does a surprising amount of healing and is great against poke lanes, or if you are trading often. This talent usually equates to the healing of an extra potion before your first back."
-        }
-      ],
-      slot3: [
-        {
-          name: "Overgrowth",
-          image: this.basePath + "resolve/resolve-slot-3-1.png",
-          description: "Gain additional permanent max health when minions or monsters die near you.",
-          highlightPrimary: false,
-          highlightSecondary: false,
-          comments: ""
-        },
-        {
-          name: "Revitalize",
-          image: this.basePath + "resolve/resolve-slot-3-2.png",
-          description: "Heals and shields are 5% stronger and increased by an additional 10% on low health targets.",
-          highlightPrimary: true,
-          highlightSecondary: false,
-          comments: "Of the choices in this tree, this is the slightly better talent because it empowers your ultimate's heal and your Guardian shield."
-        },
-        {
-          name: "Unflinching",
-          image: this.basePath + "resolve/resolve-slot-3-3.png",
-          description: "After casting a Summoner Spell, gain Tenacity and Slow Resistance for a short duration. Additionally, gain Tenacity and Slow Resistance for each Summoner Spell on cooldown.",
-          highlightPrimary: false,
-          highlightSecondary: false,
-          comments: ""
-        }
-      ]
-    }
+  resolve = {
+    primaryImage: this.basePath + "resolve/resolve-main.png",
+    name: "resolve",
+    keystone: [
+      {
+        name: "Grasp of the Undying",
+        image: this.basePath + "resolve/resolve-keystone-1.png",
+        description: "Every 4s your next attack on a champion deals bonus magic damage, heals you, and permanently increases your health.",
+        highlightPrimary: false,
+        comments: ""
+      },
+      {
+        name: "Aftershock",
+        image: this.basePath + "resolve/resolve-keystone-2.png",
+        description: "After immobilizing an enemy champion gain defenses and later deal a burst of adaptive damage around you.",
+        highlightPrimary: false,
+        comments: ""
+      },
+      {
+        name: "Guardian",
+        image: this.basePath + "resolve/resolve-keystone-3.png",
+        description: "Guard allies you cast spells on and those that are very nearby. If you or a guarded ally would take damage, you're both hasted and granted a shield.",
+        highlightPrimary: true,
+        comments: "Guardian is a simple keystone that provides a small shield to both you and your closest ally if you take damage. This also can be triggered when you speed boost an ally at low health. Many opponents underestimate the shield absorption and fail to execute on an all-in."
+      }
+    ],
+    slot1: [
+      {
+        name: "Demolish",
+        image: this.basePath + "resolve/resolve-slot-1-1.png",
+        description: "Charge up a powerful attack against a tower while near it.",
+        highlightPrimary: false,
+        highlightSecondary: false,
+        comments: ""
+      },
+      {
+        name: "Font of Life",
+        image: this.basePath + "resolve/resolve-slot-1-2.png",
+        description: "Imparing the movement of an enemy champion marks them. Your allies heal when attacking champions you've marked.",
+        highlightPrimary: true,
+        highlightSecondary: true,
+        comments: "Font of Life is the most practical of the three choices, and also provides an outlet for <img class=\"image-inline-sm\" src=\"./assets/images/items/ardent-censer.png\" alt=\"Ardent Censer Icon\"/> Ardent Censer (similar to Stoneborn Pact / Ardent Censer from Season 7)."
+      },
+      {
+        name: "Bone Plating",
+        image: this.basePath + "resolve/resolve-slot-1-3.png",
+        description: "After taking damage from an enemy champion, the next 3 spells or attacks against you recieve from the enemy deal less damage.",
+        highlightPrimary: false,
+        highlightSecondary: false,
+        comments: ""
+      },
+    ],
+    slot2: [
+      {
+        name: "Conditioning",
+        image: this.basePath + "resolve/resolve-slot-2-1.png",
+        description: "After 10 min gain +8 Armor and +8 Magic Resist and increase your Armor and Magic Resist by 5%.",
+        highlightPrimary: false,
+        highlightSecondary: false,
+        comments: "Conditioning gives you the most value in this tree after 10 minutes. If you are playing reactively, this is the better of the runes in this row."
+      },
+      {
+        name: "Second Wind",
+        image: this.basePath + "resolve/resolve-slot-2-2.png",
+        description: "After taking damage from an enemy champion heal back some of your missing health over time.",
+        highlightPrimary: true,
+        highlightSecondary: false,
+        comments: "Second Wind does a surprising amount of healing and is great against poke lanes, or if you are trading often. This talent usually equates to the healing of an extra potion before your first back."
+      },
+      {
+        name: "Chrysalis",
+        image: this.basePath + "resolve/resolve-slot-2-3.png",
+        description: "Start the game with an extra 60 health. At 4 takedowns, consume that health to gain adaptive bonus.",
+        highlightPrimary: false,
+        highlightSecondary: false,
+        comments: ""
+      }
+    ],
+    slot3: [
+      {
+        name: "Overgrowth",
+        image: this.basePath + "resolve/resolve-slot-3-1.png",
+        description: "Gain additional permanent max health when minions or monsters die near you.",
+        highlightPrimary: false,
+        highlightSecondary: false,
+        comments: ""
+      },
+      {
+        name: "Revitalize",
+        image: this.basePath + "resolve/resolve-slot-3-2.png",
+        description: "Heals and shields are 5% stronger and increased by an additional 10% on low health targets.",
+        highlightPrimary: true,
+        highlightSecondary: false,
+        comments: "Of the choices in this tree, this is the slightly better talent because it empowers your ultimate's heal and your Guardian shield."
+      },
+      {
+        name: "Unflinching",
+        image: this.basePath + "resolve/resolve-slot-3-3.png",
+        description: "After casting a Summoner Spell, gain Tenacity and Slow Resistance for a short duration. Additionally, gain Tenacity and Slow Resistance for each Summoner Spell on cooldown.",
+        highlightPrimary: false,
+        highlightSecondary: false,
+        comments: ""
+      }
+    ]
+  }
 
     inspiration = {
       primaryImage: this.basePath + "inspiration/inspiration-main.png",
@@ -481,6 +473,13 @@ export class RunesService {
           name: "Fleet Footwork",
           image: this.basePath + "precision/precision-keystone-3.png",
           description: "Attacking and moving builds Energy stacks. At 100 stacks, your next attack heals you and grants increased MS.",
+          highlightPrimary: false,
+          comments: ""
+        },
+        {
+          name: "Conqueror",
+          image: this.basePath + "precision/precision-keystone-4.png",
+          description: "After 4 seconds in combat, your first attack against an enemy champion grants you AD and converts some of your damage to true damage.",
           highlightPrimary: false,
           comments: ""
         }

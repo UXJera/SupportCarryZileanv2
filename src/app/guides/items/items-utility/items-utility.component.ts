@@ -30,17 +30,18 @@ export class ItemsUtilityComponent implements OnInit {
     this.itemBuildEarly = [
       this.items.nomadsMedallion,
       this.items.boots,
-      this.items.faerieCharm,
+      this.items.tearOfTheGoddess,
     ];
     this.itemBuildMid = [
       this.items.remnantOfTheAscended,
-      this.items.ardentCenser,
+      this.items.tearOfTheGoddess,
       this.items.redemption,
       this.items.bootsOfMobility,
       this.items.sweeper
     ];
     this.itemBuildOptional = [
       this.items.mikaelsCrucible,
+      this.items.ardentCenser,
       this.items.knightsVow,
       this.items.bannerOfCommand,
       this.items.athenesUnholyGrail,
