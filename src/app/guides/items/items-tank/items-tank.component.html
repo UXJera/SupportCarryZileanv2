@@ -1,1 +1,61 @@
-<h4>Tank Item Build Overview</h4>
+<div class="article-container">
+  <h4>Tank Item Build Overview</h4>
+  <app-items-tank-element></app-items-tank-element>
+
+  <h5>Build Objectives:</h5>
+  <p>Building tanky on Zilean usually means that you want to survive teamfights and play closer to the front line. This allows you to have safer engagments with Righteous Glory + Time Warp on yourself.</p>
+  <p>This build does not do much damage, but does an excellent job being a Crowd Control threat.</p>
+
+  <div class="">
+    <h5>Starting Items</h5>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuildStart">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
+      </li>
+    </ul>
+    <p>Coin is the best option because you will be playing reactively in lane, meaning that you will not be the aggressor. Your goal is to survive lane and get enough of an income to buy defensive items.</p>
+  </div>
+  <div class="">
+    <h5>Early Game Items</h5>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuildEarly">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
+      </li>
+    </ul>
+    <p>Upgrade your Coin on your first back then start working towards a Glacial Shroud for the extra mana and CDR. This should help you take a few hits from the enemy ADC.</p>
+  </div>
+
+  <div class="">
+    <h5>Mid Game Core Items</h5>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuildMid">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
+      </li>
+    </ul>
+    <p>Righteous Glory is a great item for creating a pick, and most people don't expect Zilean speeding in at over 700 MS with a plethora of slows. Knight's Vow is a great defensive item to protect a carry, and also gives you CDR and life to survive even longer.</p>
+  </div>
+
+  <div class="">
+    <h5>End Game Items (Full Tank)</h5>
+    <app-items-tank-element></app-items-tank-element>
+    <p>Wrapping the build out with a Locket of the Iron Solari is a great idea because you have a decent amount of extra health to make the shield larger. These tanky items give you a much higher chance to escape from a fight, and encourage you to use your ultimate on carries rather than yourself.</p>
+  </div>
+
+  <div class="">
+    <h5>Optional Utility Items</h5>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuildOptional">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
+      </li>
+    </ul>
+    <p>Rounding out the build you can pick up a utility item that offers a small amount of defense. Remember that the item you select should be dependent on how the game is going and what your teams needs from you.</p>
+  </div>
+</div>

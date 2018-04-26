@@ -1,0 +1,28 @@
+@import '~scss/components/mixins/index';
+
+.btn-center {
+  margin: 1em auto;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  color:$white;
+}
+
+.descHighlight {
+  padding: 1em;
+  color:black;
+  background: $fade-bg;
+  box-shadow: 0 0 10px 10px $yellow;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 700px){
+  .masteryItem {
+    padding: .5em 2em;
+    img {
+      width: 75px;
+    }
+  }
+}

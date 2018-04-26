@@ -1,11 +1,64 @@
 <h4>Q - Time Bomb</h4>
-<p>A brief description of the abtility</p>
 
-<p>Chart that shows the changes over ranks goes here.</p>
+<div class="spell-description">
+  <p><span>Spell Description: </span> Zilean throws a ticking time bomb to the target location that detonates after 3 seconds, dealing magic damage to all surrounding enemies.</p>
+  <p>	If a unit is near a Time Bomb as it lands or has already landed, they pick it up and become the holder, causing it to detonate at their location at the end of its duration.</p>
+  <p>If a bomb holder picks up another Time Bomb, the first bomb immediately detonates and briefly stuns all affected enemies.</p>
+  <div class="spell-row">
+    <div class="half-row">
+      <img src="./assets/images/skills/time-bomb-range.jpg">
+    </div>
+    <div class="text-center half-row">
+        <p><span>Range: </span> <br><span class="red-text">900 (skillshot)</span><br><span class="blue-text">300 (blast radius)</span><br><span class="yellow-text">100 (bomb attach radius)</span></p>
+      <p><span>Cast Delay: </span> .25 second animation of casting</p>
+      <p><span>Travel Delay:</span> .5 seconds at max range</p>
+      <p class="text-center"><span>Bombs attach to targets in order of priority:</span></p>
+      <ul>
+        <li>Any Unit Carrying a Bomb</li>
+        <li>Enemy Champions</li>
+        <li>Allied Champions</li>
+        <li>Enemy Minions</li>
+        <li>Allied Minions</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-<h5>Time Bomb: Mechanics</h5>
-<p>Talk about the mechanics of the spell: the out-of-combat timer, the circle below allies, the channel time.</p>
+<h6>Time Bomb Spell Rank Information</h6>
 
-<p>This is where you could add some video element that demonstrates the different ways that you can use Time Bomb</p>
+<div class="spell-table">
+  <table>
+    <tr>
+      <th>Rank</th>
+      <th>Mana Cost</th>
+      <th>Damage</th>
+      <th>Cooldown</th>
+      <th>Stun</th>
+    </tr>
+    <tr *ngFor="let row of spellData">
+      <td>Rank {{row.rank}}</td>
+      <td>{{row.mana}}</td>
+      <td>{{row.baseDamage}} + ({{row.apRatio}} * AP)</td>
+      <td>{{row.cooldown}} sec</td>
+      <td>{{row.stun}} sec</td>
+    </tr>
+  </table>
+</div>
 
-<p>Mana Conservation</p>
+<h5>Time Bomb</h5>
+<p>Time Bomb is a versatile spell that can deal damage, stun multiple targets, or zone areas. Even a single Time Bomb can deliver a considerable amount of damage in the early game.</p>
+<p>There are several applications that you can use Double Bomb with that may seem unintuitive:</p>
+
+<h6>Double Bomb onto Minions to Trigger Stun on Champion</h6>
+
+<h6>Double Bomb onto Allies to Trigger Stun</h6>
+
+<h6>Self-Double Bomb to Stun Enemies On You</h6>
+<p>You can do a fancy play by throwing the Bomb on yourself, tossing the second bomb, and flashing into it to detonate.</p>
+
+<h6>Triple Bomb / Chain Stun w/ Buffering</h6>
+<p>This is one of the hardest tricks to use effectively. The gist is that you have enough CDR and spell ranks to keep Rewind on 100% cooldown while holding the detonation throw of Time Bomb until the end of the Time Bomb on the Target. This video goes more in-depth about how exactly it works.</p>
+
+<h5>Mana Conservation</h5>
+<p>The best strategy for conserving mana is to <span>not throw Double Bombs unless you are guaranteed a kill or disengaging.</span> Using Single Bombs to poke is can give you lane pressure.</p>
+<p>And remember, if you are doing to Double Bomb, always try to land a slow first so you have a better chance of landing the stun.</p>

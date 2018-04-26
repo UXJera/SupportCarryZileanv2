@@ -1,0 +1,54 @@
+State of Support Zilean -> Patch 8.2:
+
+Pro Meta
+
+Protect the ADC is the professional meta, with Double and Triple Tanks
+  - Zilean performs very well in this meta because he does a great job oppressing tanks
+  - Zilean can also build utility and serve as the "Enchantress" role for the team.
+  - Works very well w Caitlyn ADC (and Jinx in 8.2)
+
+Lanes are very safe, even after the Relic Shield meta (now the spellbook meta.) Since Zilean's weakest point is the early game, the passivity makes it easy to transition into mid game while building utility and without being punished too much.
+
+Solo Q Meta
+  - Hypercarry ADCs (Kog/Jinx/Vayne to a degree) to combat Tanks
+    > Things we like: Slow, No-Gap-Close ADCS that do loads of damage
+    > Things we don't like: Poke and super mobile ADCs
+  - Sustain Supports or Tank Supports, very few poke supports
+
+Zilean does well in my elo, which is mid Plat for the season start. He's a viable pick ranging from Silver to Diamond.
+
+Support Item Changes
+  - Supports have a higher income in the early game, but lower durability.
+  - Frostfang is important to upgrade, but not a mandatory first-back-buy
+  - Tear is still an OK buy if you have mana issues, I prefer Lost Chapter or Forbidden Idol
+
+Be sure to check your Frostfang at 400 stacks and swap trinkets
+
+The support item changes do change the dynamic of bottom lane, but its the same as before; just with less health from a base Sightstone earlier on. This does make bottom lane more volatile.
+
+Item Build Changes
+    - Upgrading Frostfang to Watchers is now a luxury choice (+650g for 1 ward)
+    - Tear tends to be a little awkward in late game because of it's upgrade price, often times I end up just selling it for a situational item
+    - I've had better results with Utility than Damage
+      > Utility scales better for ADC/teamfighting
+      > Damage is better if you completely destroy your lane, they have no tanks, or you lack a AP damage threat. In a normal situation, a Locket is more impactful than an extra 100 dmg per bomb on a tank.
+
+Mastery Changes
+  Primary:
+  - Aery is good, Comet is good, Spellbook is alright
+    - Aery for utility
+    - Comet for damage
+    - Spellbook if you don't think you'll need Exhaust for teamfights
+
+  Secondary:
+  - Sorcery: Manaflow Band > Ultimate Hat
+    > MFB gives more mana, Ultimate Hat shaves off ~4 seconds from ult CD.
+  - Domination: Zombie Ward + Ingenious Hunter for Activatable Items
+  - Inspiration: Stopwatch / Future Debt or Boots / +5 CDR to all, your choice depending on how you play.
+    > Personally not a fan of Stopwatch because it only builds into Zhonya.
+  - Resolve: Font of Life and Second Wind if you're playing utility, good for easing into mid game vs hard lanes.
+
+8.2 Tier Ranking: B+
+  - Item changes help advance your build
+  - More Passive meta helps get to mid game in good shape
+  - Favorable ADC Meta

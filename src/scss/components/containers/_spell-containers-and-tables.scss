@@ -1,0 +1,55 @@
+@import '~scss/components/mixins/index';
+
+.spell-description {
+  background: $fade-bg;
+  @include border-shadow;
+  padding: 1em;
+	margin-bottom: 1em;
+}
+
+.spell-table {
+	width: 95%;
+	@include border-shadow;
+	@include white-gradient;
+	overflow:hidden;
+	display: flex;
+	margin: 1em auto;
+
+	table {
+		width: 100%;
+		text-align:center;
+
+		tbody {
+			overflow:hidden;
+		}
+
+		tr {background: $light;}
+		tr:nth-of-type(odd){background: $fade-bg;}
+		tr:nth-of-type(1){background: $time-warp-blue-bg;}
+		th { color: $white; font-weight: 700;}
+		td {font-size: .95em;}
+
+		th, td {
+			border: 1px solid $dark;
+			text-align: center;
+		}
+	}
+}
+
+.spell-row {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	img {
+		width: 100%;
+		max-width: 450px;
+		@include border-shadow;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.half-row {max-width: 45%;}
+	.skill-table {
+		width: 75%;
+	}
+}

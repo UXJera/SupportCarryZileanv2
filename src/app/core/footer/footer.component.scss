@@ -1,10 +1,9 @@
 @import '~scss/components/mixins/index';
 
-
-
 .footer {
   @include blue-dark-gradient;
   display: flex;
+  padding-left: 1em;
   ul {
     list-style: none;
     display: flex;

@@ -7,7 +7,7 @@ import { GuidesComponent } from './guides.component';
 
 import { ItemsComponent } from './items/items.component';
 import { RunesComponent } from './runes/runes.component';
-import { SpellsComponent }  from './spells/spells.component';
+import { SpellsComponent } from './spells/spells.component';
 import { PlaystyleComponent } from './playstyle/playstyle.component';
 import { MatchupsComponent } from './matchups/matchups.component';
 import { SkillOrderComponent } from './skill-order/skill-order.component';
@@ -23,7 +23,7 @@ const guidesRoutes: Routes = [
     {path: 'guides/matchups', component: MatchupsComponent},
     {path: 'guides/skill-order', component: SkillOrderComponent},
   ]},
-]
+];
 
 @NgModule({
   imports: [RouterModule.forChild(guidesRoutes)],

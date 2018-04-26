@@ -1,23 +1,27 @@
 <div class="content-container">
   <div class="container">
-    <div class="w-100">
-      <ul class="nav justify-content-center align-items-center guides-nav">
-        <li *ngFor="let item of itemList; let i of index" class="nav-item">
-          <a (click)="onSelect(item)">{{item.name}}</a>
+    <!-- <div class="w-100"> -->
+    <div>
+      <ul class="guides-nav">
+        <li *ngFor="let item of itemGuides; let i of index" [ngClass]="{selected: item.selected === true}"  class="skill-nav">
+          <a (click)="onSelect(item)">
+            <!-- {{item.name}} -->
+          <img src="{{item.img}}" alt="{{item.name}}" title="{{item.name | titlecase }}" />
+        </a>
         </li>
       </ul>
     </div>
   <div class="article-heading" *ngIf="componentSelected === undefined">
     <h2>{{ article.title }}</h2>
-    <h6>Last Updated: {{ article.updated }}</h6>
-    <div>This is an empty container that only shows up if the Item Component is not loaded.</div>
+    <h6>Updated: {{ article.updated }}</h6>
+    <!-- <div>This is an empty container that only shows up if the Item Component is not loaded.</div> -->
   </div>
 
-    <app-spells-p *ngIf="componentSelected === itemList[0].index"></app-spells-p>
-    <app-spells-q *ngIf="componentSelected === itemList[1].index"></app-spells-q>
-    <app-spells-w *ngIf="componentSelected === itemList[2].index"></app-spells-w>
-    <app-spells-e *ngIf="componentSelected === itemList[3].index"></app-spells-e>
-    <app-spells-r *ngIf="componentSelected === itemList[4].index"></app-spells-r>
+    <app-spells-p *ngIf="componentSelected === itemGuides[0].index"></app-spells-p>
+    <app-spells-q *ngIf="componentSelected === itemGuides[1].index"></app-spells-q>
+    <app-spells-w *ngIf="componentSelected === itemGuides[2].index"></app-spells-w>
+    <app-spells-e *ngIf="componentSelected === itemGuides[3].index"></app-spells-e>
+    <app-spells-r *ngIf="componentSelected === itemGuides[4].index"></app-spells-r>
 
   </div>
 </div>

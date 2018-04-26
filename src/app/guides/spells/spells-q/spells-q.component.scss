@@ -1,0 +1,7 @@
+@import '~scss/components/mixins/index';
+
+.spell-description {
+  background: $fade-bg;
+  @include border-shadow;
+  padding: 1em;
+}

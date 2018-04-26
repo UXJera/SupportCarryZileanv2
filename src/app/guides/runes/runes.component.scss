@@ -1,1 +1,17 @@
 @import '~scss/components/mixins/index';
+
+.article-heading {
+  .image-inline-md {
+    border-radius: 50%;
+    //background: $dark;
+    // Change this to a shadow?
+  }
+  a {
+    cursor: pointer;
+    font-size:1.2em;
+    @include transition;
+    &:hover {
+      color: $yellow;
+    }
+  }
+}

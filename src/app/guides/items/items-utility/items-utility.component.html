@@ -1,1 +1,84 @@
-<h4>Utility Item Build Overview</h4>
+
+<div class="article-container">
+  <h4>Utility Item Build Overview</h4>
+  <app-items-utility-element></app-items-utility-element>
+  <h5>Build Objectives:</h5>
+  <p>This item set-up is great for playing the "Tradtional" Support role, offers more utility than damage. The build excels if your team has enough damage deals (very common in SoloQ) and you need to push the team over across the line with extra heals, shields and the inherent utility that Zilean has to offer.</p>
+  <p>This build should help you become more comfortable with using active items (if you are not used to it).</p>
+
+  <div class="">
+    <h5>Starting Items</h5>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuildStart">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
+      </li>
+    </ul>
+    <p>This is a pretty generic start that gives you a little extra power in lane. If you are playing against a lane that has little pressure, start Refillable Potion; otherwise start 3 Potions.</p>
+    <p>You can switch out <a href="{{items.ancientCoin.link}}" target="_blank">
+      <img class="image-inline-sm"
+       src="{{items.ancientCoin.img}}"
+       alt="{{items.ancientCoin.name}}"
+       title="{{items.ancientCoin.name"/></a> Ancient Coin for
+     <a href="{{items.spellthiefsEdge.link}}">
+       <img class="image-inline-sm"
+       src="{{items.spellthiefsEdge.img}}"
+       alt="{{items.spellthiefsEdge.name}}"
+       title="{{items.spellthiefsEdge.name}}"/></a> Spellthief's Edge if you want to play more aggressively and bully the lane. Ancient Coin will give you more gold, but less pressure in lane.</p>
+  </div>
+  <div class="">
+    <h5>Early Game Items</h5>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuildEarly">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
+      </li>
+    </ul>
+    <p>On your first back, you should upgrade Support Item and pick up a <a href="{{items.tearOfTheGoddess.link}}" target="_blank">
+      <img class="image-inline-sm" src="{{items.tearOfTheGoddess.img}}" alt="{{items.tearOfTheGoddess.name}}"
+      title="{{items.tearOfTheGoddess.name}}"
+      /></a>
+       Tear of the Goddess. The extra mana will help you in lane and into the mid-game. You shouldn't be as concerned with damage, but the Tear gives you many more castable spells.</p>
+  </div>
+
+  <div class="">
+    <h5>Mid Game Core Items</h5>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuildMid">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
+      </li>
+    </ul>
+    <p>You have the option to upgrade your Tear into <a href="{{items.archangelsStaff.link}}" target="_blank">
+      <img class="image-inline-sm" src="{{items.archangelsStaff.img}}" alt="{{items.archangelsStaff.name}}"
+      title="{{items.archangelsStaff.name}}"
+      /></a>Archangel's Staff or you can start working on <a href="{{items.redemption.link}}" target="_blank">
+        <img class="image-inline-sm" src="{{items.redemption.img}}" alt="{{items.redemption.name}}"
+        title="{{items.redemption.name}}"
+        /></a> Redemption. Alternatively, if you want to be even more utility focused and have a high attack speed AD Carry, try building <a href="{{items.ardentCenser.link}}" target="_blank">
+          <img class="image-inline-sm" src="{{items.ardentCenser.img}}" alt="{{items.ardentCenser.name}}"
+          title="{{items.ardentCenser.name}}"
+          /></a> Ardent Censer.</p>
+  </div>
+
+  <div class="">
+    <h5>End Game Items (Full Utility)</h5>
+    <app-items-utility-element></app-items-utility-element>
+    <p>Once you have completed Redemption, your next item will be Locket of the Iron Solari. The defensive stats and active from Locket help improve your personal survival and helps soak teamfight damage when used properly. Hold off on upgrading the Frostfang for as long as you can, because the extra ward and stats are not as important.</p>
+  </div>
+
+  <div class="">
+    <h5>Optional Utility Items</h5>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuildOptional">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
+      </li>
+    </ul>
+    <p>These are defensive options that you can build depending on the enemy team composition. For instance, take Mikael's Crucible if the enemy team has an abundance of Crowd Control, or are looking for a single target to engage on (stopping the initial CC along with Time Warp should be enough to stop an enemy engage).</p>
+  </div>
+</div>

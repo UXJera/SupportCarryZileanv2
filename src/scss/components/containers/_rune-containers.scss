@@ -1,0 +1,89 @@
+
+.runeWrapper {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.runeContainer {
+  @include border-shadow;
+  overflow: hidden;
+  display: flex;
+  min-width: 40vw;
+  flex-direction: column;
+}
+
+.runeHeader {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color:white;
+  padding: 1em 0;
+}
+
+.runeRow {
+  display:flex;
+  justify-content: space-evenly;
+  &:nth-of-type(even) {
+    background: $fade-light-bg;
+  }
+  .runeItem {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5em;
+    flex:1;
+    img {
+      background:black;
+      border-radius: 50%;
+      margin: .5em 0;
+      filter: grayscale(85%);
+      &.highlight {
+        filter: grayscale(0%);
+        box-shadow: 0 0 10px 10px $yellow;
+      }
+    }
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  color:$white;
+}
+
+.descHighlight {
+  padding: 1em;
+  color:black;
+  background: $fade-bg;
+  box-shadow: 0 0 10px 10px $yellow;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 700px){
+  .runeItem {
+    padding: .5em 2em;
+    img {
+      width: 75px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px){
+  .runeContainer {
+    min-width: 35vw;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .runeContainer {
+    min-width: 30vw;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  .runeContainer {
+    min-width: 25vw;
+  }
+}

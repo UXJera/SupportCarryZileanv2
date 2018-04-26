@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Guide } from '../guide.model';
+
 @Component({
   selector: 'app-playstyle',
   templateUrl: './playstyle.component.html',
@@ -7,20 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlaystyleComponent implements OnInit {
 
-  itemList = [
-    { index: 0, name: 'aggressive', img: '' },
-    { index: 1, name: 'reactive', img: '' }
-  ];
+  article = {
+    title: 'Playstyles',
+    updated: 'Pre-Season 8'
+  };
 
   componentSelected;
 
-  onSelect(value) {
-    this.componentSelected = value.index;
-  }
+  itemGuides: Guide[] = [
+    new Guide(0, 'aggressive', ''),
+    new Guide(1, 'reactive', ''),
+  ];
 
-  article: Object = {
-    title: 'Playstyles',
-    updated: 'Pre-Season 8'
+  onSelect(value) {
+    for (const items of this.itemGuides) {
+      items.selected = false;
+    }
+    this.componentSelected = value.index;
+    value.selected = true;
   }
 
   constructor() { }

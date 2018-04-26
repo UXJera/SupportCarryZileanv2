@@ -6,6 +6,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ArticlesModule } from '../articles/articles.module';
 import { GuidesModule } from '../guides/guides.module';
 import { GameplayModule } from '../gameplay/gameplay.module';
+import { VideoContentModule } from '../video-content/video-content.module';
 import { SharedModule } from '../shared/shared.module';
 
 import { HomeComponent } from './home/home.component';
@@ -15,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 import { AboutComponent } from './about/about.component';
 
+import { ItemsService } from '../guides/items/items.service';
 
 @NgModule({
   imports: [
@@ -23,6 +25,7 @@ import { AboutComponent } from './about/about.component';
     GuidesModule,
     SharedModule,
     GameplayModule,
+    VideoContentModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
   ],
@@ -36,6 +39,9 @@ import { AboutComponent } from './about/about.component';
     AppRoutingModule,
     HeaderComponent,
     FooterComponent
+  ],
+  providers: [
+    ItemsService
   ]
 })
 export class CoreModule { }

@@ -1,3 +1,12 @@
 // See if this can be localized so that only children of guides have access to these classes
 
 @import '~scss/components/mixins/index';
+
+//
+a h5 {
+  cursor: pointer;
+  @include transition;
+  &:hover {
+    color: $yellow;
+  }
+}

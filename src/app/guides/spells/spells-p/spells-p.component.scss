@@ -1,0 +1,37 @@
+@import '~scss/components/mixins/index';
+
+// .spell-table {
+//   display:flex;
+//   background-color: green;
+//   flex-direction: column;
+//   thead>tr {
+//     background-color: red;
+//   }
+//   tbody, thead {
+//     tr {
+//       display: flex;
+//       justify-content: space-evenly;
+//     }
+//   }
+// }
+
+.skill-table {
+	width: 95%;
+	@include border-shadow;
+	@include white-gradient;
+	overflow:hidden;
+	table {
+		width: 100%;
+		text-align:center;
+		//overflow:hidden;
+		tr {background: $light;}
+		tr:nth-of-type(odd){background: $fade-bg;}
+		tr:nth-of-type(1){background: $time-warp-blue-bg;}
+		th { color: $white; font-weight: 700;}
+		td {font-size: .95em;}
+		th, td {
+			border: 1px solid $dark;
+			text-align: center;
+		}
+	}
+}

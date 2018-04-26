@@ -1,0 +1,64 @@
+import { Rune } from '../../rune.model';
+
+sorceryShortcut =  './assets/images/runes/icons/sorcery/'
+
+runeArrayPrimary = [
+  [ new Rune('Summon Aery', this.sorceryShortcut + 'sorcery-keystone-1.png',
+    'Your attack and abilities send Aery to a target, damaging enemies or shielding allies.'),
+    new Rune('Arcane Comet', this.sorceryShortcut + 'sorcery-keystone-2.png',
+    'Damaging a champion with an ability hurls a damaging comet at their location, or if Arcane Comet is on cooldown, reduces its remaining cooldown.'),
+    new Rune('Phase Rush', this.sorceryShortcut + 'sorcery-keystone-3.png',
+    'Hitting an enemy champion with 3 separate attacks or abilities grants a burst of MS.'),
+  ],
+  [
+    new Rune('Nullifying Orb', this.sorceryShortcut + 'sorcery-slot-1-1.png',
+    'Gain a magic damage shield when taken to low health by magic damage.'),
+    new Rune('Manaflow Band', this.sorceryShortcut + 'sorcery-slot-1-2.png',
+    'Periodically your next ability used has its mana cost refunded and restores some missing mana.'),
+    new Rune('The Ultimate Hat', this.sorceryShortcut + 'sorcery-slot-1-3.png',
+    'Your ultimate\'s cooldown is reduced. Each time you cast your ultimate, its cooldown is further reduced.'),
+  ],
+  [
+    new Rune('Transcendence', this.sorceryShortcut + 'sorcery-slot-2-1.png',
+    'Gain 10% CDR when you reach level 10. Excess CDR becomes AP or AD, adaptive.'),
+    new Rune('Celerity', this.sorceryShortcut + 'sorcery-slot-2-2.png',
+    'Gain 4% increased MS. Gain extra AP or AD, adaptive based on your bonus MS.'),
+    new Rune('Absolute Focus', this.sorceryShortcut + 'sorcery-slot-2-3.png',
+    'While above 70% health, gain extra adaptive damage.'),
+  ],
+  [
+    new Rune('Scorch', this.sorceryShortcut + 'sorcery-slot-3-1.png',
+    'Your first ability hit every 20s burns champions.'),
+    new Rune('Waterwalking', this.sorceryShortcut + 'sorcery-slot-3-2.png',
+    'Gain SMS and AP or AD, adaptive in the river.'),
+    new Rune('Gathering Storm', this.sorceryShortcut + 'sorcery-slot-3-3.png',
+    'Gain increasing amounts of AD or AP, adaptive over the course of the game.'),
+  ],
+];
+
+runeArraySecondary = [
+  [
+    new Rune('Nullifying Orb', this.sorceryShortcut + 'sorcery-slot-1-1.png',
+    'Gain a magic damage shield when taken to low health by magic damage.'),
+    new Rune('Manaflow Band', this.sorceryShortcut + 'sorcery-slot-1-2.png',
+    'Periodically your next ability used has its mana cost refunded and restores some missing mana.'),
+    new Rune('The Ultimate Hat', this.sorceryShortcut + 'sorcery-slot-1-3.png',
+    'Your ultimate\'s cooldown is reduced. Each time you cast your ultimate, its cooldown is further reduced.'),
+  ],
+  [
+    new Rune('Transcendence', this.sorceryShortcut + 'sorcery-slot-2-1.png',
+    'Gain 10% CDR when you reach level 10. Excess CDR becomes AP or AD, adaptive.'),
+    new Rune('Celerity', this.sorceryShortcut + 'sorcery-slot-2-2.png',
+    'Gain 4% increased MS. Gain extra AP or AD, adaptive based on your bonus MS.'),
+    new Rune('Absolute Focus', this.sorceryShortcut + 'sorcery-slot-2-3.png',
+    'While above 70% health, gain extra adaptive damage.'),
+  ],
+  [
+    new Rune('Scorch', this.sorceryShortcut + 'sorcery-slot-3-1.png',
+    'Your first ability hit every 20s burns champions.'),
+    new Rune('Waterwalking', this.sorceryShortcut + 'sorcery-slot-3-2.png',
+    'Gain SMS and AP or AD, adaptive in the river.'),
+    new Rune('Gathering Storm', this.sorceryShortcut + 'sorcery-slot-3-3.png',
+    'Gain increasing amounts of AD or AP, adaptive over the course of the game.'),
+  ],
+];

@@ -1,0 +1,60 @@
+<div class="article-container">
+  <h4>Damage / Utility Hybrid Build Overview</h4>
+  <app-items-hybrid-element></app-items-hybrid-element>
+
+  <h5>Build Objectives:</h5>
+  <p>The Hybrid build has been a popular choice for high elo Zilean players that want both damage and utility in their kit. The build looks to be a lane bully and build a Morellonomicon as the first item, then transition into utility based items. The build also uses the Transcendence (Sorcery) Rune to add extra AP for going over the CDR cap.</p>
+
+  <div class="">
+    <h5>Starting Items</h5>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuildStart">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
+      </li>
+    </ul>
+    <p>The standard Spelltheif's Edge and 3 potions opener is recommended here.</p>
+  </div>
+  <div class="">
+    <h5>Early Game Items</h5>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuildEarly">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
+      </li>
+    </ul>
+    <p>Upgrading Frostfang should be your highest priority on back. If you have extra money, pick up a Mana Crystal to start working on your Last Chapter or Tear of the Goddess.</p>
+  </div>
+
+  <div class="">
+    <h5>Mid Game Core Items</h5>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuildMid">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
+      </li>
+    </ul>
+    <p>After finishing Archangel's Staff, your next item should either be Redemption or Locket of the Iron Solari, depending on the enemy composition. You shouldn't need to upgrade Frostfang yet, unless you are having trouble keeping vision up and need the 4th ward.</p>
+  </div>
+
+  <div class="">
+    <h5>End Game Items (Hybrid)</h5>
+    <app-items-hybrid-element></app-items-hybrid-element>
+    <p>Once you have your second utility item, you can upgrade your Frostfang to Remnant of the Watchers. With this build, you should be well-rounded for having damage AND utility for group fighting.</p>
+  </div>
+
+  <div class="">
+    <h5>Optional Items</h5>
+    <ul class="item-build-container">
+      <li *ngFor="let item of itemBuildOptional">
+        <a href="{{item.link}}" target="_blank">
+          <img src="{{item.img}}" alt="{{item.name}}" [ngClass]="{optional: item.optional}"/>
+        </a>
+      </li>
+    </ul>
+    <p>From here, you have your choice on what item you may need to win the game. I tend to play on the defensive and utility side of things, but more damage items might work better for you.</p>
+  </div>
+</div>

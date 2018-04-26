@@ -1,3 +1,33 @@
-<p>
-  spells-e works!
-</p>
+<h4>E - Time Warp</h4>
+
+<div class="spell-description">
+  <p>	<span>Range: </span> 550</p>
+  <p>	<span>Spell Description: </span>Zilean bends time around the target champion, slowing them if they are an enemy or granting them bonus movement speed if they are an ally for 2.5 seconds.</p>
+  <p>112 movement speed is the absolute minimum that Time Warp can slow.</p>
+</div>
+
+<h6>Time Warp Spell Rank Information</h6>
+
+<div class="spell-table">
+  <table>
+    <tr>
+      <th>Rank</th>
+      <th>Mana Cost</th>
+      <th>Slow / Haste %</th>
+      <th>Cooldown</th>
+    </tr>
+    <tr *ngFor="let row of spellData">
+      <td>Rank {{row.rank}}</td>
+      <td>{{row.mana}}</td>
+      <td>{{row.slow}}%</td>
+      <td>{{row.cooldown}} sec</td>
+    </tr>
+  </table>
+</div>
+
+<h5>Time Bomb: Mechanics</h5>
+<p>Talk about the mechanics of the spell: the out-of-combat timer, the circle below allies, the channel time.</p>
+
+<p>This is where you could add some video element that demonstrates the different ways that you can use Time Bomb</p>
+
+<p>Mana Conservation</p>

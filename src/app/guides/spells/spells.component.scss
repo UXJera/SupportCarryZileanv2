@@ -1,0 +1,18 @@
+@import '~scss/components/mixins/index';
+
+.skill-nav {
+  margin: 1em;
+  img:hover {
+    @include transition;
+    @include border-shadow-glow;
+  }
+  img {
+    @include border-shadow;
+  }
+}
+
+.selected {
+   img {
+     @include border-shadow-glow;
+   }
+}

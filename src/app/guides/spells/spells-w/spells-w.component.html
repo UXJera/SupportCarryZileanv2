@@ -1,10 +1,27 @@
 <h4>W - Rewind</h4>
-<p>A brief description of the abtility</p>
 
-<p>Chart that shows the changes over ranks goes here.</p>
+<div class="spell-description">
+  <p>	<span>Spell Description: </span> Zilean reduces Time Bomb (Q) and Time Warp (E) cooldowns by 10 seconds.</p>
+</div>
 
-<h5>Rewind: Mechanics</h5>
-<p>Talk about the mechanics of the spell: When this can and cannot be used.</p>
+<h6>Rewind Spell Rank Information</h6>
+
+<div>
+
+  <div class="spell-table">
+    <table>
+      <tr>
+        <th>Rank</th>
+        <th>Mana Cost</th>
+        <th>Cooldown</th>
+      </tr>
+      <tr *ngFor="let row of spellData">
+        <td>Rank {{row.rank}}</td>
+        <td>{{row.mana}}</td>
+        <td>{{row.cooldown}} sec</td>
+      </tr>
+    </table>
+  </div>
 
 <h5>Rewind: When to Delay and When to Insta-cast</h5>
 <p>In most cases, you want to immediately use W when both E and Q are on cooldown. Or if you are not using Q, ALWAYS W after E.</p>

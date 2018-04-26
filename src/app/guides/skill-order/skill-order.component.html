@@ -1,3 +1,29 @@
-<p>
-  skill-order works!
-</p>
+<div class="content-container">
+  <div class="container">
+    <div class="w-100">
+      <ul class="nav justify-content-center align-items-center guides-nav">
+        <li
+        *ngFor="let item of itemGuides; let i of index"
+        [ngClass]="{selected: item.selected === true}"
+        class="nav-item">
+          <a (click)="onSelect(item)" class="skill-order-adjustment">
+            <!-- <img src="{{item.img}}" alt="{{item.name}}" /> -->
+            {{item.name}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  <div class="article-heading" *ngIf="componentSelected === undefined">
+    <h2>{{ article.title }}</h2>
+    <h6>Updated: {{ article.updated }}</h6>
+    <p>Q Max is the most common skill-order for Zileans, but there are alternatives.</p>
+    <app-skill-q-max-element></app-skill-q-max-element>
+
+  </div>
+
+    <app-skill-q-max *ngIf="componentSelected === itemGuides[0].index"></app-skill-q-max>
+    <app-skill-hybrid *ngIf="componentSelected === itemGuides[1].index"></app-skill-hybrid>
+    <app-skill-e-max *ngIf="componentSelected === itemGuides[2].index"></app-skill-e-max>
+
+  </div>
+</div>

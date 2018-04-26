@@ -1,10 +1,9 @@
 .video-block {
 	@include white-gradient;
 	@include border;
-	margin: 1em 0;
 	max-width: 95%;
 	min-width: 95%;
-  margin: 0 auto;
+  margin: 1em auto 0;
 	@include box-shadow;
   overflow:hidden;
 	//& > * {margin: .5em 1em;} // Container for video
