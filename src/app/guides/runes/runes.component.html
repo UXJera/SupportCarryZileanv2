@@ -56,7 +56,7 @@
           {{itemGuides[2].name | titlecase}}</a>
         </span> - When you want survive and win by controlling champion mobility</li>
       <li>
-        <span>
+        <!-- <span>
           <img class="image-inline-md"
           [src]="dominationIcon"
           alt="Domination Icon"
@@ -67,14 +67,14 @@
           title="Sorcery"/>
           <a (click)="onSelect(itemGuides[3])">
           {{itemGuides[3].name | titlecase}}</a>
-        </span> - When you want win by pressuring side lanes and activated items</li>
+        </span> - When you want win by pressuring side lanes and activated items</li> -->
       </ul>
     </div>
   </div>
     <app-runes-offensive *ngIf="componentSelected === itemGuides[0].index"></app-runes-offensive>
     <app-runes-utility *ngIf="componentSelected === itemGuides[1].index"></app-runes-utility>
     <app-runes-defensive *ngIf="componentSelected === itemGuides[2].index"></app-runes-defensive>
-    <app-runes-split-push *ngIf="componentSelected === itemGuides[3].index"></app-runes-split-push>
+    <!-- <app-runes-split-push *ngIf="componentSelected === itemGuides[3].index"></app-runes-split-push> -->
 
 
   </div>

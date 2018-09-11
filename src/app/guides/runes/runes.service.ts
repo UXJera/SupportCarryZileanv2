@@ -129,7 +129,15 @@ export class RunesService {
           highlightPrimary: false,
           highlightSecondary: false,
           comments: ""
-        }
+        },
+        {
+          name: "Ultimate Hunter",
+          image: this.basePath + "domination/domination-slot-3-4.png",
+          description: "Unique takedowns grant permanent cooldown reduction on your Ultimate.",
+          highlightPrimary: false,
+          highlightSecondary: false,
+          comments: ""
+        },
       ]
     }
 
@@ -177,9 +185,9 @@ export class RunesService {
           comments: "Manaflow Band is incredible because it gives a free spell and returns a percentage of your empty mana every minute. This is crucial in lane where you don't have mana or mana regen items."
         },
         {
-          name: "The Ultimate Hat",
+          name: "Nimbus Cloak",
           image: this.basePath + "sorcery/sorcery-slot-1-3.png",
-          description: "Your ultimate's cooldown is reduced. Each time you cast your ultimate, its cooldown is further reduced.",
+          description: "Shortly after casting your Ultimate, gain a decaying movement speed increase that lasts for 2.5s and allows you to pass through units.",
           highlightPrimary: false,
           highlightSecondary: false,
           comments: ""
@@ -441,9 +449,9 @@ export class RunesService {
           comments: ""
         },
         {
-          name: "Celestial Body",
+          name: "Time Warp Tonic",
           image: this.basePath + "inspiration/inspiration-slot-3-3.png",
-          description: "+100 Health permanently. -10% damage to champions and monsters until 10 min.",
+          description: "Your potions, buscuits and elixirs last 20% longer, and you gain 5% Movement Speed while under their effects.",
           highlightPrimary: false,
           highlightSecondary: false,
           comments: ""

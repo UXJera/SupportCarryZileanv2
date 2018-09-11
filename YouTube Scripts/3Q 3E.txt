@@ -1,0 +1,36 @@
+3Q 3E
+
+Laning Advantages
+
+1) 3Q Gives you enough damage to be a threat in lane
+
+  Damage Chart - 0AP  |  10AP   |  20AP  | 30AP
+    Q Rank 1
+    Q Rank 2
+    Q Rank 3
+        *Assuming 24MR (base MR for most ADCS / Mages)
+
+2) 3Q 3E has a lower mana cost and higher accuracy
+
+  Every point into Q raises its cost by 5, and Zilean already has a constrained mana pool.
+  You should be poking with Single Bombs and trading with your EQWQ Combo. A stronger slow makes it harder to dodge the stun combo, which means a longer CC chain and higher damage output
+
+3) 3Q single bomb does NOT clear the caster wave, but leaves it with enough HP to die to a single auto
+
+  This helps you shove lane, while giving your bot lane partner an easier time to CS. Going up to 4 points will kill the caster wave
+
+
+Post - Lane Advantages
+
+It sets you up for a well-rounded midgame, even if you are behind
+
+2) 3E gives you extra mobility and strong pick potential
+
+    Around level 9, laning phase is over. The extra mobility helps for warding and moving around the map
+    Additionally, you have a 70% slow on a target, which guarantees a double bomb or a flash
+
+4) 3Q 3E gives adaptability
+
+  With this order, you are not committed to either "All Damage" or "Full Utility" and you can change your build depending on how the game is going.
+
+  This means that if you are behind or need extra utility, you can max E first. Or if you are ahead and your team needs damage, you can max Q.

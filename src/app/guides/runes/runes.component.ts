@@ -20,7 +20,7 @@ export class RunesComponent implements OnInit {
     new Guide(0, 'offensive', ''),
     new Guide(1, 'utility', ''),
     new Guide(2, 'defensive', ''),
-    new Guide(3, 'split push', '')
+    // new Guide(3, 'split push', '')
   ];
 
   dominationIcon;
